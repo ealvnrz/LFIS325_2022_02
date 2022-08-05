@@ -1,0 +1,44 @@
+project:
+  type: website
+
+website:
+  page-navigation: true
+  title: "STA 210 - Spring 2022"
+  sidebar:
+    background: "#D9E3E4"
+    logo: "images/iest422_logo.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/ealvnrz/IEST422_2022_02
+        text: "Repositorio del curso"
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:    
+      - section: "Información del curso"
+        contents:
+          - href: index.qmd
+            text: Descripción
+          - href: pages/programa.qmd
+            text: Programa
+          - href: pages/evaluaciones.qmd
+            text: Evaluaciones
+          - href: pages/calendario.qmd
+            text: Calendario
+           
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme-dark.scss]
+    mainfont: "Atkinson Hyperlegible"
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    lang: es
+    
+freeze: auto
+
+

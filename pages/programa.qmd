@@ -1,0 +1,54 @@
+---
+title: "Programa del curso"
+---
+
+# Programa oficial
+
+El programa oficial del curso está disponible [**acá**](/documents/LFIS325_Estadistica_para_Ciencias_Fisicas.pdf "Programa LFIS 325")
+
+# Introducción a la Estadística
+
+1. Proceso Estadístico
+2. Tipos de muestreo
+3. Medidas de tendencia muestral
+4. Tablas de frecuencia
+5. Tipos de gráficos
+
+# Probabilidad en la ciencia
+
+1. Decisión y probabilidad
+2. Teorema de Bayes
+3. Inferencia y probabilidad
+4. Análisis de error simple
+5. Uso de la estadística
+
+# Modelamiento de datos: Estimación de parámetros
+
+1. El método de la probabilidad máxima
+2. Mínimos cuadrados
+3. Análisis Bayesiano
+4. Modelamiento Monte Carlo
+5. Modelo de modelos y combinación de conjunto de datos
+
+# Detección y Búsqueda
+
+1. Detección
+2. Catálogos y efectos de selección
+3. El límite de confusión
+
+# Estadística en 1D y 2D
+
+1. Transformaciones de datos
+2. Análisis de Fourier
+3. Filtrado
+4. Correlacionamiento
+5. Estadística sobre una superficie
+6. Representación del cielo
+7. Función correlación angular de dos puntos
+8. El espectro de potencia angular
+
+# Cadenas de Markov Monte Carlo
+
+1. Algoritmo de Metrópolis-Hastings
+2. Comparación de modelos
+3. Aplicaciones.
