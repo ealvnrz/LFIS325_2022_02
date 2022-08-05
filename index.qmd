@@ -4,18 +4,13 @@ title: "LFIS325: Estadística para Ciencias Físicas"
 
 # Descripción del curso
 
-Es un curso teórico/práctico de modalidad presencial, de nivel intermedio, cuya misión es introducir al
-estudiante a las principales herramientas de análisis. El curso está orientado a desarrollar en el estudiante
-la capacidad de transformar los datos de que dispone tanto para extraer información útil como también
-para facilitar las conclusiones. Aprenderá los conceptos de la teoría de la probabilidad y la inferencia
-estadística que se utilizan para interpretar datos experimentales. Abordará los problemas tanto desde una
-perspectiva teórica como con trabajos prácticos.
+Es un curso teórico/práctico de modalidad presencial, de nivel intermedio, cuya misión es introducir al estudiante a las principales herramientas de análisis. El curso está orientado a desarrollar en el estudiante la capacidad de transformar los datos de que dispone tanto para extraer información útil como también para facilitar las conclusiones. Aprenderá los conceptos de la teoría de la probabilidad y la inferencia estadística que se utilizan para interpretar datos experimentales. Abordará los problemas tanto desde una perspectiva teórica como con trabajos prácticos.
 
 # Horario de clases
 
-|            | Día    | Horario             | Lugar     |
-|------------|--------|---------------------|-----------|
-| Cátedra #1 | Jueves | 08:30 am - 10:00 am | A definir |
+|            | Día     | Horario             | Lugar     |
+|------------|---------|---------------------|-----------|
+| Cátedra #1 | Jueves  | 08:30 am - 10:00 am | A definir |
 | Cátedra #2 | Viernes | 14:30 pm - 16:00 pm | A definir |
 | Cátedra #3 | Viernes | 16:15 pm - 17:45 pm | A definir |
 
@@ -39,11 +34,10 @@ Para la entrega de informes y talleres que requieran uso de programación, se re
 
 La bibliografía principal del curso es:
 
-::: {layout-ncol=3}
+::: {layout-ncol="3"}
 ![Statistical Data Analysis, Glen Cowan.](images/Cowan.jpg)
 
 ![Practical Statistics for Astronomers, J.V. Wall, C.R. Jenkins](images/practical.jpg)
 
 ![Probability and Statistics for Engineering and the Sciences, 9th Edition.Jay L. Devore](images/devore.jpg)
-
 :::
