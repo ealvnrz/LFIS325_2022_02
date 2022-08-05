@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "LFIS325: Estadística para Ciencias Físicas",
@@ -21,18 +14,11 @@
     "text": "Softwares\nPara la mayoría de las aplicaciones utilizaremos R, por lo que se sugiere utilizar un IDE como RStudio.\nPara la entrega de informes y talleres que requieran uso de programación, se recomienda el uso de Rmarkdown, Jupyter Notebook o \\(\\LaTeX\\) para la confección de documentos a entregar."
   },
   {
-    "objectID": "programa.html",
-    "href": "programa.html",
-    "title": "Programa del curso",
+    "objectID": "pages/calendario.html",
+    "href": "pages/calendario.html",
+    "title": "Calendario",
     "section": "",
-    "text": "Introducción al control de calidad\n\nBreve historia del control de calidad\nControl total de la calidad\nFilosofías del control de calidad\nIngeniería de la calidad y seños robustos\nMáxima calidad.\nTeoría seis sigma\nAspectos generales del control estadístico de procesos\n\n\n\nHerramientas estadísticas para el apoyo de un plan de mejoramiento de la calidad\n\nTipos de datos\nDatos de atributos. Distribución binomial\nDatos contables distribución de Poisson\nOtras distribuciones discretas\nAplicaciones\nDiagramas de control\nEstimando el nivel medio y la variación en un proceso\n\n\n\nModelamiento de la calidad de un proceso\n\nRazones para la variación en un proceso\nDescripción de la variación\nAlgunos modelos para la variación en un proceso\nEstudio de la variación en un proceso\nDistribución condicional, definiciones formales y teorema de existencia\nEsperanza y varianza condicional, propiedades, covarianza, coeficiente de correlación. Propiedades\n\n\n\nCapacidad del proceso\n\nEstudio de la capacidad inicial de un proceso\nLímites de control de límites de especificación o tolerancia\nCapacidad relativa\n\n\n\nDiagramas de control para variables continuas\n\nControl in‐out\nDiagramas de control para el nivel medio\nDiagramas de control para la dispersión en el proceso\nOtras técnicas de control. Sumas acumuladas\n\n\n\nControl de procesos para datos discretos\n\nDiagramas de Shewhart para datos contables\nDiagramas de Shewhart para datos por atributos\nDiagramas de Cusum para datos contables\nDiagramas de Cusum para datos de atributos\nNotas de muestreo"
-  },
-  {
-    "objectID": "pages/programa.html",
-    "href": "pages/programa.html",
-    "title": "Programa del curso",
-    "section": "",
-    "text": "Introducción a la Estadística\n\nProceso Estadístico\nTipos de muestreo\nMedidas de tendencia muestral\nTablas de frecuencia\nTipos de gráficos\n\n\n\nProbabilidad en la ciencia\n\nDecisión y probabilidad\nTeorema de Bayes\nInferencia y probabilidad\nAnálisis de error simple\nUso de la estadística\n\n\n\nModelamiento de datos: Estimación de parámetros\n\nEl método de la probabilidad máxima\nMínimos cuadrados\nAnálisis Bayesiano\nModelamiento Monte Carlo\nModelo de modelos y combinación de conjunto de datos\n\n\n\nDetección y Búsqueda\n\nDetección\nCatálogos y efectos de selección\nEl límite de confusión\n\n\n\nEstadística en 1D y 2D\n\nTransformaciones de datos\nAnálisis de Fourier\nFiltrado\nCorrelacionamiento\nEstadística sobre una superficie\nRepresentación del cielo\nFunción correlación angular de dos puntos\nEl espectro de potencia angular\n\n\n\nCadenas de Markov Monte Carlo\n\nAlgoritmo de Metrópolis-Hastings\nComparación de modelos\nAplicaciones."
+    "text": "Semana\nFecha\nPreparación\nPresentación\nEjercicios\nPruebas\nTrabajo Final\n\n\n\n\n1\n18/08\n📖\n🖥️\n📋\n\n\n\n\n\n19/08\n📖\n🖥️\n📋\n\n\n\n\n2\n25/08\n📖\n🖥️\n📋\n\n\n\n\n\n26/08\n📖\n🖥️\n📋\n\n\n\n\n3\n01/09\n📖\n🖥️\n📋\n\n\n\n\n\n02/09\n📖\n🖥️\n📋\n\n\n\n\n4\n08/09\n📖\n🖥️\n📋\n📝\n\n\n\n\n09/09\n📖\n🖥️\n📋\n\n\n\n\n5\n15/09\n📖\n🖥️\n📋\n\n\n\n\n\n16/09\n📖\n🖥️\n📋\n\n\n\n\n6\n22/09\n📖\n🖥️\n📋\n\n\n\n\n\n23/09\n📖\n🖥️\n📋\n\n\n\n\n7\n29/09\n📖\n🖥️\n📋\n📝\n\n\n\n\n30/09\n📖\n🖥️\n📋\n\n\n\n\n8\n06/10\n📖\n🖥️\n📋\n\n\n\n\n\n07/10\n📖\n🖥️\n📋\n\n\n\n\n9\n13/10\n📖\n🖥️\n📋\n\n\n\n\n\n14/10\n📖\n🖥️\n📋\n📝\n\n\n\n10\n20/10\n📖\n🖥️\n📋\n\n\n\n\n\n21/10\n📖\n🖥️\n📋\n\n\n\n\n11\n27/10\n📖\n🖥️\n📋\n\n\n\n\n\n28/10\n📖\n🖥️\n📋\n\n\n\n\n12\n21/10\n📖\n🖥️\n📋\n\n\n\n\n\n21/10\n📖\n🖥️\n📋\n\n\n\n\n13\n03/11\n📖\n🖥️\n📋\n\n\n\n\n\n04/11\n📖\n🖥️\n📋\n\n\n\n\n14\n10/11\n📖\n🖥️\n📋\n\n\n\n\n\n11/11\n📖\n🖥️\n📋\n\n\n\n\n15\n17/11\n📖\n🖥️\n📋\n\n\n\n\n\n18/11\n📖\n🖥️\n📋\n\n\n\n\n16\n24/11\n📖\n🖥️\n📋\n\n\n\n\n\n25/11\n📖\n🖥️\n📋\n\n\n\n\n17\n01/12\n📖\n🖥️\n📋\n\n\n\n\n\n02/12\n📖\n🖥️\n📋\n\n\n\n\n18\n08/12\n📖\n🖥️\n📋\n\n\n\n\n\n09/12\n📖\n🖥️\n📋\n\n📔"
   },
   {
     "objectID": "pages/evaluaciones.html",
@@ -42,10 +28,10 @@
     "text": "Tipo de evaluación\nPorcentaje que corresponde\n\n\n\n\nEvaluaciones sumativas (3)\n60%\n\n\nTareas/Proyectos\n40%"
   },
   {
-    "objectID": "pages/calendario.html",
-    "href": "pages/calendario.html",
-    "title": "Calendario",
+    "objectID": "pages/programa.html",
+    "href": "pages/programa.html",
+    "title": "Programa del curso",
     "section": "",
-    "text": "Semana\nFecha\nPreparación\nPresentación\nEjercicios\nPruebas\nTrabajo Final\n\n\n\n\n1\n18/08\n📖\n🖥️\n📋\n\n\n\n\n\n19/08\n📖\n🖥️\n📋\n\n\n\n\n2\n25/08\n📖\n🖥️\n📋\n\n\n\n\n\n26/08\n📖\n🖥️\n📋\n\n\n\n\n3\n01/09\n📖\n🖥️\n📋\n\n\n\n\n\n02/09\n📖\n🖥️\n📋\n\n\n\n\n4\n08/09\n📖\n🖥️\n📋\n📝\n\n\n\n\n09/09\n📖\n🖥️\n📋\n\n\n\n\n5\n15/09\n📖\n🖥️\n📋\n\n\n\n\n\n16/09\n📖\n🖥️\n📋\n\n\n\n\n6\n22/09\n📖\n🖥️\n📋\n\n\n\n\n\n23/09\n📖\n🖥️\n📋\n\n\n\n\n7\n29/09\n📖\n🖥️\n📋\n📝\n\n\n\n\n30/09\n📖\n🖥️\n📋\n\n\n\n\n8\n06/10\n📖\n🖥️\n📋\n\n\n\n\n\n07/10\n📖\n🖥️\n📋\n\n\n\n\n9\n13/10\n📖\n🖥️\n📋\n\n\n\n\n\n14/10\n📖\n🖥️\n📋\n📝\n\n\n\n10\n20/10\n📖\n🖥️\n📋\n\n\n\n\n\n21/10\n📖\n🖥️\n📋\n\n\n\n\n11\n27/10\n📖\n🖥️\n📋\n\n\n\n\n\n28/10\n📖\n🖥️\n📋\n\n\n\n\n12\n21/10\n📖\n🖥️\n📋\n\n\n\n\n\n21/10\n📖\n🖥️\n📋\n\n\n\n\n13\n03/11\n📖\n🖥️\n📋\n\n\n\n\n\n04/11\n📖\n🖥️\n📋\n\n\n\n\n14\n10/11\n📖\n🖥️\n📋\n\n\n\n\n\n11/11\n📖\n🖥️\n📋\n\n\n\n\n15\n17/11\n📖\n🖥️\n📋\n\n\n\n\n\n18/11\n📖\n🖥️\n📋\n\n\n\n\n16\n24/11\n📖\n🖥️\n📋\n\n\n\n\n\n25/11\n📖\n🖥️\n📋\n\n\n\n\n17\n01/12\n📖\n🖥️\n📋\n\n\n\n\n\n02/12\n📖\n🖥️\n📋\n\n\n\n\n18\n08/12\n📖\n🖥️\n📋\n\n\n\n\n\n09/12\n📖\n🖥️\n📋\n\n📔"
+    "text": "Introducción a la Estadística\n\nProceso Estadístico\nTipos de muestreo\nMedidas de tendencia muestral\nTablas de frecuencia\nTipos de gráficos\n\n\n\nProbabilidad en la ciencia\n\nDecisión y probabilidad\nTeorema de Bayes\nInferencia y probabilidad\nAnálisis de error simple\nUso de la estadística\n\n\n\nModelamiento de datos: Estimación de parámetros\n\nEl método de la probabilidad máxima\nMínimos cuadrados\nAnálisis Bayesiano\nModelamiento Monte Carlo\nModelo de modelos y combinación de conjunto de datos\n\n\n\nDetección y Búsqueda\n\nDetección\nCatálogos y efectos de selección\nEl límite de confusión\n\n\n\nEstadística en 1D y 2D\n\nTransformaciones de datos\nAnálisis de Fourier\nFiltrado\nCorrelacionamiento\nEstadística sobre una superficie\nRepresentación del cielo\nFunción correlación angular de dos puntos\nEl espectro de potencia angular\n\n\n\nCadenas de Markov Monte Carlo\n\nAlgoritmo de Metrópolis-Hastings\nComparación de modelos\nAplicaciones."
   }
 ]
