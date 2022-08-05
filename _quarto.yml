@@ -11,7 +11,7 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/ealvnrz/IEST422_2022_02
+        href: https://github.com/ealvnrz/LFIS325_2022_02
         text: "Repositorio del curso"
     style: "docked"
     search: true
