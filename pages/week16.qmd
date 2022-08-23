@@ -1,0 +1,17 @@
+---
+title: "Semana 16"
+subtitle: "Continuación presentaciones y entrega de trabajo final"
+---
+
+## Preparación
+
+
+## Presentación
+
+[Ver presentación en pantalla completa](../slides/lec_week16.html)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec_week16.html" height="630" width="900"></iframe>
+```
+
+## Material adicional

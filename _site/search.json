@@ -18,14 +18,14 @@
     "href": "pages/calendario.html",
     "title": "Calendario",
     "section": "",
-    "text": "Semana\nFecha\nPreparación\nPresentación\nEjercicios\nPruebas\nTrabajo Final\n\n\n\n\n1\n18/08\n📖\n🖥️\n📋\n\n\n\n\n\n19/08\n📖\n🖥️\n📋\n\n\n\n\n2\n25/08\n📖\n🖥️\n📋\n\n\n\n\n\n26/08\n📖\n🖥️\n📋\n\n\n\n\n3\n01/09\n📖\n🖥️\n📋\n\n\n\n\n\n02/09\n📖\n🖥️\n📋\n\n\n\n\n4\n08/09\n📖\n🖥️\n📋\n📝\n\n\n\n\n09/09\n📖\n🖥️\n📋\n\n\n\n\n5\n15/09\n📖\n🖥️\n📋\n\n\n\n\n\n16/09\n📖\n🖥️\n📋\n\n\n\n\n6\n22/09\n📖\n🖥️\n📋\n\n\n\n\n\n23/09\n📖\n🖥️\n📋\n\n\n\n\n7\n29/09\n📖\n🖥️\n📋\n📝\n\n\n\n\n30/09\n📖\n🖥️\n📋\n\n\n\n\n8\n06/10\n📖\n🖥️\n📋\n\n\n\n\n\n07/10\n📖\n🖥️\n📋\n\n\n\n\n9\n13/10\n📖\n🖥️\n📋\n\n\n\n\n\n14/10\n📖\n🖥️\n📋\n📝\n\n\n\n10\n20/10\n📖\n🖥️\n📋\n\n\n\n\n\n21/10\n📖\n🖥️\n📋\n\n\n\n\n11\n27/10\n📖\n🖥️\n📋\n\n\n\n\n\n28/10\n📖\n🖥️\n📋\n\n\n\n\n12\n21/10\n📖\n🖥️\n📋\n\n\n\n\n\n21/10\n📖\n🖥️\n📋\n\n\n\n\n13\n03/11\n📖\n🖥️\n📋\n\n\n\n\n\n04/11\n📖\n🖥️\n📋\n\n\n\n\n14\n10/11\n📖\n🖥️\n📋\n\n\n\n\n\n11/11\n📖\n🖥️\n📋\n\n\n\n\n15\n17/11\n📖\n🖥️\n📋\n\n\n\n\n\n18/11\n📖\n🖥️\n📋\n\n\n\n\n16\n24/11\n📖\n🖥️\n📋\n\n\n\n\n\n25/11\n📖\n🖥️\n📋\n\n\n\n\n17\n01/12\n📖\n🖥️\n📋\n\n\n\n\n\n02/12\n📖\n🖥️\n📋\n\n\n\n\n18\n08/12\n📖\n🖥️\n📋\n\n\n\n\n\n09/12\n📖\n🖥️\n📋\n\n📔"
+    "text": "Semana\nFecha\nPreparación\nPresentación\nMaterial adicional\nPrueba\nTrabajo Final\n\n\n\n\n1\n25-26/08\n📖\n🖥️\n📋\n\n\n\n\n2\n01-02/09\n📖\n🖥️\n📋\n\n\n\n\n3\n08-09/09\n📖\n🖥️\n📋\n\n\n\n\n4\n15-16/09\n📖\n🖥️\n📋\n\n\n\n\n5\n29-30/09\n📖\n🖥️\n📋\n📝\n\n\n\n6\n06-07/10\n📖\n🖥️\n📋\n\n\n\n\n7\n13-14/10\n📖\n🖥️\n📋\n\n\n\n\n8\n20-21/10\n📖\n🖥️\n📋\n\n\n\n\n9\n27-28/10\n📖\n🖥️\n📋\n\n\n\n\n10\n10-11/11\n📖\n🖥️\n📋\n\n\n\n\n11\n17-18/11\n📖\n🖥️\n📋\n\n\n\n\n12\n24-25/11\n📖\n🖥️\n📋\n\n\n\n\n13\n01-02/11\n📖\n🖥️\n📋\n\n📔\n\n\n14\n08-09/12\n📖\n🖥️\n📋\n📝\n\n\n\n15\n15-16/12\n📖\n🖥️\n📋\n\n\n\n\n16\n22-23/12\n📖\n🖥️\n📋\n\n📔"
   },
   {
     "objectID": "pages/evaluaciones.html",
     "href": "pages/evaluaciones.html",
     "title": "Evaluaciones",
     "section": "",
-    "text": "Tipo de evaluación\nPorcentaje que corresponde\n\n\n\n\nEvaluaciones sumativas (3)\n60%\n\n\nTareas/Proyectos\n40%"
+    "text": "Tipo de evaluación\nPorcentaje que corresponde\n\n\n\n\nEvaluaciones sumativas (2)\n50%\n\n\nPresentaciones\n30%\n\n\nTrabajo final\n20%"
   },
   {
     "objectID": "pages/programa.html",
@@ -33,5 +33,502 @@
     "title": "Programa del curso",
     "section": "",
     "text": "Introducción a la Estadística\n\nProceso Estadístico\nTipos de muestreo\nMedidas de tendencia muestral\nTablas de frecuencia\nTipos de gráficos\n\n\n\nProbabilidad en la ciencia\n\nDecisión y probabilidad\nTeorema de Bayes\nInferencia y probabilidad\nAnálisis de error simple\nUso de la estadística\n\n\n\nModelamiento de datos: Estimación de parámetros\n\nEl método de la probabilidad máxima\nMínimos cuadrados\nAnálisis Bayesiano\nModelamiento Monte Carlo\nModelo de modelos y combinación de conjunto de datos\n\n\n\nDetección y Búsqueda\n\nDetección\nCatálogos y efectos de selección\nEl límite de confusión\n\n\n\nEstadística en 1D y 2D\n\nTransformaciones de datos\nAnálisis de Fourier\nFiltrado\nCorrelacionamiento\nEstadística sobre una superficie\nRepresentación del cielo\nFunción correlación angular de dos puntos\nEl espectro de potencia angular\n\n\n\nCadenas de Markov Monte Carlo\n\nAlgoritmo de Metrópolis-Hastings\nComparación de modelos\nAplicaciones."
+  },
+  {
+    "objectID": "pages/week1.html",
+    "href": "pages/week1.html",
+    "title": "Semana 1",
+    "section": "",
+    "text": "Leer el programa del curso"
+  },
+  {
+    "objectID": "pages/week1.html#presentación",
+    "href": "pages/week1.html#presentación",
+    "title": "Semana 1",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week1.html#material-adicional",
+    "href": "pages/week1.html#material-adicional",
+    "title": "Semana 1",
+    "section": "Material adicional",
+    "text": "Material adicional\nSecciones 1.1 y 1.2 de Probability and Statistics for Engineering and the Sciences, 9th Edition."
+  },
+  {
+    "objectID": "pages/week10.html#presentación",
+    "href": "pages/week10.html#presentación",
+    "title": "Semana 10",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week10.html#material-adicional",
+    "href": "pages/week10.html#material-adicional",
+    "title": "Semana 10",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week11.html#presentación",
+    "href": "pages/week11.html#presentación",
+    "title": "Semana 11",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week11.html#material-adicional",
+    "href": "pages/week11.html#material-adicional",
+    "title": "Semana 11",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week12.html#presentación",
+    "href": "pages/week12.html#presentación",
+    "title": "Semana 12",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week12.html#material-adicional",
+    "href": "pages/week12.html#material-adicional",
+    "title": "Semana 12",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week13.html#presentación",
+    "href": "pages/week13.html#presentación",
+    "title": "Semana 13",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week13.html#material-adicional",
+    "href": "pages/week13.html#material-adicional",
+    "title": "Semana 13",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week14.html#presentación",
+    "href": "pages/week14.html#presentación",
+    "title": "Semana 14",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week14.html#material-adicional",
+    "href": "pages/week14.html#material-adicional",
+    "title": "Semana 14",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week15.html#presentación",
+    "href": "pages/week15.html#presentación",
+    "title": "Semana 15",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week15.html#material-adicional",
+    "href": "pages/week15.html#material-adicional",
+    "title": "Semana 15",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week16.html#presentación",
+    "href": "pages/week16.html#presentación",
+    "title": "Semana 16",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week16.html#material-adicional",
+    "href": "pages/week16.html#material-adicional",
+    "title": "Semana 16",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week2.html#presentación",
+    "href": "pages/week2.html#presentación",
+    "title": "Semana 2",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week2.html#material-adicional",
+    "href": "pages/week2.html#material-adicional",
+    "title": "Semana 2",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week3.html#presentación",
+    "href": "pages/week3.html#presentación",
+    "title": "Semana 3",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week3.html#material-adicional",
+    "href": "pages/week3.html#material-adicional",
+    "title": "Semana 3",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week4.html#presentación",
+    "href": "pages/week4.html#presentación",
+    "title": "Semana 4",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week4.html#material-adicional",
+    "href": "pages/week4.html#material-adicional",
+    "title": "Semana 4",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week5.html#presentación",
+    "href": "pages/week5.html#presentación",
+    "title": "Semana 5",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week5.html#material-adicional",
+    "href": "pages/week5.html#material-adicional",
+    "title": "Semana 5",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week6.html#presentación",
+    "href": "pages/week6.html#presentación",
+    "title": "Semana 6",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week6.html#material-adicional",
+    "href": "pages/week6.html#material-adicional",
+    "title": "Semana 6",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week7.html",
+    "href": "pages/week7.html",
+    "title": "Semana 7",
+    "section": "",
+    "text": "Instalar R y Python.\nSe recomienda también instalar Rstudio y Spyder"
+  },
+  {
+    "objectID": "pages/week7.html#presentación",
+    "href": "pages/week7.html#presentación",
+    "title": "Semana 7",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week7.html#material-adicional",
+    "href": "pages/week7.html#material-adicional",
+    "title": "Semana 7",
+    "section": "Material adicional",
+    "text": "Material adicional\nCapítulo 1 a 8 de Introducción a R en español\nCapítulo 1 y 2 de Python for probability, statistics, and machine learning"
+  },
+  {
+    "objectID": "pages/week8.html#presentación",
+    "href": "pages/week8.html#presentación",
+    "title": "Semana 8",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week8.html#material-adicional",
+    "href": "pages/week8.html#material-adicional",
+    "title": "Semana 8",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week9.html#presentación",
+    "href": "pages/week9.html#presentación",
+    "title": "Semana 9",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week9.html#material-adicional",
+    "href": "pages/week9.html#material-adicional",
+    "title": "Semana 9",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "slides/lec_week1.html#descripción-del-curso",
+    "href": "slides/lec_week1.html#descripción-del-curso",
+    "title": "Estadística para ciencias físicas",
+    "section": "Descripción del curso",
+    "text": "Descripción del curso\nEs un curso teórico/práctico de modalidad presencial, de nivel intermedio, cuya misión es introducir al estudiante a las principales herramientas de análisis. El curso está orientado a desarrollar en el estudiante la capacidad de transformar los datos de que dispone tanto para extraer información útil como también para facilitar las conclusiones. Aprenderá los conceptos de la teoría de la probabilidad y la inferencia estadística que se utilizan para interpretar datos experimentales. Abordará los problemas tanto desde una perspectiva teórica como con trabajos prácticos."
+  },
+  {
+    "objectID": "slides/lec_week1.html#horario-de-clases",
+    "href": "slides/lec_week1.html#horario-de-clases",
+    "title": "Estadística para ciencias físicas",
+    "section": "Horario de clases",
+    "text": "Horario de clases\n\n\n\n\nDía\nHorario\nLugar\n\n\n\n\nCátedra #1\nJueves\n08:30 am - 10:00 am\nJuan Mouat\n\n\nCátedra #2\nViernes\n14:30 pm - 16:00 pm\nJuan Mouat\n\n\nCátedra #3\nViernes\n16:15 pm - 17:45 pm\nJuan Mouat\n\n\n\nPágina del curso\nUtilizaremos el Aula Virtual/Google Classroom y el sitio https://lfis325-2022-02.netlify.com/. Ambas páginas tendrán la misma información, sin embargo, para efectos de entrega de informes, el medio oficial será el Aula Virtual/Google Classroom."
+  },
+  {
+    "objectID": "slides/lec_week1.html#softwares",
+    "href": "slides/lec_week1.html#softwares",
+    "title": "Estadística para ciencias físicas",
+    "section": "Softwares",
+    "text": "Softwares\nPara la mayoría de las aplicaciones utilizaremos R, por lo que se sugiere utilizar un IDE como RStudio.\nPara la entrega de informes y talleres que requieran uso de programación, se recomienda el uso de Rmarkdown, Jupyter Notebook o \\(\\LaTeX\\) para la confección de documentos a entregar."
+  },
+  {
+    "objectID": "slides/lec_week1.html#bibliografía",
+    "href": "slides/lec_week1.html#bibliografía",
+    "title": "Estadística para ciencias físicas",
+    "section": "Bibliografía",
+    "text": "Bibliografía\nLa bibliografía principal del curso es:\n\n\n\n\n\n\nStatistical Data Analysis, Glen Cowan.\n\n\n\n\n\n\n\nPractical Statistics for Astronomers, J.V. Wall, C.R. Jenkins\n\n\n\n\n\n\n\nProbability and Statistics for Engineering and the Sciences, 9th Edition.Jay L. Devore"
+  },
+  {
+    "objectID": "slides/lec_week1.html#introducción-a-la-estadística",
+    "href": "slides/lec_week1.html#introducción-a-la-estadística",
+    "title": "Estadística para ciencias físicas",
+    "section": "Introducción a la Estadística",
+    "text": "Introducción a la Estadística\n\nProceso Estadístico\nTipos de muestreo\nMedidas de tendencia muestral\nTablas de frecuencia\nTipos de gráficos"
+  },
+  {
+    "objectID": "slides/lec_week1.html#probabilidad-en-la-ciencia",
+    "href": "slides/lec_week1.html#probabilidad-en-la-ciencia",
+    "title": "Estadística para ciencias físicas",
+    "section": "Probabilidad en la ciencia",
+    "text": "Probabilidad en la ciencia\n\nDecisión y probabilidad\nTeorema de Bayes\nInferencia y probabilidad\nAnálisis de error simple\nUso de la estadística"
+  },
+  {
+    "objectID": "slides/lec_week1.html#modelamiento-de-datos-estimación-de-parámetros",
+    "href": "slides/lec_week1.html#modelamiento-de-datos-estimación-de-parámetros",
+    "title": "Estadística para ciencias físicas",
+    "section": "Modelamiento de datos: Estimación de parámetros",
+    "text": "Modelamiento de datos: Estimación de parámetros\n\nEl método de la probabilidad máxima\nMínimos cuadrados\nAnálisis Bayesiano\nModelamiento Monte Carlo\nModelo de modelos y combinación de conjunto de datos"
+  },
+  {
+    "objectID": "slides/lec_week1.html#detección-y-búsqueda",
+    "href": "slides/lec_week1.html#detección-y-búsqueda",
+    "title": "Estadística para ciencias físicas",
+    "section": "Detección y Búsqueda",
+    "text": "Detección y Búsqueda\n\nDetección\nCatálogos y efectos de selección\nEl límite de confusión"
+  },
+  {
+    "objectID": "slides/lec_week1.html#estadística-en-1d-y-2d",
+    "href": "slides/lec_week1.html#estadística-en-1d-y-2d",
+    "title": "Estadística para ciencias físicas",
+    "section": "Estadística en 1D y 2D",
+    "text": "Estadística en 1D y 2D\n\nTransformaciones de datos\nAnálisis de Fourier\nFiltrado\nCorrelacionamiento\nEstadística sobre una superficie\nRepresentación del cielo\nFunción correlación angular de dos puntos\nEl espectro de potencia angular"
+  },
+  {
+    "objectID": "slides/lec_week1.html#cadenas-de-markov-monte-carlo",
+    "href": "slides/lec_week1.html#cadenas-de-markov-monte-carlo",
+    "title": "Estadística para ciencias físicas",
+    "section": "Cadenas de Markov Monte Carlo",
+    "text": "Cadenas de Markov Monte Carlo\n\nAlgoritmo de Metrópolis-Hastings\nComparación de modelos\nAplicaciones."
+  },
+  {
+    "objectID": "slides/lec_week1.html#ponderaciones",
+    "href": "slides/lec_week1.html#ponderaciones",
+    "title": "Estadística para ciencias físicas",
+    "section": "Ponderaciones",
+    "text": "Ponderaciones\nLa metodología de evaluación es la siguiente:\n\n\n\nTipo de evaluación\nPorcentaje que corresponde\n\n\n\n\nEvaluaciones sumativas (2)\n50%\n\n\nPresentaciones\n30%\n\n\nTrabajo final\n20%"
+  },
+  {
+    "objectID": "slides/lec_week1.html#metodología-del-curso",
+    "href": "slides/lec_week1.html#metodología-del-curso",
+    "title": "Estadística para ciencias físicas",
+    "section": "Metodología del curso",
+    "text": "Metodología del curso\n\nAntes de cada sesión, se mandará una lectura de preparación para la sesión\nEl enfoque principal será teórico, pero sin dejar de lado las aplicaciones\nSe pondrá a disposición material adicional para estudiar:\n\nEjemplos y ejercicios teóricos\nCódigos\n\nEl curso será mayoritariamente autocontenido, pero requiere al menos conocimiento básico cálculo y programación."
+  },
+  {
+    "objectID": "slides/lec_week1.html#proceso-estadístico",
+    "href": "slides/lec_week1.html#proceso-estadístico",
+    "title": "Estadística para ciencias físicas",
+    "section": "Proceso Estadístico",
+    "text": "Proceso Estadístico\nLa estadística es la ciencia encargada de la descripción, organización, presentación de datos y además la obtención de conclusiones basadas en los datos experimentales; a esto le llamamos inferencia, la cual es inductiva debido a que se proyecta de lo específico hacia lo general.\nAl ser una ciencia, esta se rige al método científico."
+  },
+  {
+    "objectID": "slides/lec_week1.html#diagrama-del-proceso-estadístico",
+    "href": "slides/lec_week1.html#diagrama-del-proceso-estadístico",
+    "title": "Estadística para ciencias físicas",
+    "section": "Diagrama del proceso estadístico",
+    "text": "Diagrama del proceso estadístico"
+  },
+  {
+    "objectID": "slides/lec_week1.html#por-qué-el-uso-de-la-estadística-en-física",
+    "href": "slides/lec_week1.html#por-qué-el-uso-de-la-estadística-en-física",
+    "title": "Estadística para ciencias físicas",
+    "section": "¿Por qué el uso de la estadística en Física?",
+    "text": "¿Por qué el uso de la estadística en Física?\n\nCuantificación del error: Errores propios y externos, ¿Qué significan?\n¿Cómo pueden nuestros datos ser utilizados de la mejor manera posible? o ¿Pueden ser usados?\nCorrelaciones, test de hipótesis y modelación: ¿Como se procede?\nMuestras incompletas, datos de un experimento que no puede ser replicado ¿Cómo se trabajo con este tipo de datos?\nLa presentación de datos y conclusión siempre vienen -inherentemente- en términos estadísticos.\nEl proceso de decisión no puede ser realizado sin una metodología, sin importar que tan bueno sea el experimento."
+  },
+  {
+    "objectID": "slides/lec_week1.html#procedimiento-de-un-experimento",
+    "href": "slides/lec_week1.html#procedimiento-de-un-experimento",
+    "title": "Estadística para ciencias físicas",
+    "section": "Procedimiento de un experimento",
+    "text": "Procedimiento de un experimento\n\nObservar: Registrar u obtener los datos.\nReducir: Limpiar los datos para eliminar efectos experimentales: corrección flat-field, calibración, etc.\nAnalizar: Obtener los números desde una base de datos limpia: intensidades, posiciones, etcétera. A partir de esta información, producir indicadores que permitan comparar o modelar. Estos indicadores son llamados estadísticos y determinan el diseño de experimentos.\nConclusión: Llevar a cabo un procedimiento para llegar a una conclusión. Test de hipótesis; correlación, modelos, etc.\nReflexión: ¿Qué se aprendió? ¿Es la decisión viable? ¿Fue inesperada? ¿En qué paso del experimiento se debe examinar para verificar? ¿Qué es necesario para confimar un resultado inesperado? ¿Cómo se debe realizar el siguiente experimento? ¿Se extenderá la hipótesis realizada o se sugerirá una nueva hipótesis?"
+  },
+  {
+    "objectID": "slides/lec_week1.html#diagrama-de-una-muestra",
+    "href": "slides/lec_week1.html#diagrama-de-una-muestra",
+    "title": "Estadística para ciencias físicas",
+    "section": "Diagrama de una muestra",
+    "text": "Diagrama de una muestra"
+  },
+  {
+    "objectID": "slides/lec_week1.html#tipos-de-muestreo",
+    "href": "slides/lec_week1.html#tipos-de-muestreo",
+    "title": "Estadística para ciencias físicas",
+    "section": "Tipos de Muestreo",
+    "text": "Tipos de Muestreo\n\nMuestreo no Probabilístico: Los resultados obtenidos sólo representan las características de los elementos muestrados y no de la población\n\nMuestreo por conveniencia\nMuestreo consecutivo\nMuestreo por cuotas\nMuestreo de bola de nieve. (Muestreo en cadena).\n\nMuestreo Probabilístico: Cada uno de los elementos de la población de interés, o población objetivo, tiene una probabilidad conocida (frecuentemente igual) de ser elegidos en la muestra."
+  },
+  {
+    "objectID": "slides/lec_week1.html#muestreo-aleatorio-simple-y-sistemático",
+    "href": "slides/lec_week1.html#muestreo-aleatorio-simple-y-sistemático",
+    "title": "Estadística para ciencias físicas",
+    "section": "Muestreo Aleatorio simple y sistemático",
+    "text": "Muestreo Aleatorio simple y sistemático\n\nMuestreo Aleatorio Simple: Los elementos se escogen en forma individual y al azar de la totalidad de la población, es decir, se escogen sin ningún privilegio y cada uno posee la misma probabilidad de formar parte de la muestra en cada una de las posibles muestras.\nMuestreo Aleatorio Sistemático: Existe un plan de muestreo al azar, en la cual se eligen los elementos de la población a intervalos uniformes, a partir de un listado (ordenado), tal como elegir cada \\(k-\\)ésimo elemento después de un arranque aleatorio."
+  },
+  {
+    "objectID": "slides/lec_week1.html#muestreo-estratificado",
+    "href": "slides/lec_week1.html#muestreo-estratificado",
+    "title": "Estadística para ciencias físicas",
+    "section": "Muestreo estratificado",
+    "text": "Muestreo estratificado\n\nMuestreo Aleatorio Estratificado: La característica que se está midiendo en la población objetivo, presenta mucha dispersión en grupos identificados, por lo tanto, lo primero que se debe hacer es estratificar los elementos de la población en subgrupos y excluyentes de acuerdo al comportamiento que presenta la característica dentro de estos grupos.\n\n\n\n\n\n\n\nPosterior a la clasificación de los elementos de la población en grupos, se obtiene por separado una muestra aleatoria simple o sistemática de cada estrato."
+  },
+  {
+    "objectID": "slides/lec_week1.html#tipos-de-variable",
+    "href": "slides/lec_week1.html#tipos-de-variable",
+    "title": "Estadística para ciencias físicas",
+    "section": "Tipos de Variable",
+    "text": "Tipos de Variable\n\nVariables Cualitativas: Cuando los elementos de una población son clasificados en categorías o clases excluyentes, se habla de variables cualitativas. Ejemplos: estado civil, lugar de procedencia, marca de artículos, etc.\nVariables Cuantitativas (o Numéricas): Si los posibles valores para los elementos de una población, son cantidades o números, se habla de variables cuantitativas. Ejemplos: kms por litro de gasolina de un auto, temperatura, duración de un examen, etc.\n\nDiscretas: Se habla de variables discretas, cuando el conjunto de valores posibles es finito o infinito numerable. Ejemplos: Cantidad de crías por camada, número de alumnos por carrera, etc.\nContinuas: Son aquellas que pueden asumir infinitos valores. Ejemplos: sueldo de una persona, tiempo que tarda un animal en alcanzar un peso previamente determinado, etc."
+  },
+  {
+    "objectID": "slides/lec_week1.html#escalas-de-medición",
+    "href": "slides/lec_week1.html#escalas-de-medición",
+    "title": "Estadística para ciencias físicas",
+    "section": "Escalas de medición",
+    "text": "Escalas de medición\n\nEscalas de Medición para variables cualitativas:\n\nNominal: Es aquella escala en donde las categorías (o los posibles valores de la variable), no pueden ser ordenadas en un sentido de magnitud. Ejemplos: colores, profesión, etc.\nOrdinal: Cuando las categorías admiten una ordenación (no alfabética), se habla de escala ordinal. Ejemplo: Nivel Socio-económico (alto, medio o bajo), sistema de evaluación cualitativa (insuficiente, suficiente, bueno, muy bueno), etc.\n\nEscalas de Medición para variables cuantitativas:\n\nIntervalar: Son aquellas que poseen un punto de referencia (o cero) relativo, en el sentido de que si se cambia de unidad de medición, el punto de referencia difiere entre una unidad de medida y otra. Ejemplo: temperatura (Celcius - Fahrenheit).\nRazón: Son aquellas que poseen un cero absoluto (es decir, único). Incluso permiten hacer comparaciones por cocientes. Ejemplo: Peso de una persona, distancias, etc."
+  },
+  {
+    "objectID": "slides/lec_week1.html#organización-de-los-datos",
+    "href": "slides/lec_week1.html#organización-de-los-datos",
+    "title": "Estadística para ciencias físicas",
+    "section": "Organización de los datos",
+    "text": "Organización de los datos\nLa organización de los datos trata de acomodar éstos para que puedan revelar sus características informativas fundamentales y de esta manera simplificar los análisis para la obtención de conclusiones.\nEl uso de frecuencia es más natural en datos cualitativos o discretos, pues en estos casos es sencillo contar el número de veces que aparece un mismo dato en la población (muestra) de éstos, en este caso se habla de tabla de frecuencia no agrupadas.\nSin Embargo, cuando se trabaja con datos cuantitativos en escala continua, es muy posible que exista un conjunto de números distintos lo suficientemente grande, como para hacer impracticable lo anterior, en este último caso se procede a crear agrupaciones convenientes para los datos observados, en este caso se habla de tabla de frecuencia agrupadas."
+  },
+  {
+    "objectID": "slides/lec_week1.html#tabla-de-frecuencia",
+    "href": "slides/lec_week1.html#tabla-de-frecuencia",
+    "title": "Estadística para ciencias físicas",
+    "section": "Tabla de frecuencia",
+    "text": "Tabla de frecuencia\nEn las tablas de frecuencia cada categoría tiene una frecuencia observada, este cálculo es siempre posible en datos cualitativos, sin embargo, si la cantidad de categorías es grande, deja de ser un resumen adecuado para los datos.\nLas respuestas observadas en la población (muestra), se denominarán clases, y se simbolizan por: \\(C_1,C_2,\\dots, C_k\\) donde \\(k\\) es la cantidad de categorías (respuestas) distintas."
+  },
+  {
+    "objectID": "slides/lec_week1.html#frecuencia-absoluta-y-relativa",
+    "href": "slides/lec_week1.html#frecuencia-absoluta-y-relativa",
+    "title": "Estadística para ciencias físicas",
+    "section": "Frecuencia absoluta y relativa",
+    "text": "Frecuencia absoluta y relativa\nFrecuencia Absoluta: Se llama frecuencia absoluta de la clase \\(C_i\\), al número de elementos de la población (muestra) que pertenecen a la clase \\(C_i\\). Este número lo denotaremos por \\(n_i\\) y cumplen la propiedad:\n\\[\\sum_{i=1}^{k} n_i =n\\]\nEn donde \\(n\\) es el tamaño de la población o muestra, según sea el caso.\nFrecuencia Relativa: Se llama frecuencia relativa de la clase \\(C_i\\), a la cantidad de elementos en la población (muestra) que pertenecen a la clase \\(C_i\\), relativo al total de elementos en la población (muestra). Este número lo denotaremos por \\(f_i\\) y cumplen la propiedad:\n\\[f_i=\\dfrac{n_i}{n} \\Rightarrow \\sum_{i=1}^{k} f_i = \\sum_{i=1}^{k}\\dfrac{n_i}{n} = 1\\]\n\n\n\nLFIS 325 - Semana 1"
+  },
+  {
+    "objectID": "slides/lec_week1.html#frecuencia-absoluta",
+    "href": "slides/lec_week1.html#frecuencia-absoluta",
+    "title": "Estadística para ciencias físicas",
+    "section": "Frecuencia absoluta",
+    "text": "Frecuencia absoluta\nSe llama frecuencia absoluta de la clase \\(C_i\\), al número de elementos de la población (muestra) que pertenecen a la clase \\(C_i\\). Este número lo denotaremos por \\(n_i\\) y cumplen la propiedad:\n\\[\\sum_{i=1}^{k} n_i =n\\]\nEn donde \\(n\\) es el tamaño de la población o muestra, según sea el caso."
+  },
+  {
+    "objectID": "slides/lec_week1.html#frecuencia-relativa",
+    "href": "slides/lec_week1.html#frecuencia-relativa",
+    "title": "Estadística para ciencias físicas",
+    "section": "Frecuencia relativa",
+    "text": "Frecuencia relativa\nSe llama frecuencia relativa de la clase \\(C_i\\), a la cantidad de elementos en la población (muestra) que pertenecen a la clase \\(C_i\\), relativo al total de elementos en la población (muestra). Este número lo denotaremos por \\(f_i\\) y cumplen la propiedad:\n\\[f_i=\\dfrac{n_i}{n} \\Rightarrow \\sum_{i=1}^{k} f_i = \\sum_{i=1}^{k}\\dfrac{n_i}{n} = 1\\]"
+  },
+  {
+    "objectID": "slides/lec_week1.html#frecuencia-absoluta-acumulada",
+    "href": "slides/lec_week1.html#frecuencia-absoluta-acumulada",
+    "title": "Estadística para ciencias físicas",
+    "section": "Frecuencia absoluta acumulada",
+    "text": "Frecuencia absoluta acumulada\nSe llama frecuencia absoluta acumulada hasta la clase \\(C_i\\), al número total de elementos en la población (muestra) que pertenecen a las clases \\(C_1,C_2,\\dots,C_i\\). Este número lo denotaremos por \\(N_i\\) y cumplen la propiedad:\n\\[N_i=n_1+n_2+\\dots+n_i=\\sum_{j=1}^{i}n_j, \\hspace{10pt} j=1,2,\\dots,i, \\hspace{10pt} i=1,2,\\dots,k\\] y,\n\\[N_k=n_1+n_2+\\dots+n_i+\\dots+n_k=n\\]"
+  },
+  {
+    "objectID": "slides/lec_week1.html#frecuencia-relativa-acumulada",
+    "href": "slides/lec_week1.html#frecuencia-relativa-acumulada",
+    "title": "Estadística para ciencias físicas",
+    "section": "Frecuencia relativa acumulada",
+    "text": "Frecuencia relativa acumulada\nSe llama frecuencia relativa acumulada hasta la clase \\(C_i\\), a la cantidad de elementos en la población (muestra) que pertenecen a las clases \\(C_1,C_2,\\dots,C_i\\), con respecto al total de elementos en la población (muestra). Este número lo denotaremos por \\(F_i\\) y cumplen la propiedad:\n\\[F_i=f_1+f_2+\\dots+f_i=\\sum_{j=1}^{i}f_j, \\hspace{10pt} j=1,2,\\dots,i, \\hspace{10pt} i=1,2,\\dots,k\\]"
+  },
+  {
+    "objectID": "slides/lec_week1.html#ejemplo",
+    "href": "slides/lec_week1.html#ejemplo",
+    "title": "Estadística para ciencias físicas",
+    "section": "Ejemplo",
+    "text": "Ejemplo\nEn un conjunto de resultados experimentales, se desea determinar la clasificación de los resultados obtenidos. Estos son clasificados como: Malos (M), Regulares (R), Buenos (B) y Excelentes (E). Los datos son:\n\n\n\nB\nR\nB\nE\nE\nE\nM\nB\nE\nR\n\n\nR\nM\nM\nR\nR\nM\nR\nB\nB\nB\n\n\nB\nB\nE\nB\nB\nB\nE\nB\nE\nR\n\n\nE\nM\nB\nB\nE\nB\nB\nB\nB\nB\n\n\nM\nR\nM\nB\nB\nB\nB\nE\nM\nR\n\n\n\n\n\n\nLFIS 325 - Semana 1"
+  },
+  {
+    "objectID": "slides/lec_week1.html#ejemplo-enunciado",
+    "href": "slides/lec_week1.html#ejemplo-enunciado",
+    "title": "Estadística para ciencias físicas",
+    "section": "Ejemplo: enunciado",
+    "text": "Ejemplo: enunciado\nEn un conjunto de resultados experimentales, se desea determinar la clasificación de los resultados obtenidos. Estos son clasificados como: Malos (M), Regulares (R), Buenos (B) y Excelentes (E). Los datos son:\n\n\n\nB\nR\nB\nE\nE\nE\nM\nB\nE\nR\n\n\nR\nM\nM\nR\nR\nM\nR\nB\nB\nB\n\n\nB\nB\nE\nB\nB\nB\nE\nB\nE\nR\n\n\nE\nM\nB\nB\nE\nB\nB\nB\nB\nB\n\n\nM\nR\nM\nB\nB\nB\nB\nE\nM\nR"
+  },
+  {
+    "objectID": "slides/lec_week1.html#ejemplo-respuesta",
+    "href": "slides/lec_week1.html#ejemplo-respuesta",
+    "title": "Estadística para ciencias físicas",
+    "section": "Ejemplo: respuesta",
+    "text": "Ejemplo: respuesta\n\n\n\n\nFrecuencias\n\nFrecuencias\nAcumuladas\n\n\n\n\nClasificación\nAbsoluta\nRelativa\nAbsoluta\nRelativa\n\n\nMalo\n8\n16%\n8\n16%\n\n\nRegular\n9\n18%\n17\n34%\n\n\nBuenos\n23\n46%\n40\n80%\n\n\nExcelentes\n10\n20%\n50\n100%"
+  },
+  {
+    "objectID": "slides/lec_week1.html#tablas-para-variables-continuas",
+    "href": "slides/lec_week1.html#tablas-para-variables-continuas",
+    "title": "Estadística para ciencias físicas",
+    "section": "Tablas para Variables Continuas",
+    "text": "Tablas para Variables Continuas\nEn variables continuas, la organización de datos es un poco más compleja: se dividen los datos en \\(k\\) grupos o segmentos disjuntos. Estos grupos representan las clases y se determina la frecuencia de datos asociado a cada grupo, conformando una tabla de frecuencia agrupada.\nEn este tipo de datos las clases están compuestas por intervalos, luego es necesario buscar un representante de la frecuencia asociada a este intervalo , el cual se conoce como marca de clase. Es común utilizar como marca de clase al valor medio del segmento (intervalo)."
+  },
+  {
+    "objectID": "slides/lec_week1.html#construcción-de-la-tabla-de-frecuencia",
+    "href": "slides/lec_week1.html#construcción-de-la-tabla-de-frecuencia",
+    "title": "Estadística para ciencias físicas",
+    "section": "Construcción de la tabla de frecuencia",
+    "text": "Construcción de la tabla de frecuencia\nEn la construcción de una tabla de frecuencia, lo primero que se tiene que tener claro es la cantidad de segmentos (intervalos) a considerar. Lo más común es utilizar como una primera aproximación la regla de Sturges.\n\nRegla de Sturges: El número de clases \\(k= 3,3 * \\log(n)+1\\), donde \\(n\\) es la cantidad de datos que se desea organizar.\nAmplitud: Para determinar la amplitud de las clases \\(a\\), se debe calcular el rango \\(R_D\\), que es la diferencia entre el dato mayor (\\(\\max x_i\\)) y el dato menor (\\(\\min x_i\\)). También es necesario determinar \\(u\\), la unidad mínima de conteo de los datos. Luego, la amplitud estará dada por:\n\n\n\\[ a=\\dfrac{R_D +u}{k}\\]"
+  },
+  {
+    "objectID": "slides/lec_week1.html#rango-de-la-tabla",
+    "href": "slides/lec_week1.html#rango-de-la-tabla",
+    "title": "Estadística para ciencias físicas",
+    "section": "Rango de la tabla",
+    "text": "Rango de la tabla\nUna vez determinada la amplitud \\(a\\), se procede a determinar el rango de la tabla \\(R_T\\), que es la multiplicación entre la cantidad de clases que se están utilizando y la amplitud. Para determinar los límites teóricos de las clases, se comienza con el límite inferior de la primera clase (\\(LI_1\\)), el cual se calcula como:\n\\[LI_1=\\min x_i - \\dfrac{D}{2}\\]\nDonde la diferencia \\(D=R_T-R_D\\), en el caso que el último dígito de \\(D\\) no sea par, se realiza un ajuste conveniente.\nPosteriormente, se suma la amplitud a \\(LI_1\\) obteniéndose el limite superior de esta clase (\\(LS_1\\)), el que también será el límite inferior de la segunda clase, \\(LI_2=LS_1\\). Este último se considera abierto para su clase y cerrado para la segunda clase, luego para los siguientes intervalos se realiza el mismo procedimiento anterior."
+  },
+  {
+    "objectID": "slides/lec_week1.html#tabla-general",
+    "href": "slides/lec_week1.html#tabla-general",
+    "title": "Estadística para ciencias físicas",
+    "section": "Tabla general",
+    "text": "Tabla general\n\n\n\n\nFrecuencias\n\nFrecuencias\nAcumuladas\n\n\n\n\nClases\nAbsoluta\nRelativa\nAbsoluta\nRelativa\n\n\n\\([LI_1-LS_1[\\)\n\\(n_1\\)\n\\(f_1\\)\n\\(N_1\\)\n\\(F_1\\)\n\n\n\\([LI_2-LS_2[\\)\n\\(n_2\\)\n\\(f_2\\)\n\\(N_2\\)\n\\(F_2\\)\n\n\n\\([LI_3-LS_3[\\)\n\\(n_3\\)\n\\(f_3\\)\n\\(N_3\\)\n\\(F_3\\)\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n\\([LI_k-LS_k[\\)\n\\(n_k\\)\n\\(f_k\\)\n\\(N_k\\)\n\\(F_k\\)"
+  },
+  {
+    "objectID": "pages/week2.html",
+    "href": "pages/week2.html",
+    "title": "Semana 2",
+    "section": "",
+    "text": "Leer capítulo 1 de Probability and Statistics for Engineering and the Sciences, 9th Edition."
   }
 ]

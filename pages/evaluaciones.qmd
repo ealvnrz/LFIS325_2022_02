@@ -6,5 +6,6 @@ La metodología de evaluación es la siguiente:
 
 | Tipo de evaluación         | Porcentaje que corresponde |
 |----------------------------|----------------------------|
-| Evaluaciones sumativas (3) | 60%                        |
-| Tareas/Proyectos           | 40%                        |
+| Evaluaciones sumativas (2) | 50%                        |
+| Presentaciones           | 30%                        |
+| Trabajo final           | 20%                        |

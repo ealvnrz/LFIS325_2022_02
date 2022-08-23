@@ -10,13 +10,13 @@ Es un curso teórico/práctico de modalidad presencial, de nivel intermedio, cuy
 
 |            | Día     | Horario             | Lugar     |
 |------------|---------|---------------------|-----------|
-| Cátedra #1 | Jueves  | 08:30 am - 10:00 am | A definir |
-| Cátedra #2 | Viernes | 14:30 pm - 16:00 pm | A definir |
-| Cátedra #3 | Viernes | 16:15 pm - 17:45 pm | A definir |
+| Cátedra #1 | Jueves  | 08:30 am - 10:00 am | Juan Mouat |
+| Cátedra #2 | Viernes | 14:30 pm - 16:00 pm | Juan Mouat |
+| Cátedra #3 | Viernes | 16:15 pm - 17:45 pm | Juan Mouat |
 
 # Instructor
 
-![](images/placeholder.png){style="float:right;padding: 0 0 0 10px;" fig-alt="EAN" width="200"}
+![](images/e.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="EAN" width="200"}
 
 Prof. [Eloy Alvarado Narváez](https://ealvnrz.netlify.com/) es candidato a Doctor en estadística en la [Universidad de Valparaíso](https://www.uv.cl/) en el área de estadística espacial, particularmente en el estudio de campos aleatorios y cópulas. Es Licenciado en Estadística de la [Pontificia Universidad Católica de Valparaíso](http://www.pucv.cl). Actualmente, presta servicios de consultoría al [Instituto de Fomento Pesquero](http://www.ifop.cl) en modelamiento espacio-temporal.
 

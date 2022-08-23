@@ -1,0 +1,19 @@
+---
+title: "Semana 2"
+subtitle: "Medidas de posición, variabilidad y gráficos"
+---
+
+## Preparación
+
+Leer capítulo 1 de Probability and Statistics for Engineering and the Sciences, 9th Edition.
+
+## Presentación
+
+[Ver presentación en pantalla completa](../slides/lec_week2.html)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec_week2.html" height="630" width="900"></iframe>
+```
+
+## Material adicional
+

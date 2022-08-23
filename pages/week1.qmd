@@ -1,0 +1,20 @@
+---
+title: "Semana 1"
+subtitle: "Bienvenida al curso e introducción a estadística descriptiva"
+---
+
+## Preparación
+
+Leer el [programa del curso](/documents/LFIS325_Estadistica_para_Ciencias_Fisicas.pdf "Programa LFIS 325")
+
+## Presentación
+
+[Ver presentación en pantalla completa](../slides/lec_week1.html)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec_week1.html" height="630" width="900"></iframe>
+```
+
+## Material adicional
+
+Secciones 1.1 y 1.2 de Probability and Statistics for Engineering and the Sciences, 9th Edition.
