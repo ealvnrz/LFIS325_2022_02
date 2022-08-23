@@ -360,8 +360,8 @@
     "objectID": "slides/lec_week1.html#proceso-estadístico",
     "href": "slides/lec_week1.html#proceso-estadístico",
     "title": "Estadística para ciencias físicas",
-    "section": "Proceso Estadístico",
-    "text": "Proceso Estadístico\nLa estadística es la ciencia encargada de la descripción, organización, presentación de datos y además la obtención de conclusiones basadas en los datos experimentales; a esto le llamamos inferencia, la cual es inductiva debido a que se proyecta de lo específico hacia lo general.\nAl ser una ciencia, esta se rige al método científico."
+    "section": "Proceso estadístico",
+    "text": "Proceso estadístico\nLa estadística es la ciencia encargada de la descripción, organización, presentación de datos y además la obtención de conclusiones basadas en los datos experimentales; a esto le llamamos inferencia, la cual es inductiva debido a que se proyecta de lo específico hacia lo general.\nAl ser una ciencia, esta se rige al método científico."
   },
   {
     "objectID": "slides/lec_week1.html#diagrama-del-proceso-estadístico",
@@ -374,8 +374,8 @@
     "objectID": "slides/lec_week1.html#por-qué-el-uso-de-la-estadística-en-física",
     "href": "slides/lec_week1.html#por-qué-el-uso-de-la-estadística-en-física",
     "title": "Estadística para ciencias físicas",
-    "section": "¿Por qué el uso de la estadística en Física?",
-    "text": "¿Por qué el uso de la estadística en Física?\n\nCuantificación del error: Errores propios y externos, ¿Qué significan?\n¿Cómo pueden nuestros datos ser utilizados de la mejor manera posible? o ¿Pueden ser usados?\nCorrelaciones, test de hipótesis y modelación: ¿Como se procede?\nMuestras incompletas, datos de un experimento que no puede ser replicado ¿Cómo se trabajo con este tipo de datos?\nLa presentación de datos y conclusión siempre vienen -inherentemente- en términos estadísticos.\nEl proceso de decisión no puede ser realizado sin una metodología, sin importar que tan bueno sea el experimento."
+    "section": "¿Por qué el uso de la estadística en física?",
+    "text": "¿Por qué el uso de la estadística en física?\n\nCuantificación del error: Errores propios y externos, ¿Qué significan?\n¿Cómo pueden nuestros datos ser utilizados de la mejor manera posible? o ¿Pueden ser usados?\nCorrelaciones, test de hipótesis y modelación: ¿Como se procede?\nMuestras incompletas, datos de un experimento que no puede ser replicado ¿Cómo se trabajo con este tipo de datos?\nLa presentación de datos y conclusión siempre vienen -inherentemente- en términos estadísticos.\nEl proceso de decisión no puede ser realizado sin una metodología, sin importar que tan bueno sea el experimento."
   },
   {
     "objectID": "slides/lec_week1.html#procedimiento-de-un-experimento",
@@ -395,15 +395,15 @@
     "objectID": "slides/lec_week1.html#tipos-de-muestreo",
     "href": "slides/lec_week1.html#tipos-de-muestreo",
     "title": "Estadística para ciencias físicas",
-    "section": "Tipos de Muestreo",
-    "text": "Tipos de Muestreo\n\nMuestreo no Probabilístico: Los resultados obtenidos sólo representan las características de los elementos muestrados y no de la población\n\nMuestreo por conveniencia\nMuestreo consecutivo\nMuestreo por cuotas\nMuestreo de bola de nieve. (Muestreo en cadena).\n\nMuestreo Probabilístico: Cada uno de los elementos de la población de interés, o población objetivo, tiene una probabilidad conocida (frecuentemente igual) de ser elegidos en la muestra."
+    "section": "Tipos de muestreo",
+    "text": "Tipos de muestreo\n\nMuestreo no Probabilístico: Los resultados obtenidos sólo representan las características de los elementos muestrados y no de la población\n\nMuestreo por conveniencia\nMuestreo consecutivo\nMuestreo por cuotas\nMuestreo de bola de nieve. (Muestreo en cadena).\n\nMuestreo Probabilístico: Cada uno de los elementos de la población de interés, o población objetivo, tiene una probabilidad conocida (frecuentemente igual) de ser elegidos en la muestra."
   },
   {
     "objectID": "slides/lec_week1.html#muestreo-aleatorio-simple-y-sistemático",
     "href": "slides/lec_week1.html#muestreo-aleatorio-simple-y-sistemático",
     "title": "Estadística para ciencias físicas",
-    "section": "Muestreo Aleatorio simple y sistemático",
-    "text": "Muestreo Aleatorio simple y sistemático\n\nMuestreo Aleatorio Simple: Los elementos se escogen en forma individual y al azar de la totalidad de la población, es decir, se escogen sin ningún privilegio y cada uno posee la misma probabilidad de formar parte de la muestra en cada una de las posibles muestras.\nMuestreo Aleatorio Sistemático: Existe un plan de muestreo al azar, en la cual se eligen los elementos de la población a intervalos uniformes, a partir de un listado (ordenado), tal como elegir cada \\(k-\\)ésimo elemento después de un arranque aleatorio."
+    "section": "Muestreo aleatorio simple y sistemático",
+    "text": "Muestreo aleatorio simple y sistemático\n\nMuestreo Aleatorio Simple: Los elementos se escogen en forma individual y al azar de la totalidad de la población, es decir, se escogen sin ningún privilegio y cada uno posee la misma probabilidad de formar parte de la muestra en cada una de las posibles muestras.\nMuestreo Aleatorio Sistemático: Existe un plan de muestreo al azar, en la cual se eligen los elementos de la población a intervalos uniformes, a partir de un listado (ordenado), tal como elegir cada \\(k-\\)ésimo elemento después de un arranque aleatorio."
   },
   {
     "objectID": "slides/lec_week1.html#muestreo-estratificado",
@@ -416,8 +416,8 @@
     "objectID": "slides/lec_week1.html#tipos-de-variable",
     "href": "slides/lec_week1.html#tipos-de-variable",
     "title": "Estadística para ciencias físicas",
-    "section": "Tipos de Variable",
-    "text": "Tipos de Variable\n\nVariables Cualitativas: Cuando los elementos de una población son clasificados en categorías o clases excluyentes, se habla de variables cualitativas. Ejemplos: estado civil, lugar de procedencia, marca de artículos, etc.\nVariables Cuantitativas (o Numéricas): Si los posibles valores para los elementos de una población, son cantidades o números, se habla de variables cuantitativas. Ejemplos: kms por litro de gasolina de un auto, temperatura, duración de un examen, etc.\n\nDiscretas: Se habla de variables discretas, cuando el conjunto de valores posibles es finito o infinito numerable. Ejemplos: Cantidad de crías por camada, número de alumnos por carrera, etc.\nContinuas: Son aquellas que pueden asumir infinitos valores. Ejemplos: sueldo de una persona, tiempo que tarda un animal en alcanzar un peso previamente determinado, etc."
+    "section": "Tipos de variable",
+    "text": "Tipos de variable\n\nVariables Cualitativas: Cuando los elementos de una población son clasificados en categorías o clases excluyentes, se habla de variables cualitativas. Ejemplos: estado civil, lugar de procedencia, marca de artículos, etc.\nVariables Cuantitativas (o Numéricas): Si los posibles valores para los elementos de una población, son cantidades o números, se habla de variables cuantitativas. Ejemplos: kms por litro de gasolina de un auto, temperatura, duración de un examen, etc.\n\nDiscretas: Se habla de variables discretas, cuando el conjunto de valores posibles es finito o infinito numerable. Ejemplos: Cantidad de crías por camada, número de alumnos por carrera, etc.\nContinuas: Son aquellas que pueden asumir infinitos valores. Ejemplos: sueldo de una persona, tiempo que tarda un animal en alcanzar un peso previamente determinado, etc."
   },
   {
     "objectID": "slides/lec_week1.html#escalas-de-medición",
@@ -500,8 +500,8 @@
     "objectID": "slides/lec_week1.html#tablas-para-variables-continuas",
     "href": "slides/lec_week1.html#tablas-para-variables-continuas",
     "title": "Estadística para ciencias físicas",
-    "section": "Tablas para Variables Continuas",
-    "text": "Tablas para Variables Continuas\nEn variables continuas, la organización de datos es un poco más compleja: se dividen los datos en \\(k\\) grupos o segmentos disjuntos. Estos grupos representan las clases y se determina la frecuencia de datos asociado a cada grupo, conformando una tabla de frecuencia agrupada.\nEn este tipo de datos las clases están compuestas por intervalos, luego es necesario buscar un representante de la frecuencia asociada a este intervalo , el cual se conoce como marca de clase. Es común utilizar como marca de clase al valor medio del segmento (intervalo)."
+    "section": "Tablas para variables continuas",
+    "text": "Tablas para variables continuas\nEn variables continuas, la organización de datos es un poco más compleja: se dividen los datos en \\(k\\) grupos o segmentos disjuntos. Estos grupos representan las clases y se determina la frecuencia de datos asociado a cada grupo, conformando una tabla de frecuencia agrupada.\nEn este tipo de datos las clases están compuestas por intervalos, luego es necesario buscar un representante de la frecuencia asociada a este intervalo , el cual se conoce como marca de clase. Es común utilizar como marca de clase al valor medio del segmento (intervalo)."
   },
   {
     "objectID": "slides/lec_week1.html#construcción-de-la-tabla-de-frecuencia",

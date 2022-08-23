@@ -136,7 +136,7 @@ La metodología de evaluación es la siguiente:
 
 # Introducción
 
-## Proceso Estadístico
+## Proceso estadístico
 
 La estadística es la ciencia encargada de la descripción, organización, presentación de datos y además la obtención de conclusiones basadas en los datos experimentales; a esto le llamamos **inferencia**, la cual es inductiva debido a que se proyecta de lo específico hacia lo general.
 
@@ -146,7 +146,7 @@ Al ser una ciencia, esta se rige al método científico.
 
 ![](images/week1/proc_est.png){fig-align="center"}
 
-## ¿Por qué el uso de la estadística en Física?
+## ¿Por qué el uso de la estadística en física?
 
 -   Cuantificación del error: Errores propios y externos, ¿Qué significan?
 -   ¿Cómo pueden nuestros datos ser utilizados de la mejor manera posible? o ¿Pueden ser usados?
@@ -163,7 +163,7 @@ Al ser una ciencia, esta se rige al método científico.
 4.  **Conclusión**: Llevar a cabo un procedimiento para llegar a una conclusión. Test de hipótesis; correlación, modelos, etc.
 5.  **Reflexión**: ¿Qué se aprendió? ¿Es la decisión viable? ¿Fue inesperada? ¿En qué paso del experimiento se debe examinar para verificar? ¿Qué es necesario para confimar un resultado inesperado? ¿Cómo se debe realizar el siguiente experimento? ¿Se extenderá la hipótesis realizada o se sugerirá una nueva hipótesis?
 
-# Introducción al Muestreo
+# Introducción al muestreo
 
 El mundo empírico está compuesto por un sin fin de conjuntos de elementos, tales como: personas, animales, objetos, etc., habitualmente de cantidades suficientemente grandes, cuyo trabajo de recopilación y posterior análisis para obtener alguna información de interés de ésta, resulta impracticable en tiempos reales. Estos conjuntos de elementos son llamados **población** o **población objetivo**, que en una investigación, debe quedar claramente acotada, geográficamente o en el tiempo.
 
@@ -173,7 +173,7 @@ Un mecanismo más apropiado para obtener información es la extracción de un su
 
 ![](images/week1/muestra.png){fig-align="center" width="700"}
 
-## Tipos de Muestreo
+## Tipos de muestreo
 
 -   **Muestreo no Probabilístico**: Los resultados obtenidos sólo representan las características de los elementos muestrados y no de la población
     -   Muestreo por conveniencia
@@ -182,7 +182,7 @@ Un mecanismo más apropiado para obtener información es la extracción de un su
     -   Muestreo de bola de nieve. (Muestreo en cadena).
 -   **Muestreo Probabilístico**: Cada uno de los elementos de la población de interés, o población objetivo, tiene una probabilidad conocida (frecuentemente igual) de ser elegidos en la muestra.
 
-## Muestreo Aleatorio simple y sistemático
+## Muestreo aleatorio simple y sistemático
 
 -   **Muestreo Aleatorio Simple**: Los elementos se escogen en forma individual y al azar de la totalidad de la población, es decir, se escogen sin ningún privilegio y cada uno posee la misma probabilidad de formar parte de la muestra en cada una de las posibles muestras.
 
@@ -198,7 +198,7 @@ Un mecanismo más apropiado para obtener información es la extracción de un su
 
 Posterior a la clasificación de los elementos de la población en grupos, se obtiene por separado una muestra aleatoria simple o sistemática de cada estrato.
 
-## Tipos de Variable
+## Tipos de variable
 
 -   **Variables Cualitativas**: Cuando los elementos de una población son clasificados en categorías o clases excluyentes, se habla de variables cualitativas. Ejemplos: estado civil, lugar de procedencia, marca de artículos, etc.
 
@@ -216,7 +216,7 @@ Posterior a la clasificación de los elementos de la población en grupos, se ob
     -   **Intervalar**: Son aquellas que poseen un punto de referencia (o cero) relativo, en el sentido de que si se cambia de unidad de medición, el punto de referencia difiere entre una unidad de medida y otra. Ejemplo: temperatura (Celcius - Fahrenheit).
     -   **Razón:** Son aquellas que poseen un cero absoluto (es decir, único). Incluso permiten hacer comparaciones por cocientes. Ejemplo: Peso de una persona, distancias, etc.
 
-# Estadística Descriptiva
+# Estadística descriptiva
 
 ## Organización de los datos
 
@@ -282,7 +282,7 @@ En un conjunto de resultados experimentales, se desea determinar la clasificaci�
 |        Buenos |          23 |      46% |          40 |        80% |
 |    Excelentes |          10 |      20% |          50 |       100% |
 
-## Tablas para Variables Continuas
+## Tablas para variables continuas
 
 En variables continuas, la organización de datos es un poco más compleja: se dividen los datos en $k$ grupos o segmentos disjuntos. Estos grupos representan las clases y se determina la frecuencia de datos asociado a cada grupo, conformando una tabla de frecuencia agrupada.
 
