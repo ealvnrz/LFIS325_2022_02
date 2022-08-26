@@ -121,7 +121,7 @@ La metodología de evaluación es la siguiente:
 
 ## Metodología del curso
 
--   Antes de cada sesión, se mandará una lectura de preparación para la sesión
+-   Antes de cada clase, se mandará una lectura de preparación para la sesión
 
 -   El enfoque principal será teórico, pero sin dejar de lado las aplicaciones
 
