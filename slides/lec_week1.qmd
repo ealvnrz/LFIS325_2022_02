@@ -148,10 +148,10 @@ Al ser una ciencia, esta se rige al método científico.
 
 ## ¿Por qué el uso de la estadística en física?
 
--   Cuantificación del error: Errores propios y externos, ¿Qué significan?
--   ¿Cómo pueden nuestros datos ser utilizados de la mejor manera posible? o ¿Pueden ser usados?
--   Correlaciones, test de hipótesis y modelación: ¿Como se procede?
--   Muestras incompletas, datos de un experimento que no puede ser replicado ¿Cómo se trabajo con este tipo de datos?
+-   Cuantificación del error: Errores propios y externos, ¿Qué significan?.
+-   ¿Cómo pueden nuestros datos ser utilizados de la mejor manera posible? o ¿Pueden ser usados?.
+-   Correlaciones, test de hipótesis y modelación: ¿Como se procede?.
+-   Muestras incompletas, datos de un experimento que no puede ser replicado ¿Cómo se trabajo con este tipo de datos?.
 -   La presentación de datos y conclusión siempre vienen -inherentemente- en términos estadísticos.
 -   El proceso de decisión no puede ser realizado sin una metodología, sin importar que tan bueno sea el experimento.
 
@@ -161,7 +161,7 @@ Al ser una ciencia, esta se rige al método científico.
 2.  **Reducir**: *Limpiar* los datos para eliminar efectos experimentales: *corrección flat-field*, calibración, etc.
 3.  **Analizar**: Obtener los *números* desde una base de datos limpia: intensidades, posiciones, etcétera. A partir de esta información, producir **indicadores** que permitan comparar o modelar. Estos **indicadores** son llamados **estadísticos** y determinan el diseño de experimentos.
 4.  **Conclusión**: Llevar a cabo un procedimiento para llegar a una conclusión. Test de hipótesis; correlación, modelos, etc.
-5.  **Reflexión**: ¿Qué se aprendió? ¿Es la decisión viable? ¿Fue inesperada? ¿En qué paso del experimiento se debe examinar para verificar? ¿Qué es necesario para confimar un resultado inesperado? ¿Cómo se debe realizar el siguiente experimento? ¿Se extenderá la hipótesis realizada o se sugerirá una nueva hipótesis?
+5.  **Reflexión**: ¿Qué se aprendió? ¿Es la decisión viable? ¿Fue inesperada? ¿En qué paso del experimiento se debe examinar para verificar? ¿Qué es necesario para confirmar un resultado inesperado? ¿Cómo se debe realizar el siguiente experimento? ¿Se extenderá la hipótesis realizada o se sugerirá una nueva hipótesis?
 
 # Introducción al muestreo
 

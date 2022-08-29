@@ -5,6 +5,7 @@ subtitle: "Introducción a probabilidad"
 
 ## Preparación
 
+Leer capítulo 2 de Probability and Statistics for Engineering and the Sciences, 9th Edition.
 
 ## Presentación
 
