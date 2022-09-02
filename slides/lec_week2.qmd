@@ -55,7 +55,8 @@ $n_i$ para representar la frecuencia absoluta observada en la clase
 respectiva. En tal caso, las expresiones son:
 
 $$\mu = \dfrac{\sum_{i=1}^{k} n_i m_i}{N}, \hspace{20pt} \overline{x} = \dfrac{\sum_{i=1}^{k} n_i m_i}{n}$$
-\## Mediana
+
+## Mediana
 
 Es el valor que ocupa el lugar central de estos cuando se ordenan en
 orden de magnitud. Para conjunto de datos, con un número par de
@@ -163,10 +164,10 @@ de los datos con respecto a una medida del centro o un valor particular.
 Existen varios indicadores para medir la magnitud de la variabilidad en
 conjuntos de datos, entre ellos:
 
--   Rango\
--   Desviación media\
--   Varianza\
--   Desviación estándar\
+-   Rango
+-   Desviación media
+-   Varianza
+-   Desviación estándar
 -   Coeficiente de Variación
 
 ## Rango
@@ -191,8 +192,9 @@ muestral, respectivamente:
 
 $$V[X]=\sigma^2=\sum_{i=1}^{N} \dfrac{(x_i-\mu)^2}{N}$$
 
-$$S^2=\sum_{i=1}^{n} \dfrac{(x_i-\overline{x})^2}{n-1}$$ \## Desviación
-estándar o típica
+$$S^2=\sum_{i=1}^{n} \dfrac{(x_i-\overline{x})^2}{n-1}$$ 
+
+## Desviación estándar o típica
 
 Se utiliza con mayor frecuencia la raíz cuadrada de la varianza,
 representada mediante la letra griega $\sigma$ para el caso poblacional
@@ -200,7 +202,9 @@ y $S$ para una muestra:
 
 $$\sigma=\sqrt{V[X]}$$
 
-$$S=\sqrt{S^2}$$ \## Coeficiente de variación
+$$S=\sqrt{S^2}$$ 
+
+## Coeficiente de variación
 
 Relación entre la desviación estándar y su media. Tiene por fórmula,
 para su cálculo poblacional y muestral, respectivamente:

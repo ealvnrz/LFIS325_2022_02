@@ -344,7 +344,9 @@
 <p><span class="math display">\[\mu = \dfrac{\sum_{i=1}^{N}X_i}{N}, \hspace{20pt} \overline{x} = \dfrac{\sum_{i=1}^{n} X_i}{n}\]</span></p>
 <p>Cuando se tiene a disposición sólo los datos agrupados, se utiliza el punto medio de cada clase como aproximación de todos los valores contenidos en ella. El punto medio o marca de clase se representa por <span class="math inline">\(m_i\)</span>, en donde el subíndice <span class="math inline">\(i\)</span> indica la clase <span class="math inline">\(i-\)</span>ésima, y se utiliza <span class="math inline">\(n_i\)</span> para representar la frecuencia absoluta observada en la clase respectiva. En tal caso, las expresiones son:</p>
 <p><span class="math display">\[\mu = \dfrac{\sum_{i=1}^{k} n_i m_i}{N}, \hspace{20pt} \overline{x} = \dfrac{\sum_{i=1}^{k} n_i m_i}{n}\]</span></p>
-<p>## Mediana</p>
+</section>
+<section id="mediana" class="slide level2">
+<h2>Mediana</h2>
 <p>Es el valor que ocupa el lugar central de estos cuando se ordenan en orden de magnitud. Para conjunto de datos, con un número par de elementos, la mediana se calcula como el promedio de los valores centrales. En caso de trabajar con datos dispersos, la expresión para determinar la posición de la mediana en el conjunto (ordenado) es:</p>
 <p><span class="math display">\[Me=\begin{cases}
 X_{\left(\dfrac{n+1}{2}\right)}, &amp;\text{Si }n\text{ es impar} \\
@@ -402,14 +404,10 @@ X_{\left(\dfrac{n+1}{2}\right)}, &amp;\text{Si }n\text{ es impar} \\
 <h1>Medidas de Variabilidad</h1>
 <p>Las medidas de <em>tendencia central</em> son útiles para identificar un valor “típico” ó “particular” de un conjunto de datos, las <strong>medidas de variabilidad</strong> se ocupan de describir la dispersión (riesgo, precisión) de los datos con respecto a una medida del centro o un valor particular. Existen varios indicadores para medir la magnitud de la variabilidad en conjuntos de datos, entre ellos:</p>
 <ul>
-<li class="fragment">Rango<br>
-</li>
-<li class="fragment">Desviación media<br>
-</li>
-<li class="fragment">Varianza<br>
-</li>
-<li class="fragment">Desviación estándar<br>
-</li>
+<li class="fragment">Rango</li>
+<li class="fragment">Desviación media</li>
+<li class="fragment">Varianza</li>
+<li class="fragment">Desviación estándar</li>
 <li class="fragment">Coeficiente de Variación</li>
 </ul>
 </section>
@@ -427,10 +425,16 @@ X_{\left(\dfrac{n+1}{2}\right)}, &amp;\text{Si }n\text{ es impar} \\
 <h2>Varianza</h2>
 <p><span class="math inline">\((V[X],\sigma^2)\)</span> La varianza es similar a la desviación media porque se basa en la diferencia entre cada uno de los valores del conjunto de datos y la media del grupo. Su fórmula es, para su cálculo poblacional y muestral, respectivamente:</p>
 <p><span class="math display">\[V[X]=\sigma^2=\sum_{i=1}^{N} \dfrac{(x_i-\mu)^2}{N}\]</span></p>
-<p><span class="math display">\[S^2=\sum_{i=1}^{n} \dfrac{(x_i-\overline{x})^2}{n-1}\]</span> ## Desviación estándar o típica</p>
+<p><span class="math display">\[S^2=\sum_{i=1}^{n} \dfrac{(x_i-\overline{x})^2}{n-1}\]</span></p>
+</section>
+<section id="desviación-estándar-o-típica" class="slide level2">
+<h2>Desviación estándar o típica</h2>
 <p>Se utiliza con mayor frecuencia la raíz cuadrada de la varianza, representada mediante la letra griega <span class="math inline">\(\sigma\)</span> para el caso poblacional y <span class="math inline">\(S\)</span> para una muestra:</p>
 <p><span class="math display">\[\sigma=\sqrt{V[X]}\]</span></p>
-<p><span class="math display">\[S=\sqrt{S^2}\]</span> ## Coeficiente de variación</p>
+<p><span class="math display">\[S=\sqrt{S^2}\]</span></p>
+</section>
+<section id="coeficiente-de-variación" class="slide level2">
+<h2>Coeficiente de variación</h2>
 <p>Relación entre la desviación estándar y su media. Tiene por fórmula, para su cálculo poblacional y muestral, respectivamente:</p>
 <p><span class="math display">\[CV=\dfrac{\sigma}{\mu}\]</span></p>
 <p><span class="math display">\[CV=\dfrac{S}{\overline{x}}\]</span></p>
