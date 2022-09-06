@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.0.36">
 
   <meta name="author" content="Eloy Alvarado Narváez">
-  <meta name="dcterms.date" content="2022-01-09">
-  <title>LFIS 325 - Estadística para Ciencias Físicas - Estadística descriptiva</title>
+  <meta name="dcterms.date" content="2022-08-09">
+  <title>LFIS 325 - Estadística para Ciencias Físicas - Probabilidades</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -320,244 +320,286 @@
     <div class="slides">
 
 <section id="title-slide" class="center">
-  <h1 class="title">Estadística descriptiva</h1>
+  <h1 class="title">Probabilidades</h1>
   <p class="subtitle">LFIS 325 - 2022/02</p>
   <p class="author">Eloy Alvarado Narváez</p>
   <p class="institute">Universidad de Valparaíso</p>
-  <p class="date">01/09/22</p>
+  <p class="date">08/09/22</p>
 </section>
 
 <section>
-<section id="medidas-de-posición" class="title-slide slide level1 center">
-<h1>Medidas de posición</h1>
-<p>Una medida de posición es un valor simple que se calcula para un grupo de datos y que se utiliza como una manera de resumir a estos un valor dentro del rango de los datos.</p>
-<p>Normalmente se desea que el valor sea representativo de todos los valores incluidos en el grupo, estos valores pueden estar relacionados con posiciones de particular interés como los extremos, los cuales se asocian a <strong>cuantiles</strong>, o valores del centro, llamados de <strong>tendencia central</strong>.</p>
+<section id="enfoques-de-la-probabilidad" class="title-slide slide level1 center">
+<h1>Enfoques de la probabilidad</h1>
+
 </section>
-<section id="media-aritmética" class="slide level2">
-<h2>Media aritmética</h2>
-<p>Se define como el cociente de la suma de todos los valores entre el número total de valores. Las expresiones para cálculo de la media de una población y de una muestra son, respectivamente:</p>
-<p><span class="math display">\[\mu = \dfrac{\sum_{i=1}^{N}X_i}{N}, \hspace{20pt} \overline{x} = \dfrac{\sum_{i=1}^{n} X_i}{n}\]</span></p>
-<p>Cuando se tiene a disposición sólo los datos agrupados, se utiliza el punto medio de cada clase como aproximación de todos los valores contenidos en ella. El punto medio o marca de clase se representa por <span class="math inline">\(m_i\)</span>, en donde el subíndice <span class="math inline">\(i\)</span> indica la clase <span class="math inline">\(i-\)</span>ésima, y se utiliza <span class="math inline">\(n_i\)</span> para representar la frecuencia absoluta observada en la clase respectiva. En tal caso, las expresiones son:</p>
-<p><span class="math display">\[\mu = \dfrac{\sum_{i=1}^{k} n_i m_i}{N}, \hspace{20pt} \overline{x} = \dfrac{\sum_{i=1}^{k} n_i m_i}{n}\]</span></p>
-</section>
-<section id="mediana" class="slide level2">
-<h2>Mediana</h2>
-<p>Es el valor que ocupa el lugar central de estos cuando se ordenan en orden de magnitud. Para conjunto de datos, con un número par de elementos, la mediana se calcula como el promedio de los valores centrales. En caso de trabajar con datos dispersos, la expresión para determinar la posición de la mediana en el conjunto (ordenado) es:</p>
-<p><span class="math display">\[Me=\begin{cases}
-X_{\left(\dfrac{n+1}{2}\right)}, &amp;\text{Si }n\text{ es impar} \\
-\dfrac{1}{2}\left(X_{\left(\dfrac{n}{2}\right)} + X_{\left(\dfrac{n}{2}+1\right)}\right), &amp;\text{Si }n\text{ es par}
-\end{cases}\]</span></p>
-</section>
-<section id="mediana-datos-agrupados" class="slide level2">
-<h2>Mediana: datos agrupados</h2>
-<p>Para datos agrupados, en primer lugar es necesario determinar la clase que contiene el valor de la mediana, para después determinar la posición de la mediana dentro de la clase mediante interpolación. La clase que contiene la mediana es la primera clase cuya frecuencia acumulada es mayor o igual a la mitad de los datos. Una vez que se identifica esta clase, se determina el valor interpolado de la mediana, empleando la siguiente expresión:</p>
-<p><span class="math display">\[Me=LI_i+ \left( \dfrac{\dfrac{n}{2}-N_{i-1}}{n_i}\right)a_i\]</span></p>
-<p>En donde <span class="math inline">\(LI_i\)</span> es límite inferior de la clase que contiene a la mediana, <span class="math inline">\(n\)</span> el número total de observaciones, <span class="math inline">\(a_i\)</span> la amplitud de clase, <span class="math inline">\(N_{i-1}\)</span> la frecuencia acumulada anterior a la clase que contiene la mediana y <span class="math inline">\(n_i\)</span> el número de observaciones de la clase que contiene la mediana.</p>
-</section>
-<section id="moda" class="slide level2">
-<h2>Moda</h2>
-<p>Se define como el valor o clase que se presenta con mayor frecuencia. Para datos agrupados, se utiliza interpolación dentro de la clase modal, de acuerdo a la siguiente expresión:</p>
-<p><span class="math display">\[Mo=LI_i+ \left(\dfrac{d_1}{d_1+d_2} \right)a_i\]</span> en donde,</p>
+<section id="escuelas-de-probabilidad" class="slide level2">
+<h2>Escuelas de probabilidad</h2>
 <ul>
-<li class="fragment"><p><span class="math inline">\(LI_i\)</span> es el límite inferior de la clase que contiene la moda.</p></li>
-<li class="fragment"><p><span class="math inline">\(d_1\)</span> es la diferencia entre la frecuencia de la clase modal y la frecuencia de la clase que le precede.</p></li>
-<li class="fragment"><p><span class="math inline">\(d_2\)</span> es la diferencia entre la frecuencia de la clase modal y la frecuencia de la clase que le sigue.</p></li>
-<li class="fragment"><p><span class="math inline">\(a_i\)</span> es la amplitud de clase.</p></li>
+<li class="fragment">Enfoque clásico</li>
+<li class="fragment">Enfoque frecuentista</li>
+<li class="fragment">Enfoque bayesiano</li>
 </ul>
 </section>
-<section id="cuantiles" class="slide level2">
-<h2>Cuantiles</h2>
-<p>Son medidas de posición que dividen los datos en grupos bajo los cuales se encuentra una determinada proporción de éstos, por lo se requiere que los datos se encuentren en al menos escala <em>ordinal</em>.</p>
+<section id="enfoque-clásico" class="slide level2">
+<h2>Enfoque clásico</h2>
+<p>Este enfoque también llamado enfoque <em>apriori</em> tiene por característica principal la asignación igualitaria de una medida de ocurrencia para un resultado de un experimento aleatorio (experimento equiprobable).</p>
+<div class="fragment">
+<p>Esta asignación de <em>probabilidad</em> se determina antes de observar los resultados experimentales.</p>
+</div>
+<div class="fragment">
 <ul>
-<li class="fragment"><p><strong>Cuartil</strong>: <span class="math inline">\(Q_{i}=X_{\left(\dfrac{i(n+1)}{4}\right)}, \hspace{20pt} i:1,2,\dots,4\)</span></p></li>
-<li class="fragment"><p><strong>Quintil</strong>: <span class="math inline">\(K_{i}=X_{\left(\dfrac{i(n+1)}{5}\right)}, \hspace{20pt} i:1,2,\dots,5\)</span></p></li>
-<li class="fragment"><p><strong>Decil</strong>: <span class="math inline">\(D_{i}=X_{\left(\dfrac{i(n+1)}{10}\right)}, \hspace{20pt} i:1,2,\dots,10\)</span></p></li>
-<li class="fragment"><p><strong>Percentil</strong>: <span class="math inline">\(P_{i}=X_{\left(\dfrac{i(n+1)}{100}\right)}, \hspace{20pt} i:1,2,\dots,100\)</span></p></li>
+<li class="fragment"><strong>¿Algún ejemplo?</strong></li>
 </ul>
+</div>
 </section>
-<section id="cuantiles-datos-agrupados" class="slide level2">
-<h2>Cuantiles: datos agrupados</h2>
-<p>Para datos agrupados, la fórmula se modifica de acuerdo con el punto fraccionario de interés. Para utilizar esta expresión modificada, en primer lugar se determina la clase que contiene el punto de interés, de acuerdo con las frecuencias acumuladas, y después se lleva a cabo una interpolación como en el caso anterior de la mediana.</p>
-
-<img data-src="images/week2/perc.png" width="400" class="r-stretch quarto-figure-center"></section>
-<section id="interpolación" class="slide level2">
-<h2>Interpolación</h2>
-<p>En este caso se observa que <span class="math inline">\(y=\mathbf{y}, x=P_{78}, x_2 - x_1= LS-LI=a\)</span> y <span class="math inline">\(y_2 - y_1 = N_i - N_{i-1}=n_i\)</span></p>
-<p>Luego despejando <span class="math inline">\(x=P_{78}\)</span>, se obtiene una expresión para el cálculo de percentiles en datos agrupados:</p>
-<p><span class="math display">\[x=P_{78}=x_1+\left( \dfrac{y-y_1}{y_2 - y_1} \right)(x_2 - x_1)=LI+\left(\dfrac{y- N_{i-1}}{n_i}\right)a\]</span></p>
-<p>pero <span class="math inline">\(y\)</span> no es otra cosa que <span class="math inline">\(\dfrac{n \times j}{100}\)</span>, donde <span class="math inline">\(j\)</span> es el percentil <span class="math inline">\(j-\)</span>ésimo. Por lo que podemos generalizar la ecuación anterior como:</p>
-<p><span class="math display">\[P_j=LI+\left(\dfrac{\dfrac{n\times j}{100}-N_{i-1}}{n_i}\right)a=LI+\left(\dfrac{\dfrac{j}{100}-F_{i-1}}{f_i}\right)a\]</span></p>
+<section id="enfoque-frecuentista" class="slide level2">
+<h2>Enfoque frecuentista</h2>
+<p>Este enfoque también llamado enfoque <em>empírico</em>, determina la medida de ocurrencia con base en la proporción de veces que ocurre un resultado <em>favorable</em> en un determinado número de observaciones o experimentos. Este enfoque no asigna probabilidades <em>a priori</em> a los posibles resultados de un experimento aleatorio.</p>
+<div class="fragment">
+<ul>
+<li class="fragment"><strong>¿Algún ejemplo?</strong></li>
+</ul>
+</div>
 </section>
-<section id="ejemplo" class="slide level2">
-<h2>Ejemplo</h2>
-<p>La siguiente tabla resume los tiempos de espera antes de obtener ciertos resultados experimentales.</p>
-
-<img data-src="images/week2/tab.png" width="200" class="r-stretch quarto-figure-center"><p>Calcular el percentil 80</p>
+<section id="enfoque-bayesiano" class="slide level2">
+<h2>Enfoque bayesiano</h2>
+<p>Este enfoque también llamado enfoque <em>subjetivo</em>, determina la medida de ocurrencia en base a una <em>expectativa razonable</em> basado en el conocimiento del investigador.</p>
+<p>El enfoque bayesiano es particularmente útil cuando se tiene poca información del experimento, y este puede ser realizado para <em>actualizador</em> mis probabilidades, esto debido a que cada realización del experimento aleatorio me otorgará información adicional para determinar correctamente mis probabilidades.</p>
 </section></section>
 <section>
-<section id="medidas-de-variabilidad" class="title-slide slide level1 center">
-<h1>Medidas de variabilidad</h1>
-<p>Las medidas de <em>tendencia central</em> son útiles para identificar un valor “típico” ó “particular” de un conjunto de datos, las <strong>medidas de variabilidad</strong> se ocupan de describir la dispersión (riesgo, precisión) de los datos con respecto a una medida del centro o un valor particular. Existen varios indicadores para medir la magnitud de la variabilidad en conjuntos de datos, entre ellos:</p>
+<section id="técnicas-de-conteo" class="title-slide slide level1 center">
+<h1>Técnicas de conteo</h1>
+
+</section>
+<section id="principio-de-multiplicación" class="slide level2">
+<h2>Principio de multiplicación</h2>
+<p>Supongamos que un procedimiento <span class="math inline">\(1\)</span>, puede hacerse de <span class="math inline">\(n_1\)</span> maneras. Supongamos que un segundo procedimiento <span class="math inline">\(2\)</span>, se puede hacer de <span class="math inline">\(n_2\)</span> maneras. También supongamos que cada una de las maneras de efectuar 1 puede ser seguida por cualquiera de las <span class="math inline">\(n_2\)</span> de efectuar 2.</p>
+<p>Entonces el procedimiento que consta de <span class="math inline">\(1\)</span> seguido por <span class="math inline">\(2\)</span> se puede hacer de <span class="math inline">\(n_1 \times n_2\)</span> maneras. De igual manera podemos generalizar lo anterior a cualquier número de procedimientos.</p>
+</section>
+<section id="principio-de-adición" class="slide level2">
+<h2>Principio de adición</h2>
+<p>Supongamos que un procedimiento <span class="math inline">\(1\)</span>, se puede hacerse de <span class="math inline">\(n_1\)</span> maneras, y que un segundo procedimiento <span class="math inline">\(2\)</span>, se puede hacer de <span class="math inline">\(n_2\)</span> maneras. Supongamos además que no es posible que ambos procedimientos, 1 y 2, se realicen. Entonces el número de maneras como se puede hacer el procedimiento 1 ó 2 es de <span class="math inline">\(n_1 + n_2\)</span>.</p>
 <ul>
-<li class="fragment">Rango</li>
-<li class="fragment">Desviación media</li>
-<li class="fragment">Varianza</li>
-<li class="fragment">Desviación estándar</li>
-<li class="fragment">Coeficiente de Variación</li>
+<li class="fragment"><strong>Factorial:</strong> Sea <span class="math inline">\(n \in \mathbb{N}\)</span>, entonces se define <span class="math inline">\(n\)</span> factorial como <span class="math inline">\(n \times (n-1) \times (n-2) \times \dots \times 1\)</span>, y se simboliza por <span class="math inline">\(n!\)</span> Empleado en situaciones donde una vez seleccionado un elemento, éste puede ser nuevamente seleccionado.</li>
 </ul>
+<div class="fragment">
+<h3 id="ejemplo">Ejemplo</h3>
+<p>Considere un grupo de personas conformado por 15 hombres y 10 mujeres. Se eligen 3 personas al azar, la primera será la presidente de la comisión, la segunda vicepresidente y la tercera secretario. ¿De cuantas formas se puede conformar la comisión?</p>
+</div>
 </section>
-<section id="rango" class="slide level2">
-<h2>Rango</h2>
-<p>Es la diferencia entre el mayor y menor valor del conjunto de datos.</p>
-<p><span class="math display">\[R= \begin{cases}\max x_i - \min x_i,  &amp;\text{datos dispersos} \\ LS_k -LI_1,  &amp;\text{datos agrupados} \end{cases}\]</span></p>
+<section id="permutación" class="slide level2">
+<h2>Permutación</h2>
+<p>Se define la permutación de <span class="math inline">\(r\)</span> elementos sobre <span class="math inline">\(n\)</span> como el número de arreglos distintos que se pueden hacer con <span class="math inline">\(r\)</span> elementos de un total de <span class="math inline">\(n\)</span>, <strong>importando el orden</strong> en el que salen los elementos, se simboliza por:</p>
+<p><span class="math display">\[P_{r}^{n}=\dfrac{n!}{(n-r)!}\]</span></p>
+<div class="fragment">
+<h3 id="ejemplo-1">Ejemplo</h3>
+<p>Un directorio compuesto por: Presidente, Secretario y Tesorero se debe elegir de un total de 10 candidatos. ¿Cuántos directorios diferentes se pueden conformar?</p>
+<p><span class="math display">\[P_{3}^{10}=\dfrac{10!}{(10-3)!}=\dfrac{10!}{7!}=720\]</span></p>
+</div>
 </section>
-<section id="desviación-media" class="slide level2">
-<h2>Desviación media</h2>
-<p>Es la media (promedio) del valor absoluto de la diferencia entre cada uno de los datos y el promedio del grupo.</p>
-<p><span class="math display">\[DM= \begin{cases}\sum_{i=1}^{n}\dfrac{|x_i- \overline{x}|}{n}, &amp;\text{datos dispersos}\\\sum_{i=1}^{k} f_i |m_i - \overline{x}|,&amp;\text{datos agrupados}\end{cases}\]</span></p>
-</section>
-<section id="varianza" class="slide level2">
-<h2>Varianza</h2>
-<p><span class="math inline">\((V[X],\sigma^2)\)</span> La varianza es similar a la desviación media porque se basa en la diferencia entre cada uno de los valores del conjunto de datos y la media del grupo. Su fórmula es, para su cálculo poblacional y muestral, respectivamente:</p>
-<p><span class="math display">\[V[X]=\sigma^2=\sum_{i=1}^{N} \dfrac{(x_i-\mu)^2}{N}\]</span></p>
-<p><span class="math display">\[S^2=\sum_{i=1}^{n} \dfrac{(x_i-\overline{x})^2}{n-1}\]</span></p>
-</section>
-<section id="desviación-estándar-o-típica" class="slide level2">
-<h2>Desviación estándar o típica</h2>
-<p>Se utiliza con mayor frecuencia la raíz cuadrada de la varianza, representada mediante la letra griega <span class="math inline">\(\sigma\)</span> para el caso poblacional y <span class="math inline">\(S\)</span> para una muestra:</p>
-<p><span class="math display">\[\sigma=\sqrt{V[X]}\]</span></p>
-<p><span class="math display">\[S=\sqrt{S^2}\]</span></p>
-</section>
-<section id="coeficiente-de-variación" class="slide level2">
-<h2>Coeficiente de variación</h2>
-<p>Relación entre la desviación estándar y su media. Tiene por fórmula, para su cálculo poblacional y muestral, respectivamente:</p>
-<p><span class="math display">\[CV=\dfrac{\sigma}{\mu}\]</span></p>
-<p><span class="math display">\[CV=\dfrac{S}{\overline{x}}\]</span></p>
-<p>Representa la desviación estándar como proporción (o porcentaje) de la media, por lo que es de gran utilidad al comparar dos poblaciones o muestras, pues no posee unidades lo que elimina el efecto de la magnitud de las variables medidas.</p>
-</section>
-<section id="rango-intercuartil" class="slide level2">
-<h2>Rango intercuartil</h2>
-<p>Es la diferencia entre los percentiles 75 y 25, esto es RIQ (IQR)<span class="math inline">\(= Q_3 - Q_1\)</span>.</p>
-<ul>
-<li class="fragment">Representa el 50% central de la población</li>
-</ul>
+<section id="combinatoria" class="slide level2">
+<h2>Combinatoria</h2>
+<p>Se define la combinatoria de <span class="math inline">\(r\)</span> elementos sobre <span class="math inline">\(n\)</span> como el número de arreglos distintos que se pueden hacer con <span class="math inline">\(r\)</span> elementos de un total de <span class="math inline">\(n\)</span> <strong>sin importar el orden</strong> en que son asignados. Esta expresión se anota por:</p>
+<p><span class="math display">\[C_{r}^{n}={{n}\choose{r}}=\dfrac{n!}{r!(n-r)!}\]</span></p>
+<div class="fragment">
+<h3 id="ejemplo-2">Ejemplo</h3>
+<p>Para formar un comité se van a elegir a tres personas de un total de 10. El número de grupos diferentes de tres personas que podrían elegirse, sin importar el orden en el que cada uno de los grupos está dado por:</p>
+<p><span class="math display">\[C_{3}^{10}=\dfrac{10!}{3!(10-3)!}=\dfrac{10!}{3!7!}=\dfrac{720}{6}=120\]</span></p>
+</div>
 </section></section>
 <section>
-<section id="gráficos" class="title-slide slide level1 center">
-<h1>Gráficos</h1>
-<p>Un gráfico es otra forma de representar y resumir datos, en el gráfico se pueden hacer evidentes ciertas características que en una tabla de frecuencias pueden pasar inadvertidas. Entre los gráficos más utilizados están:</p>
+<section id="conceptos-fundamentales-de-probabilidad" class="title-slide slide level1 center">
+<h1>Conceptos fundamentales de probabilidad</h1>
 <ul>
-<li class="fragment"><strong>Gráfico de barras</strong></li>
-<li class="fragment"><strong>Gráfico de Pastel (o circular)</strong></li>
-<li class="fragment"><strong>Histograma</strong></li>
-<li class="fragment"><strong>Polígono de Frecuencias</strong></li>
-<li class="fragment"><strong>Ojiva</strong></li>
-<li class="fragment"><strong>Box - plot (o diagrama de cajas)</strong></li>
+<li class="fragment"><strong>Espacio muestral:</strong> Se define como el conjunto de todos los posibles resultados del experimento, lo anotamos por <span class="math inline">\(\Omega\)</span>.</li>
+<li class="fragment"><strong>Suceso o evento:</strong> Es cualquier subconjunto de <span class="math inline">\(\Omega\)</span>, usualmente lo anotamos con letras mayúsculas. <span class="math inline">\((A,B,C,\dots)\)</span>.</li>
+<li class="fragment"><strong>Espacio de sucesos:</strong> Es el conjunto de todos los subconjuntos de <span class="math inline">\(\Omega\)</span>. Lo anotamos por <span class="math inline">\(2^{\Omega}\)</span>.</li>
+<li class="fragment"><strong><span class="math inline">\(\sigma\)</span>-álgebra</strong>: Es una familia de subconjuntos del espacio de sucesos, <span class="math inline">\(\Sigma \subset 2^{\Omega}\)</span>, y que cumplen con <em>ciertas propiedades</em>.</li>
 </ul>
 </section>
-<section id="histograma" class="slide level2">
-<h2>Histograma</h2>
-
-<img data-src="images/week2/histograma.png" width="400" class="r-stretch quarto-figure-center"></section>
-<section id="ojiva" class="slide level2">
-<h2>Ojiva</h2>
-
-<img data-src="images/week2/ojiva.png" width="400" class="r-stretch quarto-figure-center"></section>
-<section id="diagrama-de-caja-box-plot" class="slide level2">
-<h2>Diagrama de caja / box-plot</h2>
-
-<img data-src="images/week2/boxplot.png" width="400" class="r-stretch quarto-figure-center"></section>
-<section id="construcción-box-plot" class="slide level2">
-<h2>Construcción box-plot</h2>
+<section id="clasificación-del-espacio-muestral" class="slide level2">
+<h2>Clasificación del espacio muestral</h2>
+<ul>
+<li class="fragment"><strong>Discreto</strong>
+<ul>
+<li class="fragment"><strong>Numerable:</strong> Finito o Infinito.</li>
+</ul></li>
+<li class="fragment"><strong>Continuo</strong>
+<ul>
+<li class="fragment"><strong>No numerable:</strong> Acotado o No acotado.</li>
+</ul></li>
+</ul>
+</section>
+<section id="definición-formal-de-probabilidad" class="slide level2">
+<h2>Definición formal de probabilidad</h2>
+<p>El par <span class="math inline">\((\Omega,\Sigma)\)</span> se dice <em>espacio medible</em>, y la función <span class="math inline">\(\mathbb{P}:\Sigma \rightarrow \mathbb{R}^{+}\)</span>, es una <strong>medida de probabilidad</strong> si satisface:</p>
 <ol type="1">
-<li class="fragment">Calcular: Mediana, Cuartil 1 y 3 <span class="math inline">\((Q_{1},Q_{3})\)</span></li>
-<li class="fragment">Calcular Rango Intercuartil (RIQ/IQR): <span class="math inline">\(RIQ=Q_{3}-Q_{1}\)</span></li>
-<li class="fragment">Calcular bigotes interiores (superiores e inferiores):
-<ul>
-<li class="fragment">Bigote inferior: <span class="math inline">\(\max (Q_{1}-1,5* RIQ, x_{1})\)</span></li>
-<li class="fragment">Bigote superior: <span class="math inline">\(\min (Q_{3}+1,5* RIQ, x_{n})\)</span></li>
-</ul></li>
-<li class="fragment">Calcular bigotes exteriores (superiores e inferiores):
-<ul>
-<li class="fragment">Bigote inferior: <span class="math inline">\(Q_{1}-3* RIQ\)</span></li>
-<li class="fragment">Bigote superior: <span class="math inline">\(Q_{3}+3* RIQ\)</span></li>
-</ul></li>
-<li class="fragment">Marcar datos <em>outliers</em>:
-<ul>
-<li class="fragment">Observaciones entre bigote interior y exterior, se consideran sospechosos de ser outliers.</li>
-<li class="fragment">Observaciones pasados los bigotes exteriores son outliers.</li>
-</ul></li>
+<li class="fragment"><span class="math inline">\(0\leq \mathbb{P}[A] \leq 1, \forall A \in \Sigma\)</span></li>
+<li class="fragment"><span class="math inline">\(\mathbb{P}[\Omega]=1\)</span></li>
+<li class="fragment">Dados <span class="math inline">\(\displaystyle A_1,A_2,\dots \in \Sigma \Rightarrow \mathbb{P}\left[ \bigcup_{i=1}^{n} A_n \right] = \sum_{i=1}^{n} \mathbb{P}[A_i], \hspace{5pt} \forall i\)</span></li>
+</ol>
+</section>
+<section id="algunas-propiedades" class="slide level2">
+<h2>Algunas propiedades</h2>
+<ol type="1">
+<li class="fragment"><span class="math inline">\(\mathbb{P}[A]+\mathbb{P}[A^c]=\mathbb{P}[\Omega]\)</span></li>
+<li class="fragment"><span class="math inline">\(\mathbb{P}[\phi]=1-\mathbb{P}[\phi^c]=1-\mathbb{P}[\Omega]=0\)</span></li>
+<li class="fragment"><span class="math inline">\(\mathbb{P}[A \cup B]=\mathbb{P}[A]+\mathbb{P}[B] - \mathbb{P}[A\cap B]\)</span> . Si este último término <span class="math inline">\((\mathbb{P}[A\cap B])\)</span> es cero, se dice que <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> son eventos mutuamente excluyentes.</li>
+<li class="fragment"><span class="math inline">\(\mathbb{P}[A-B]=\mathbb{P}[A\cap B^c]\)</span></li>
+<li class="fragment"><span class="math inline">\(\mathbb{P}[A \cap B]=\mathbb{P}[A]\mathbb{P}[B]\)</span>. Si <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> son independientes.</li>
 </ol>
 </section>
 <section id="ejercicio" class="slide level2">
 <h2>Ejercicio</h2>
-<p>Datos:</p>
-<table style="width:100%;">
-<colgroup>
-<col style="width: 12%">
-<col style="width: 11%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><span class="math inline">\(7,12\)</span></th>
-<th><span class="math inline">\(7,89\)</span></th>
-<th><span class="math inline">\(10,12\)</span></th>
-<th><span class="math inline">\(8,88\)</span></th>
-<th><span class="math inline">\(10,02\)</span></th>
-<th><span class="math inline">\(9,91\)</span></th>
-<th><span class="math inline">\(9,95\)</span></th>
-<th><span class="math inline">\(9,90\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="math inline">\(10,23\)</span></td>
-<td><span class="math inline">\(9,12\)</span></td>
-<td><span class="math inline">\(9,99\)</span></td>
-<td><span class="math inline">\(12,40\)</span></td>
-<td><span class="math inline">\(8,65\)</span></td>
-<td><span class="math inline">\(10,05\)</span></td>
-<td><span class="math inline">\(10,50\)</span></td>
-<td><span class="math inline">\(9,87\)</span></td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(8,54\)</span></td>
-<td><span class="math inline">\(9,72\)</span></td>
-<td><span class="math inline">\(11,09\)</span></td>
-<td><span class="math inline">\(11,52\)</span></td>
-<td><span class="math inline">\(12,30\)</span></td>
-<td><span class="math inline">\(11,53\)</span></td>
-<td><span class="math inline">\(16,40\)</span></td>
-<td><span class="math inline">\(13,24\)</span></td>
-</tr>
-</tbody>
-</table>
+<p>Sea A el evento en el cual un hombre vivirá 10 años más y sea B el evento en el cual su esposa viva 10 años más. Supongamos que <span class="math inline">\(\mathbb{P}(A)=\frac{1}{4}\)</span> y <span class="math inline">\(\mathbb{P}(B)=\frac{1}{3}\)</span>. Supongamos que A y B son eventos independientes, encuentre la probabilidad de que en 10 años:</p>
+<ol type="1">
+<li class="fragment">Ambos estén vivos.</li>
+<li class="fragment">Al menos uno esté vivo.</li>
+<li class="fragment">Ninguno esté vivo.</li>
+<li class="fragment">Solamente la esposa esté viva</li>
+</ol>
+</section>
+<section id="probabilidades-clásicas" class="slide level2">
+<h2>Probabilidades clásicas</h2>
+<p>Este planteamiento probabilista establece que los eventos del espacio muestral sean expresados de la forma más elemental posible, con el fin de poder aceptar la posibilidad de que cada posible resultado sea igualmente posible.</p>
+<p><span class="math display">\[\mathbb{P}[A]=\dfrac{\#A}{\#\Omega}\]</span></p>
+<div class="fragment">
+<h3 id="ejemplo-3">Ejemplo</h3>
+<p>Considere que se tienen 10 sacos de semillas. Se sabe que 4 son de una variedad y el resto de otra. Un cliente compra 3 sacos. ¿Cuál es la probabilidad de que los sacos sean de las dos variedades?</p>
+<div class="fragment">
+<p><span class="math inline">\(A:{ \text{Los sacos comprados son de las dos variedades} }\)</span></p>
+<p><span class="math display">\[\mathbb{P}[A]=\dfrac{\#A}{\#\Omega}=\dfrac{ C_{1}^{4} \times C_{2}^{6} +C_{2}^{4} \times C_{1}^{6} }{C_{3}^{10}}\]</span></p>
+</div>
+</div>
+</section>
+<section id="probabilidades-condicionales" class="slide level2">
+<h2>Probabilidades condicionales</h2>
+<p>El concepto de probabilidad condicional se emplea para redefinir el cálculo de probabilidad de ocurrencia de un evento dada cierta condición (o información). Lo anotamos por:</p>
+<p><span class="math display">\[\mathbb{P}[B | A]=\dfrac{\mathbb{P}[B \cap A]}{\mathbb{P}[A]}\]</span></p>
+<p>Lo anterior, mide la probabilidad de que el evento <span class="math inline">\(B\)</span> ocurra dado que el evento <span class="math inline">\(A\)</span> ocurrió. Notar que si los eventos <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> son independientes se tiene:</p>
+<p><span class="math display">\[\mathbb{P}[B|A]=\dfrac{\mathbb{P}[B]\mathbb{P}[A]}{\mathbb{P}[A]}=\mathbb{P}[B]\]</span></p>
+<p>Por lo que, en palabras, si los eventos son independientes, la probabilidad condicional se reduce a la probabilidad simple.</p>
+</section>
+<section id="regla-multiplicativa" class="slide level2">
+<h2>Regla multiplicativa</h2>
+<p>Se refiere a la determinación de la probabilidad de ocurrencia conjunta de dos o más eventos. Para el caso de dos eventos, se tiene:</p>
+<p><span class="math display">\[\mathbb{P}[A\cap B]=\mathbb{P}[A]\mathbb{P}[B|A]\]</span></p>
+<p>En el caso de tres eventos, se tiene:</p>
+<p><span class="math display">\[\mathbb{P}[A \cap B \cap C]=\mathbb{P}[A] \mathbb{P}[B|A] \mathbb{P}[C| (A \cap B)]\]</span></p>
+</section>
+<section id="diagrama-de-árbol" class="slide level2">
+<h2>Diagrama de árbol</h2>
+<p>Los diagramas de árbol son particularmente útiles para ilustrar los posibles eventos asociados con observaciones o ensayos secuenciales.</p>
+
+<img data-src="images/week3/prob_tree.png" class="r-stretch quarto-figure-center"></section>
+<section id="regla-de-bayes" class="slide level2">
+<h2>Regla de Bayes</h2>
+<p>La regla de Bayes permite actualizar ciertas probabilidades <em>a priori</em> para transformarse en probabilidades <em>posteriori</em> de un evento (experimento). La importancia de la regla de Bayes consiste en que se aplica en contexto de eventos secuenciales y además, de que proporciona la base para determinar la probabilidad condicional de un evento a la luz de un evento especifico que ha ocurrido.</p>
+<p><span class="math display">\[\mathbb{P}[A|B]=\dfrac{\mathbb{P}[A\cap B]}{\mathbb{P}[B]}=\dfrac{\mathbb{P}[A]\mathbb{P}[B|A]}{\mathbb{P}[A]\mathbb{P}[B|A]+\mathbb{P}[A^c]\mathbb{P}[B|A^c]}\]</span></p>
+<div class="fragment">
+<h3 id="ejemplo-4">Ejemplo</h3>
+<div style="font-size: smaller">
+<p>Un fabricante posee dos máquinas que producen el mismo artículo. Se sabe que una de ella (A) produce un <span class="math inline">\(5\%\)</span> de defectuosos y la otra (B) un <span class="math inline">\(3\%\)</span>. Por otra parte el <span class="math inline">\(60\%\)</span> de las unidades es producido por la máquina A.</p>
 <ul>
-<li class="fragment">Realizar un diagrama de caja</li>
+<li class="fragment">Defina sucesos e identifique las probabilidades.</li>
+<li class="fragment">Si el artículo es no defectuoso. ¿Cuál es la probabilidad que el artículo provenga de la máquina A?</li>
 </ul>
+</div>
+</div>
+</section>
+<section id="ejemplo-5" class="slide level2">
+<h2>Ejemplo</h2>
+<p>Un grupo de estudiantes se inscribió en dos asignaturas, A y B. De los resultados se observa que el 40% aprobó A. El 45% aprobó al menos una asignatura. De los que aprobaron A, el 37.5% aprobó B. Se elige un alumno al azar, calcule la probabilidad que:</p>
+<ul>
+<li class="fragment">Haya aprobado ambas asignaturas.</li>
+<li class="fragment">Haya aprobado B.</li>
+<li class="fragment">No haya aprobado ni A ni B</li>
+</ul>
+</section>
+<section id="desarrollo-ejemplo" class="slide level2 smaller">
+<h2>Desarrollo ejemplo</h2>
+<p>Definiendo los eventos:</p>
+<p><span class="math display">\[A: \text{ El alumno aprobó la asignatura }A \quad B: \text{ El alumno aprobó la asignatura } B\]</span></p>
+<p>por enunciado sabemos que:</p>
+<p><span class="math display">\[\mathbb{P}(A) = 0.4 \hspace{15pt} \mathbb{P}(A\cup B)=0.45 \hspace{15pt} \mathbb{P}(B\vert A)=0.375\]</span></p>
+<p>Por lo que:</p>
+<ul>
+<li class="fragment">Haya aprobado ambas asignaturas.</li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[\mathbb{P}(A \cap B)= \mathbb{P}(B\vert A)* \mathbb{P}(A)=0.375 * 0.4=0.15\]</span></p>
+<ul>
+<li class="fragment">Haya aprobado <span class="math inline">\(B\)</span>.</li>
+</ul>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\mathbb{P}(B)=\mathbb{P}(A\cup B)-\mathbb{P}(A)+\mathbb{P}(A\cap B)=0.45-0.4+0.15= 0.2\]</span></p>
+<ul>
+<li class="fragment">No haya aprobado ni <span class="math inline">\(A\)</span> ni <span class="math inline">\(B\)</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p><span class="math display">\[\mathbb{P}(A^c \cap B^c)=\mathbb{P}((A \cup B)^c)=1-\mathbb{P}(A \cup B)=1-0.45\]</span></p>
+</div>
+</section>
+<section id="pregunta-tipo-prueba" class="slide level2">
+<h2>Pregunta tipo prueba</h2>
+<p>Una persona esta interesada en invertir su dinero en acciones en el mercado bursátil nacional. Estudios estadísticos indican que las preferencias por las distintas acciones están representadas por las del tipo A y tipo B. Además, el 45% de preferencias son por las acciones del tipo A. Si la acción es de tipo A, la probabilidad de tener una rentabilidad positiva es de 0.7. Si la acción es de tipo B, la probabilidad de tener una rentabilidad positiva es de 0.6.</p>
+<ul>
+<li class="fragment">Defina sucesos e identifique las probabilidades.</li>
+<li class="fragment">¿Cuál es la probabilidad de tener una rentabilidad positiva?</li>
+<li class="fragment">Si la rentabilidad es negativa, ¿Cuál es la probabilidad que no se haya invertido en acciones del tipo A?</li>
+</ul>
+</section>
+<section id="desarrollo-pregunta-tipo-prueba" class="slide level2 smaller">
+<h2>Desarrollo pregunta tipo prueba</h2>
+<p>Definiendo eventos como:</p>
+<ul>
+<li class="fragment"><span class="math inline">\(A: \text{ La persona invierte en acciones de tipo }A\)</span></li>
+<li class="fragment"><span class="math inline">\(B: \text{ La persona invierte en acciones de tipo }B\)</span></li>
+<li class="fragment"><span class="math inline">\(R: \text{ Se obtiene rentabilidad positiva tras invertir}\)</span></li>
+</ul>
+<div class="fragment">
+<p>Así,</p>
+<p><span class="math display">\[\mathbb{P}(A)=0.45 \hspace{15pt} \mathbb{P}(R\vert A)=0.7 \hspace{15pt} \mathbb{P}(R\vert B)=0.6\]</span></p>
+</div>
+<div class="fragment">
+<p><strong>¿Cuál es la probabilidad de tener una rentabilidad positiva?</strong></p>
+</div>
+<div class="fragment">
+<p>Por regla multiplicativa se tiene que:</p>
+<p><span class="math display">\[\mathbb{P}(R)=\mathbb{P}(A)*\mathbb{P}(R\vert A)+\mathbb{P}(B)*\mathbb{P}(R\vert B)\]</span></p>
+<p>reemplazando, tenemos que:</p>
+<p><span class="math display">\[\mathbb{P}(R)=0.45*0.7+0.55*0.6=0.645\]</span></p>
+</div>
+</section>
+<section id="continuación-desarrollo" class="slide level2">
+<h2>Continuación desarrollo</h2>
+<p><strong>Si la rentabilidad es negativa, ¿Cuál es la probabilidad que no se haya invertido en acciones del tipo A?</strong></p>
+<p>Por enunciado se sabe que <span class="math inline">\(\displaystyle \mathbb{P}(R\vert B)=0.6 \Rightarrow \mathbb{P}(R^{c}\vert B)=0.4= \dfrac{\mathbb{P}(R^{c}\cap B)}{\mathbb{P}(B)}\)</span>, pero</p>
+<p><span class="math display">\[\mathbb{P}(B)=0.55 \Rightarrow \mathbb{P}(R^{c}\cap B)= 0.4 * 0.55 = 0.22\]</span></p>
+<p>Nos piden <span class="math inline">\(\mathbb{P}(B\vert R^{c})=\dfrac{\mathbb{P}(B\cap R^{c})}{\mathbb{P}(R^{c})}=\dfrac{0.22}{(1-\mathbb{P}(R))}\)</span>.</p>
+<p>Por ítem anterior sabemos que <span class="math inline">\(\mathbb{P}(R)=0.645 \Rightarrow \mathbb{P}(R^{c})=1-0.645\)</span>.</p>
+<p>Reemplazando,</p>
+<p><span class="math display">\[\dfrac{\mathbb{P}(B\cap R^{c})}{\mathbb{P}(R^{c})}=\dfrac{0.22}{0.355}\approx 0.62\]</span></p>
 </section></section>
 <section id="qué-veremos-la-próxima-semana" class="title-slide slide level1 center">
 <h1>¿Qué veremos la próxima semana?</h1>
 <ul>
-<li class="fragment">Probabilidades básicas</li>
+<li class="fragment">Ejercitación para prueba #1</li>
 </ul>
 </section>
 
 <section id="qué-deben-preparar-para-la-próxima-semana" class="title-slide slide level1 center">
 <h1>¿Qué deben preparar para la próxima semana?</h1>
 <ul>
-<li class="fragment">Leer capítulo 2 de Probability and Statistics for Engineering and the Sciences, 9th Edition.</li>
+<li class="fragment">Estudiar pruebas de años anteriores</li>
+<li class="fragment">Desarrollar guía de ejercicios</li>
 </ul>
 
 
 <img src="images/logo_uv.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>LFIS 325 - Semana 2</p>
+<p>LFIS 325 - Semana 3</p>
 </div>
 </section>
     </div>

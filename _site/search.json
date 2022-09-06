@@ -179,7 +179,7 @@
     "href": "pages/week3.html#material-adicional",
     "title": "Semana 3",
     "section": "Material adicional",
-    "text": "Material adicional"
+    "text": "Material adicional\n\nGuía de ejercicios: estadística descriptiva\nGuía de ejercicios: cálculo de probabilidad\nGuía de ejercicios adicionales: estadística descriptiva"
   },
   {
     "objectID": "pages/week4.html#presentación",
@@ -534,49 +534,49 @@
   {
     "objectID": "slides/lec_week2.html#media-aritmética",
     "href": "slides/lec_week2.html#media-aritmética",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Media aritmética",
     "text": "Media aritmética\nSe define como el cociente de la suma de todos los valores entre el número total de valores. Las expresiones para cálculo de la media de una población y de una muestra son, respectivamente:\n\\[\\mu = \\dfrac{\\sum_{i=1}^{N}X_i}{N}, \\hspace{20pt} \\overline{x} = \\dfrac{\\sum_{i=1}^{n} X_i}{n}\\]\nCuando se tiene a disposición sólo los datos agrupados, se utiliza el punto medio de cada clase como aproximación de todos los valores contenidos en ella. El punto medio o marca de clase se representa por \\(m_i\\), en donde el subíndice \\(i\\) indica la clase \\(i-\\)ésima, y se utiliza \\(n_i\\) para representar la frecuencia absoluta observada en la clase respectiva. En tal caso, las expresiones son:\n\\[\\mu = \\dfrac{\\sum_{i=1}^{k} n_i m_i}{N}, \\hspace{20pt} \\overline{x} = \\dfrac{\\sum_{i=1}^{k} n_i m_i}{n}\\]"
   },
   {
     "objectID": "slides/lec_week2.html#mediana",
     "href": "slides/lec_week2.html#mediana",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Mediana",
     "text": "Mediana\nEs el valor que ocupa el lugar central de estos cuando se ordenan en orden de magnitud. Para conjunto de datos, con un número par de elementos, la mediana se calcula como el promedio de los valores centrales. En caso de trabajar con datos dispersos, la expresión para determinar la posición de la mediana en el conjunto (ordenado) es:\n\\[Me=\\begin{cases}\nX_{\\left(\\dfrac{n+1}{2}\\right)}, &\\text{Si }n\\text{ es impar} \\\\\n\\dfrac{1}{2}\\left(X_{\\left(\\dfrac{n}{2}\\right)} + X_{\\left(\\dfrac{n}{2}+1\\right)}\\right), &\\text{Si }n\\text{ es par}\n\\end{cases}\\]"
   },
   {
     "objectID": "slides/lec_week2.html#mediana-datos-agrupados",
     "href": "slides/lec_week2.html#mediana-datos-agrupados",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Mediana: datos agrupados",
     "text": "Mediana: datos agrupados\nPara datos agrupados, en primer lugar es necesario determinar la clase que contiene el valor de la mediana, para después determinar la posición de la mediana dentro de la clase mediante interpolación. La clase que contiene la mediana es la primera clase cuya frecuencia acumulada es mayor o igual a la mitad de los datos. Una vez que se identifica esta clase, se determina el valor interpolado de la mediana, empleando la siguiente expresión:\n\\[Me=LI_i+ \\left( \\dfrac{\\dfrac{n}{2}-N_{i-1}}{n_i}\\right)a_i\\]\nEn donde \\(LI_i\\) es límite inferior de la clase que contiene a la mediana, \\(n\\) el número total de observaciones, \\(a_i\\) la amplitud de clase, \\(N_{i-1}\\) la frecuencia acumulada anterior a la clase que contiene la mediana y \\(n_i\\) el número de observaciones de la clase que contiene la mediana."
   },
   {
     "objectID": "slides/lec_week2.html#moda",
     "href": "slides/lec_week2.html#moda",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Moda",
     "text": "Moda\nSe define como el valor o clase que se presenta con mayor frecuencia. Para datos agrupados, se utiliza interpolación dentro de la clase modal, de acuerdo a la siguiente expresión:\n\\[Mo=LI_i+ \\left(\\dfrac{d_1}{d_1+d_2} \\right)a_i\\] en donde,\n\n\\(LI_i\\) es el límite inferior de la clase que contiene la moda.\n\\(d_1\\) es la diferencia entre la frecuencia de la clase modal y la frecuencia de la clase que le precede.\n\\(d_2\\) es la diferencia entre la frecuencia de la clase modal y la frecuencia de la clase que le sigue.\n\\(a_i\\) es la amplitud de clase."
   },
   {
     "objectID": "slides/lec_week2.html#cuantiles",
     "href": "slides/lec_week2.html#cuantiles",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Cuantiles",
     "text": "Cuantiles\nSon medidas de posición que dividen los datos en grupos bajo los cuales se encuentra una determinada proporción de éstos, por lo se requiere que los datos se encuentren en al menos escala ordinal.\n\nCuartil: \\(Q_{i}=X_{\\left(\\dfrac{i(n+1)}{4}\\right)}, \\hspace{20pt} i:1,2,\\dots,4\\)\nQuintil: \\(K_{i}=X_{\\left(\\dfrac{i(n+1)}{5}\\right)}, \\hspace{20pt} i:1,2,\\dots,5\\)\nDecil: \\(D_{i}=X_{\\left(\\dfrac{i(n+1)}{10}\\right)}, \\hspace{20pt} i:1,2,\\dots,10\\)\nPercentil: \\(P_{i}=X_{\\left(\\dfrac{i(n+1)}{100}\\right)}, \\hspace{20pt} i:1,2,\\dots,100\\)"
   },
   {
     "objectID": "slides/lec_week2.html#cuantiles-datos-agrupados",
     "href": "slides/lec_week2.html#cuantiles-datos-agrupados",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Cuantiles: datos agrupados",
     "text": "Cuantiles: datos agrupados\nPara datos agrupados, la fórmula se modifica de acuerdo con el punto fraccionario de interés. Para utilizar esta expresión modificada, en primer lugar se determina la clase que contiene el punto de interés, de acuerdo con las frecuencias acumuladas, y después se lleva a cabo una interpolación como en el caso anterior de la mediana."
   },
   {
     "objectID": "slides/lec_week2.html#interpolación",
     "href": "slides/lec_week2.html#interpolación",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Interpolación",
     "text": "Interpolación\nEn este caso se observa que \\(y=\\mathbf{y}, x=P_{78}, x_2 - x_1= LS-LI=a\\) y \\(y_2 - y_1 = N_i - N_{i-1}=n_i\\)\nLuego despejando \\(x=P_{78}\\), se obtiene una expresión para el cálculo de percentiles en datos agrupados:\n\\[x=P_{78}=x_1+\\left( \\dfrac{y-y_1}{y_2 - y_1} \\right)(x_2 - x_1)=LI+\\left(\\dfrac{y- N_{i-1}}{n_i}\\right)a\\]\npero \\(y\\) no es otra cosa que \\(\\dfrac{n \\times j}{100}\\), donde \\(j\\) es el percentil \\(j-\\)ésimo. Por lo que podemos generalizar la ecuación anterior como:\n\\[P_j=LI+\\left(\\dfrac{\\dfrac{n\\times j}{100}-N_{i-1}}{n_i}\\right)a=LI+\\left(\\dfrac{\\dfrac{j}{100}-F_{i-1}}{f_i}\\right)a\\]"
   },
@@ -590,84 +590,84 @@
   {
     "objectID": "slides/lec_week2.html#ejemplo",
     "href": "slides/lec_week2.html#ejemplo",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Ejemplo",
     "text": "Ejemplo\nLa siguiente tabla resume los tiempos de espera antes de obtener ciertos resultados experimentales.\n\nCalcular el percentil 80"
   },
   {
     "objectID": "slides/lec_week2.html#rango",
     "href": "slides/lec_week2.html#rango",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Rango",
     "text": "Rango\nEs la diferencia entre el mayor y menor valor del conjunto de datos.\n\\[R= \\begin{cases}\\max x_i - \\min x_i,  &\\text{datos dispersos} \\\\ LS_k -LI_1,  &\\text{datos agrupados} \\end{cases}\\]"
   },
   {
     "objectID": "slides/lec_week2.html#desviación-media",
     "href": "slides/lec_week2.html#desviación-media",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Desviación media",
     "text": "Desviación media\nEs la media (promedio) del valor absoluto de la diferencia entre cada uno de los datos y el promedio del grupo.\n\\[DM= \\begin{cases}\\sum_{i=1}^{n}\\dfrac{|x_i- \\overline{x}|}{n}, &\\text{datos dispersos}\\\\\\sum_{i=1}^{k} f_i |m_i - \\overline{x}|,&\\text{datos agrupados}\\end{cases}\\]"
   },
   {
     "objectID": "slides/lec_week2.html#varianza",
     "href": "slides/lec_week2.html#varianza",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Varianza",
     "text": "Varianza\n\\((V[X],\\sigma^2)\\) La varianza es similar a la desviación media porque se basa en la diferencia entre cada uno de los valores del conjunto de datos y la media del grupo. Su fórmula es, para su cálculo poblacional y muestral, respectivamente:\n\\[V[X]=\\sigma^2=\\sum_{i=1}^{N} \\dfrac{(x_i-\\mu)^2}{N}\\]\n\\[S^2=\\sum_{i=1}^{n} \\dfrac{(x_i-\\overline{x})^2}{n-1}\\]"
   },
   {
     "objectID": "slides/lec_week2.html#desviación-estándar-o-típica",
     "href": "slides/lec_week2.html#desviación-estándar-o-típica",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Desviación estándar o típica",
     "text": "Desviación estándar o típica\nSe utiliza con mayor frecuencia la raíz cuadrada de la varianza, representada mediante la letra griega \\(\\sigma\\) para el caso poblacional y \\(S\\) para una muestra:\n\\[\\sigma=\\sqrt{V[X]}\\]\n\\[S=\\sqrt{S^2}\\]"
   },
   {
     "objectID": "slides/lec_week2.html#coeficiente-de-variación",
     "href": "slides/lec_week2.html#coeficiente-de-variación",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Coeficiente de variación",
     "text": "Coeficiente de variación\nRelación entre la desviación estándar y su media. Tiene por fórmula, para su cálculo poblacional y muestral, respectivamente:\n\\[CV=\\dfrac{\\sigma}{\\mu}\\]\n\\[CV=\\dfrac{S}{\\overline{x}}\\]\nRepresenta la desviación estándar como proporción (o porcentaje) de la media, por lo que es de gran utilidad al comparar dos poblaciones o muestras, pues no posee unidades lo que elimina el efecto de la magnitud de las variables medidas."
   },
   {
     "objectID": "slides/lec_week2.html#rango-intercuartil",
     "href": "slides/lec_week2.html#rango-intercuartil",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Rango intercuartil",
     "text": "Rango intercuartil\nEs la diferencia entre los percentiles 75 y 25, esto es RIQ (IQR)\\(= Q_3 - Q_1\\).\n\nRepresenta el 50% central de la población"
   },
   {
     "objectID": "slides/lec_week2.html#diagrama-de-caja-box-plot",
     "href": "slides/lec_week2.html#diagrama-de-caja-box-plot",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Diagrama de caja / box-plot",
     "text": "Diagrama de caja / box-plot"
   },
   {
     "objectID": "slides/lec_week2.html#histograma",
     "href": "slides/lec_week2.html#histograma",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Histograma",
     "text": "Histograma"
   },
   {
     "objectID": "slides/lec_week2.html#ojiva",
     "href": "slides/lec_week2.html#ojiva",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Ojiva",
     "text": "Ojiva"
   },
   {
     "objectID": "slides/lec_week2.html#construcción-box-plot",
     "href": "slides/lec_week2.html#construcción-box-plot",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Construcción box-plot",
     "text": "Construcción box-plot\n\nCalcular: Mediana, Cuartil 1 y 3 \\((Q_{1},Q_{3})\\)\nCalcular Rango Intercuartil (RIQ/IQR): \\(RIQ=Q_{3}-Q_{1}\\)\nCalcular bigotes interiores (superiores e inferiores):\n\nBigote inferior: \\(\\max (Q_{1}-1,5* RIQ, x_{1})\\)\nBigote superior: \\(\\min (Q_{3}+1,5* RIQ, x_{n})\\)\n\nCalcular bigotes exteriores (superiores e inferiores):\n\nBigote inferior: \\(Q_{1}-3* RIQ\\)\nBigote superior: \\(Q_{3}+3* RIQ\\)\n\nMarcar datos outliers:\n\nObservaciones entre bigote interior y exterior, se consideran sospechosos de ser outliers.\nObservaciones pasados los bigotes exteriores son outliers."
   },
   {
     "objectID": "slides/lec_week2.html#ejercicio",
     "href": "slides/lec_week2.html#ejercicio",
-    "title": "Estadística para ciencias físicas",
+    "title": "Estadística descriptiva",
     "section": "Ejercicio",
     "text": "Ejercicio\nDatos:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(7,12\\)\n\\(7,89\\)\n\\(10,12\\)\n\\(8,88\\)\n\\(10,02\\)\n\\(9,91\\)\n\\(9,95\\)\n\\(9,90\\)\n\n\n\n\n\\(10,23\\)\n\\(9,12\\)\n\\(9,99\\)\n\\(12,40\\)\n\\(8,65\\)\n\\(10,05\\)\n\\(10,50\\)\n\\(9,87\\)\n\n\n\\(8,54\\)\n\\(9,72\\)\n\\(11,09\\)\n\\(11,52\\)\n\\(12,30\\)\n\\(11,53\\)\n\\(16,40\\)\n\\(13,24\\)\n\n\n\n\nRealizar un diagrama de caja"
   },
@@ -677,5 +677,180 @@
     "title": "Semana 3",
     "section": "",
     "text": "Leer capítulo 2 de Probability and Statistics for Engineering and the Sciences, 9th Edition."
+  },
+  {
+    "objectID": "slides/lec_week3.html#escuelas-de-probabilidad",
+    "href": "slides/lec_week3.html#escuelas-de-probabilidad",
+    "title": "Probabilidades",
+    "section": "Escuelas de probabilidad",
+    "text": "Escuelas de probabilidad\n\nEnfoque clásico\nEnfoque frecuentista\nEnfoque bayesiano"
+  },
+  {
+    "objectID": "slides/lec_week3.html#enfoque-clásico",
+    "href": "slides/lec_week3.html#enfoque-clásico",
+    "title": "Probabilidades",
+    "section": "Enfoque clásico",
+    "text": "Enfoque clásico\nEste enfoque también llamado enfoque apriori tiene por característica principal la asignación igualitaria de una medida de ocurrencia para un resultado de un experimento aleatorio (experimento equiprobable).\n\nEsta asignación de probabilidad se determina antes de observar los resultados experimentales.\n\n\n\n¿Algún ejemplo?"
+  },
+  {
+    "objectID": "slides/lec_week3.html#enfoque-frecuentista",
+    "href": "slides/lec_week3.html#enfoque-frecuentista",
+    "title": "Probabilidades",
+    "section": "Enfoque frecuentista",
+    "text": "Enfoque frecuentista\nEste enfoque también llamado enfoque empírico, determina la medida de ocurrencia con base en la proporción de veces que ocurre un resultado favorable en un determinado número de observaciones o experimentos. Este enfoque no asigna probabilidades a priori a los posibles resultados de un experimento aleatorio.\n\n\n¿Algún ejemplo?"
+  },
+  {
+    "objectID": "slides/lec_week3.html#enfoque-bayesiano",
+    "href": "slides/lec_week3.html#enfoque-bayesiano",
+    "title": "Probabilidades",
+    "section": "Enfoque bayesiano",
+    "text": "Enfoque bayesiano\nEste enfoque también llamado enfoque subjetivo, determina la medida de ocurrencia en base a una expectativa razonable basado en el conocimiento del investigador.\nEl enfoque bayesiano es particularmente útil cuando se tiene poca información del experimento, y este puede ser realizado para actualizador mis probabilidades, esto debido a que cada realización del experimento aleatorio me otorgará información adicional para determinar correctamente mis probabilidades."
+  },
+  {
+    "objectID": "slides/lec_week3.html#principio-de-multiplicación",
+    "href": "slides/lec_week3.html#principio-de-multiplicación",
+    "title": "Probabilidades",
+    "section": "Principio de multiplicación",
+    "text": "Principio de multiplicación\nSupongamos que un procedimiento \\(1\\), puede hacerse de \\(n_1\\) maneras. Supongamos que un segundo procedimiento \\(2\\), se puede hacer de \\(n_2\\) maneras. También supongamos que cada una de las maneras de efectuar 1 puede ser seguida por cualquiera de las \\(n_2\\) de efectuar 2.\nEntonces el procedimiento que consta de \\(1\\) seguido por \\(2\\) se puede hacer de \\(n_1 \\times n_2\\) maneras. De igual manera podemos generalizar lo anterior a cualquier número de procedimientos."
+  },
+  {
+    "objectID": "slides/lec_week3.html#principio-de-adición",
+    "href": "slides/lec_week3.html#principio-de-adición",
+    "title": "Probabilidades",
+    "section": "Principio de adición",
+    "text": "Principio de adición\nSupongamos que un procedimiento \\(1\\), se puede hacerse de \\(n_1\\) maneras, y que un segundo procedimiento \\(2\\), se puede hacer de \\(n_2\\) maneras. Supongamos además que no es posible que ambos procedimientos, 1 y 2, se realicen. Entonces el número de maneras como se puede hacer el procedimiento 1 ó 2 es de \\(n_1 + n_2\\).\n\nFactorial: Sea \\(n \\in \\mathbb{N}\\), entonces se define \\(n\\) factorial como \\(n \\times (n-1) \\times (n-2) \\times \\dots \\times 1\\), y se simboliza por \\(n!\\) Empleado en situaciones donde una vez seleccionado un elemento, éste puede ser nuevamente seleccionado.\n\n\nEjemplo\nConsidere un grupo de personas conformado por 15 hombres y 10 mujeres. Se eligen 3 personas al azar, la primera será la presidente de la comisión, la segunda vicepresidente y la tercera secretario. ¿De cuantas formas se puede conformar la comisión?"
+  },
+  {
+    "objectID": "slides/lec_week3.html#conceptos-fundamentales",
+    "href": "slides/lec_week3.html#conceptos-fundamentales",
+    "title": "Probabilidades",
+    "section": "Conceptos fundamentales",
+    "text": "Conceptos fundamentales\n\nEspacio muestral: Se define como el conjunto de todos los posibles resultados del experimento, lo anotamos por \\(\\Omega\\).\nSuceso o evento: Es cualquier subconjunto de \\(\\Omega\\), usualmente lo anotamos con letras mayúsculas. \\((A,B,C,\\dots)\\).\nEspacio de sucesos: Es el conjunto de todos los subconjuntos de \\(\\Omega\\). Lo anotamos por \\(2^{\\Omega}\\).\n\\(\\sigma\\)-álgebra: Es una familia de subconjuntos del espacio de sucesos, \\(\\Sigma \\subset 2^{\\Omega}\\), y que cumplen con ciertas propiedades."
+  },
+  {
+    "objectID": "slides/lec_week3.html#clasificación-del-espacio-muestral",
+    "href": "slides/lec_week3.html#clasificación-del-espacio-muestral",
+    "title": "Probabilidades",
+    "section": "Clasificación del espacio muestral",
+    "text": "Clasificación del espacio muestral\n\nDiscreto\n\nNumerable: Finito o Infinito.\n\nContinuo\n\nNo numerable: Acotado o No acotado."
+  },
+  {
+    "objectID": "slides/lec_week3.html#definición-formal-de-probabilidad",
+    "href": "slides/lec_week3.html#definición-formal-de-probabilidad",
+    "title": "Probabilidades",
+    "section": "Definición formal de probabilidad",
+    "text": "Definición formal de probabilidad\nEl par \\((\\Omega,\\Sigma)\\) se dice espacio medible, y la función \\(\\mathbb{P}:\\Sigma \\rightarrow \\mathbb{R}^{+}\\), es una medida de probabilidad si satisface:\n\n\\(0\\leq \\mathbb{P}[A] \\leq 1, \\forall A \\in \\Sigma\\)\n\\(\\mathbb{P}[\\Omega]=1\\)\nDados \\(\\displaystyle A_1,A_2,\\dots \\in \\Sigma \\Rightarrow \\mathbb{P}\\left[ \\bigcup_{i=1}^{n} A_n \\right] = \\sum_{i=1}^{n} \\mathbb{P}[A_i], \\hspace{5pt} \\forall i\\)"
+  },
+  {
+    "objectID": "slides/lec_week3.html#algunas-propiedades",
+    "href": "slides/lec_week3.html#algunas-propiedades",
+    "title": "Probabilidades",
+    "section": "Algunas propiedades",
+    "text": "Algunas propiedades\n\n\\(\\mathbb{P}[A]+\\mathbb{P}[A^c]=\\mathbb{P}[\\Omega]\\)\n\\(\\mathbb{P}[\\phi]=1-\\mathbb{P}[\\phi^c]=1-\\mathbb{P}[\\Omega]=0\\)\n\\(\\mathbb{P}[A \\cup B]=\\mathbb{P}[A]+\\mathbb{P}[B] - \\mathbb{P}[A\\cap B]\\) . Si este último término \\((\\mathbb{P}[A\\cap B])\\) es cero, se dice que \\(A\\) y \\(B\\) son eventos mutuamente excluyentes.\n\\(\\mathbb{P}[A-B]=\\mathbb{P}[A\\cap B^c]\\)\n\\(\\mathbb{P}[A \\cap B]=\\mathbb{P}[A]\\mathbb{P}[B]\\). Si \\(A\\) y \\(B\\) son independientes."
+  },
+  {
+    "objectID": "slides/lec_week3.html#permutación",
+    "href": "slides/lec_week3.html#permutación",
+    "title": "Probabilidades",
+    "section": "Permutación",
+    "text": "Permutación\nSe define la permutación de \\(r\\) elementos sobre \\(n\\) como el número de arreglos distintos que se pueden hacer con \\(r\\) elementos de un total de \\(n\\), importando el orden en el que salen los elementos, se simboliza por:\n\\[P_{r}^{n}=\\dfrac{n!}{(n-r)!}\\]\n\nEjemplo\nUn directorio compuesto por: Presidente, Secretario y Tesorero se debe elegir de un total de 10 candidatos. ¿Cuántos directorios diferentes se pueden conformar?\n\\[P_{3}^{10}=\\dfrac{10!}{(10-3)!}=\\dfrac{10!}{7!}=720\\]"
+  },
+  {
+    "objectID": "slides/lec_week3.html#combinatoria",
+    "href": "slides/lec_week3.html#combinatoria",
+    "title": "Probabilidades",
+    "section": "Combinatoria",
+    "text": "Combinatoria\nSe define la combinatoria de \\(r\\) elementos sobre \\(n\\) como el número de arreglos distintos que se pueden hacer con \\(r\\) elementos de un total de \\(n\\) sin importar el orden en que son asignados. Esta expresión se anota por:\n\\[C_{r}^{n}={{n}\\choose{r}}=\\dfrac{n!}{r!(n-r)!}\\]\n\nEjemplo\nPara formar un comité se van a elegir a tres personas de un total de 10. El número de grupos diferentes de tres personas que podrían elegirse, sin importar el orden en el que cada uno de los grupos está dado por:\n\\[C_{3}^{10}=\\dfrac{10!}{3!(10-3)!}=\\dfrac{10!}{3!7!}=\\dfrac{720}{6}=120\\]"
+  },
+  {
+    "objectID": "slides/lec_week3.html#ejemplo-3",
+    "href": "slides/lec_week3.html#ejemplo-3",
+    "title": "Probabilidades",
+    "section": "Ejemplo",
+    "text": "Ejemplo\nSea A el evento en el cual un hombre vivirá 10 años más y sea B el evento en el cual su esposa viva 10 años más. Supongamos que \\(\\mathbb{P}(A)=\\frac{1}{4}\\) y \\(\\mathbb{P}(B)=\\frac{1}{3}\\). Supongamos que A y B son eventos independientes, encuentre la probabilidad de que en 10 años:\n\nAmbos estén vivos.\nAl menos uno esté vivo.\nNinguno esté vivo.\nSolamente la esposa esté viva"
+  },
+  {
+    "objectID": "slides/lec_week3.html#probabilidades-clásicas",
+    "href": "slides/lec_week3.html#probabilidades-clásicas",
+    "title": "Probabilidades",
+    "section": "Probabilidades clásicas",
+    "text": "Probabilidades clásicas\nEste planteamiento probabilista establece que los eventos del espacio muestral sean expresados de la forma más elemental posible, con el fin de poder aceptar la posibilidad de que cada posible resultado sea igualmente posible.\n\\[\\mathbb{P}[A]=\\dfrac{\\#A}{\\#\\Omega}\\]\n\nEjemplo\nConsidere que se tienen 10 sacos de semillas. Se sabe que 4 son de una variedad y el resto de otra. Un cliente compra 3 sacos. ¿Cuál es la probabilidad de que los sacos sean de las dos variedades?\n\n\\(A:{ \\text{Los sacos comprados son de las dos variedades} }\\)\n\\[\\mathbb{P}[A]=\\dfrac{\\#A}{\\#\\Omega}=\\dfrac{ C_{1}^{4} \\times C_{2}^{6} +C_{2}^{4} \\times C_{1}^{6} }{C_{3}^{10}}\\]"
+  },
+  {
+    "objectID": "slides/lec_week3.html#ejercicio",
+    "href": "slides/lec_week3.html#ejercicio",
+    "title": "Probabilidades",
+    "section": "Ejercicio",
+    "text": "Ejercicio\nSea A el evento en el cual un hombre vivirá 10 años más y sea B el evento en el cual su esposa viva 10 años más. Supongamos que \\(\\mathbb{P}(A)=\\frac{1}{4}\\) y \\(\\mathbb{P}(B)=\\frac{1}{3}\\). Supongamos que A y B son eventos independientes, encuentre la probabilidad de que en 10 años:\n\nAmbos estén vivos.\nAl menos uno esté vivo.\nNinguno esté vivo.\nSolamente la esposa esté viva"
+  },
+  {
+    "objectID": "slides/lec_week3.html#probabilidades-condicionales",
+    "href": "slides/lec_week3.html#probabilidades-condicionales",
+    "title": "Probabilidades",
+    "section": "Probabilidades condicionales",
+    "text": "Probabilidades condicionales\nEl concepto de probabilidad condicional se emplea para redefinir el cálculo de probabilidad de ocurrencia de un evento dada cierta condición (o información). Lo anotamos por:\n\\[\\mathbb{P}[B | A]=\\dfrac{\\mathbb{P}[B \\cap A]}{\\mathbb{P}[A]}\\]\nLo anterior, mide la probabilidad de que el evento \\(B\\) ocurra dado que el evento \\(A\\) ocurrió. Notar que si los eventos \\(A\\) y \\(B\\) son independientes se tiene:\n\\[\\mathbb{P}[B|A]=\\dfrac{\\mathbb{P}[B]\\mathbb{P}[A]}{\\mathbb{P}[A]}=\\mathbb{P}[B]\\]\nPor lo que, en palabras, si los eventos son independientes, la probabilidad condicional se reduce a la probabilidad simple."
+  },
+  {
+    "objectID": "slides/lec_week3.html#regla-multiplicativa",
+    "href": "slides/lec_week3.html#regla-multiplicativa",
+    "title": "Probabilidades",
+    "section": "Regla multiplicativa",
+    "text": "Regla multiplicativa\nSe refiere a la determinación de la probabilidad de ocurrencia conjunta de dos o más eventos. Para el caso de dos eventos, se tiene:\n\\[\\mathbb{P}[A\\cap B]=\\mathbb{P}[A]\\mathbb{P}[B|A]\\]\nEn el caso de tres eventos, se tiene:\n\\[\\mathbb{P}[A \\cap B \\cap C]=\\mathbb{P}[A] \\mathbb{P}[B|A] \\mathbb{P}[C| (A \\cap B)]\\]"
+  },
+  {
+    "objectID": "slides/lec_week3.html#a",
+    "href": "slides/lec_week3.html#a",
+    "title": "Probabilidades",
+    "section": "a",
+    "text": "a"
+  },
+  {
+    "objectID": "slides/lec_week3.html#diagrama-de-árbol",
+    "href": "slides/lec_week3.html#diagrama-de-árbol",
+    "title": "Probabilidades",
+    "section": "Diagrama de árbol",
+    "text": "Diagrama de árbol\nLos diagramas de árbol son particularmente útiles para ilustrar los posibles eventos asociados con observaciones o ensayos secuenciales."
+  },
+  {
+    "objectID": "slides/lec_week3.html#regla-de-bayes",
+    "href": "slides/lec_week3.html#regla-de-bayes",
+    "title": "Probabilidades",
+    "section": "Regla de Bayes",
+    "text": "Regla de Bayes\nLa regla de Bayes permite actualizar ciertas probabilidades a priori para transformarse en probabilidades posteriori de un evento (experimento). La importancia de la regla de Bayes consiste en que se aplica en contexto de eventos secuenciales y además, de que proporciona la base para determinar la probabilidad condicional de un evento a la luz de un evento especifico que ha ocurrido.\n\\[\\mathbb{P}[A|B]=\\dfrac{\\mathbb{P}[A\\cap B]}{\\mathbb{P}[B]}=\\dfrac{\\mathbb{P}[A]\\mathbb{P}[B|A]}{\\mathbb{P}[A]\\mathbb{P}[B|A]+\\mathbb{P}[A^c]\\mathbb{P}[B|A^c]}\\]\n\nEjemplo\n\nUn fabricante posee dos máquinas que producen el mismo artículo. Se sabe que una de ella (A) produce un \\(5\\%\\) de defectuosos y la otra (B) un \\(3\\%\\). Por otra parte el \\(60\\%\\) de las unidades es producido por la máquina A.\n\nDefina sucesos e identifique las probabilidades.\nSi el artículo es no defectuoso. ¿Cuál es la probabilidad que el artículo provenga de la máquina A?"
+  },
+  {
+    "objectID": "slides/lec_week3.html#ejemplo-5",
+    "href": "slides/lec_week3.html#ejemplo-5",
+    "title": "Probabilidades",
+    "section": "Ejemplo",
+    "text": "Ejemplo\nUn grupo de estudiantes se inscribió en dos asignaturas, A y B. De los resultados se observa que el 40% aprobó A. El 45% aprobó al menos una asignatura. De los que aprobaron A, el 37.5% aprobó B. Se elige un alumno al azar, calcule la probabilidad que:\n\nHaya aprobado ambas asignaturas.\nHaya aprobado B.\nNo haya aprobado ni A ni B"
+  },
+  {
+    "objectID": "slides/lec_week3.html#desarrollo-ejemplo",
+    "href": "slides/lec_week3.html#desarrollo-ejemplo",
+    "title": "Probabilidades",
+    "section": "Desarrollo ejemplo",
+    "text": "Desarrollo ejemplo\nDefiniendo los eventos:\n\\[A: \\text{ El alumno aprobó la asignatura }A \\quad B: \\text{ El alumno aprobó la asignatura } B\\]\npor enunciado sabemos que:\n\\[\\mathbb{P}(A) = 0.4 \\hspace{15pt} \\mathbb{P}(A\\cup B)=0.45 \\hspace{15pt} \\mathbb{P}(B\\vert A)=0.375\\]\nPor lo que:\n\nHaya aprobado ambas asignaturas.\n\n\n\\[\\mathbb{P}(A \\cap B)= \\mathbb{P}(B\\vert A)* \\mathbb{P}(A)=0.375 * 0.4=0.15\\]\n\nHaya aprobado \\(B\\).\n\n\n\n\\[\\mathbb{P}(B)=\\mathbb{P}(A\\cup B)-\\mathbb{P}(A)+\\mathbb{P}(A\\cap B)=0.45-0.4+0.15= 0.2\\]\n\nNo haya aprobado ni \\(A\\) ni \\(B\\)\n\n\n\n\\[\\mathbb{P}(A^c \\cap B^c)=\\mathbb{P}((A \\cup B)^c)=1-\\mathbb{P}(A \\cup B)=1-0.45\\]"
+  },
+  {
+    "objectID": "slides/lec_week3.html#pregunta-tipo-prueba",
+    "href": "slides/lec_week3.html#pregunta-tipo-prueba",
+    "title": "Probabilidades",
+    "section": "Pregunta tipo prueba",
+    "text": "Pregunta tipo prueba\nUna persona esta interesada en invertir su dinero en acciones en el mercado bursátil nacional. Estudios estadísticos indican que las preferencias por las distintas acciones están representadas por las del tipo A y tipo B. Además, el 45% de preferencias son por las acciones del tipo A. Si la acción es de tipo A, la probabilidad de tener una rentabilidad positiva es de 0.7. Si la acción es de tipo B, la probabilidad de tener una rentabilidad positiva es de 0.6.\n\nDefina sucesos e identifique las probabilidades.\n¿Cuál es la probabilidad de tener una rentabilidad positiva?\nSi la rentabilidad es negativa, ¿Cuál es la probabilidad que no se haya invertido en acciones del tipo A?"
+  },
+  {
+    "objectID": "slides/lec_week3.html#desarrollo-pregunta-tipo-prueba",
+    "href": "slides/lec_week3.html#desarrollo-pregunta-tipo-prueba",
+    "title": "Probabilidades",
+    "section": "Desarrollo pregunta tipo prueba",
+    "text": "Desarrollo pregunta tipo prueba\nDefiniendo eventos como:\n\n\\(A: \\text{ La persona invierte en acciones de tipo }A\\)\n\\(B: \\text{ La persona invierte en acciones de tipo }B\\)\n\\(R: \\text{ Se obtiene rentabilidad positiva tras invertir}\\)\n\n\nAsí,\n\\[\\mathbb{P}(A)=0.45 \\hspace{15pt} \\mathbb{P}(R\\vert A)=0.7 \\hspace{15pt} \\mathbb{P}(R\\vert B)=0.6\\]\n\n\n¿Cuál es la probabilidad de tener una rentabilidad positiva?\n\n\nPor regla multiplicativa se tiene que:\n\\[\\mathbb{P}(R)=\\mathbb{P}(A)*\\mathbb{P}(R\\vert A)+\\mathbb{P}(B)*\\mathbb{P}(R\\vert B)\\]\nreemplazando, tenemos que:\n\\[\\mathbb{P}(R)=0.45*0.7+0.55*0.6=0.645\\]"
+  },
+  {
+    "objectID": "slides/lec_week3.html#continuación-desarrollo",
+    "href": "slides/lec_week3.html#continuación-desarrollo",
+    "title": "Probabilidades",
+    "section": "Continuación desarrollo",
+    "text": "Continuación desarrollo\nSi la rentabilidad es negativa, ¿Cuál es la probabilidad que no se haya invertido en acciones del tipo A?\nPor enunciado se sabe que \\(\\displaystyle \\mathbb{P}(R\\vert B)=0.6 \\Rightarrow \\mathbb{P}(R^{c}\\vert B)=0.4= \\dfrac{\\mathbb{P}(R^{c}\\cap B)}{\\mathbb{P}(B)}\\), pero\n\\[\\mathbb{P}(B)=0.55 \\Rightarrow \\mathbb{P}(R^{c}\\cap B)= 0.4 * 0.55 = 0.22\\]\nNos piden \\(\\mathbb{P}(B\\vert R^{c})=\\dfrac{\\mathbb{P}(B\\cap R^{c})}{\\mathbb{P}(R^{c})}=\\dfrac{0.22}{(1-\\mathbb{P}(R))}\\).\nPor ítem anterior sabemos que \\(\\mathbb{P}(R)=0.645 \\Rightarrow \\mathbb{P}(R^{c})=1-0.645\\).\nReemplazando,\n\\[\\dfrac{\\mathbb{P}(B\\cap R^{c})}{\\mathbb{P}(R^{c})}=\\dfrac{0.22}{0.355}\\approx 0.62\\]"
   }
 ]

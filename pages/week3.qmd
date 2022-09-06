@@ -16,3 +16,9 @@ Leer capítulo 2 de Probability and Statistics for Engineering and the Sciences,
 ```
 
 ## Material adicional
+
+- [Guía de ejercicios: estadística descriptiva](../documents/Prueba_1/exercises_eda.pdf)
+
+- [Guía de ejercicios: cálculo de probabilidad](../documents/Prueba_1/exercises_prob.pdf)
+
+- [Guía de ejercicios adicionales: estadística descriptiva](../documents/Pruebexercises_eda_2.pdf.pdf)

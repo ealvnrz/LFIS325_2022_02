@@ -1,5 +1,5 @@
 ---
-title: "Estadística para ciencias físicas"
+title: "Estadística descriptiva"
 subtitle: "LFIS 325 - 2022/02"
 author: "Eloy Alvarado Narváez"
 institute: "Universidad de Valparaíso"
@@ -25,7 +25,6 @@ editor:
     wrap: 72
 ---
 
-# Estadística descriptiva
 
 # Medidas de posición
 
@@ -155,7 +154,7 @@ resultados experimentales.
 
 Calcular el percentil 80
 
-# Medidas de Variabilidad
+# Medidas de variabilidad
 
 Las medidas de *tendencia central* son útiles para identificar un valor
 "típico" ó "particular" de un conjunto de datos, las **medidas de
