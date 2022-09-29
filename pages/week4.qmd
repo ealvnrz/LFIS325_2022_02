@@ -17,5 +17,5 @@ subtitle: "Ejemplos, ejercitación y consultas"
 
 ## Material adicional
 
-- [Prueba #1 2020](../documents/Prueba_1/LFIS325_2020_02_P1.pdf)
-- [Prueba #1 2021](../documents/Prueba_1/LFIS325_2021_02_P1.pdf)
+- [Pauta Prueba #1 2020](../documents/Prueba_1/LFIS325_2020_02_P1.pdf)
+- [Pauta Prueba #1 2021](../documents/Prueba_1/LFIS325_2021_02_P1.pdf)
