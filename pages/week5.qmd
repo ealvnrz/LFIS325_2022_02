@@ -16,3 +16,5 @@ subtitle: "Prueba #1 e Introducción a Variables aleatorias"
 ```
 
 ## Material adicional
+
+[Pauta Prueba #1 2022](../documents/Prueba_1/LFIS325_2022_02_P1_P.pdf)
