@@ -154,6 +154,13 @@
     "text": "Material adicional"
   },
   {
+    "objectID": "pages/week2.html",
+    "href": "pages/week2.html",
+    "title": "Semana 2",
+    "section": "",
+    "text": "Leer capítulo 1 de Probability and Statistics for Engineering and the Sciences, 9th Edition."
+  },
+  {
     "objectID": "pages/week2.html#presentación",
     "href": "pages/week2.html#presentación",
     "title": "Semana 2",
@@ -166,6 +173,13 @@
     "title": "Semana 2",
     "section": "Material adicional",
     "text": "Material adicional\nSecciones 1.3 y 1.4 de Probability and Statistics for Engineering and the Sciences, 9th Edition."
+  },
+  {
+    "objectID": "pages/week3.html",
+    "href": "pages/week3.html",
+    "title": "Semana 3",
+    "section": "",
+    "text": "Leer capítulo 2 de Probability and Statistics for Engineering and the Sciences, 9th Edition."
   },
   {
     "objectID": "pages/week3.html#presentación",
@@ -210,6 +224,13 @@
     "text": "Material adicional\nPauta Prueba #1 2022"
   },
   {
+    "objectID": "pages/week6.html",
+    "href": "pages/week6.html",
+    "title": "Semana 6",
+    "section": "",
+    "text": "Leer capítulo 3, Probability and Statistics for Engineering and the Sciences, 9th Edition."
+  },
+  {
     "objectID": "pages/week6.html#presentación",
     "href": "pages/week6.html#presentación",
     "title": "Semana 6",
@@ -221,7 +242,7 @@
     "href": "pages/week6.html#material-adicional",
     "title": "Semana 6",
     "section": "Material adicional",
-    "text": "Material adicional"
+    "text": "Material adicional\nLeer capítulo 4, Probability and Statistics for Engineering and the Sciences, 9th Edition."
   },
   {
     "objectID": "pages/week7.html",
@@ -441,13 +462,6 @@
     "text": "Tabla de frecuencia\nEn las tablas de frecuencia cada categoría tiene una frecuencia observada, este cálculo es siempre posible en datos cualitativos, sin embargo, si la cantidad de categorías es grande, deja de ser un resumen adecuado para los datos.\nLas respuestas observadas en la población (muestra), se denominarán clases, y se simbolizan por: \\(C_1,C_2,\\dots, C_k\\) donde \\(k\\) es la cantidad de categorías (respuestas) distintas."
   },
   {
-    "objectID": "slides/lec_week1.html#frecuencia-absoluta-y-relativa",
-    "href": "slides/lec_week1.html#frecuencia-absoluta-y-relativa",
-    "title": "Estadística para ciencias físicas",
-    "section": "Frecuencia absoluta y relativa",
-    "text": "Frecuencia absoluta y relativa\nFrecuencia Absoluta: Se llama frecuencia absoluta de la clase \\(C_i\\), al número de elementos de la población (muestra) que pertenecen a la clase \\(C_i\\). Este número lo denotaremos por \\(n_i\\) y cumplen la propiedad:\n\\[\\sum_{i=1}^{k} n_i =n\\]\nEn donde \\(n\\) es el tamaño de la población o muestra, según sea el caso.\nFrecuencia Relativa: Se llama frecuencia relativa de la clase \\(C_i\\), a la cantidad de elementos en la población (muestra) que pertenecen a la clase \\(C_i\\), relativo al total de elementos en la población (muestra). Este número lo denotaremos por \\(f_i\\) y cumplen la propiedad:\n\\[f_i=\\dfrac{n_i}{n} \\Rightarrow \\sum_{i=1}^{k} f_i = \\sum_{i=1}^{k}\\dfrac{n_i}{n} = 1\\]\n\n\n\nLFIS 325 - Semana 1"
-  },
-  {
     "objectID": "slides/lec_week1.html#frecuencia-absoluta",
     "href": "slides/lec_week1.html#frecuencia-absoluta",
     "title": "Estadística para ciencias físicas",
@@ -474,13 +488,6 @@
     "title": "Estadística para ciencias físicas",
     "section": "Frecuencia relativa acumulada",
     "text": "Frecuencia relativa acumulada\nSe llama frecuencia relativa acumulada hasta la clase \\(C_i\\), a la cantidad de elementos en la población (muestra) que pertenecen a las clases \\(C_1,C_2,\\dots,C_i\\), con respecto al total de elementos en la población (muestra). Este número lo denotaremos por \\(F_i\\) y cumplen la propiedad:\n\\[F_i=f_1+f_2+\\dots+f_i=\\sum_{j=1}^{i}f_j, \\hspace{10pt} j=1,2,\\dots,i, \\hspace{10pt} i=1,2,\\dots,k\\]"
-  },
-  {
-    "objectID": "slides/lec_week1.html#ejemplo",
-    "href": "slides/lec_week1.html#ejemplo",
-    "title": "Estadística para ciencias físicas",
-    "section": "Ejemplo",
-    "text": "Ejemplo\nEn un conjunto de resultados experimentales, se desea determinar la clasificación de los resultados obtenidos. Estos son clasificados como: Malos (M), Regulares (R), Buenos (B) y Excelentes (E). Los datos son:\n\n\n\nB\nR\nB\nE\nE\nE\nM\nB\nE\nR\n\n\nR\nM\nM\nR\nR\nM\nR\nB\nB\nB\n\n\nB\nB\nE\nB\nB\nB\nE\nB\nE\nR\n\n\nE\nM\nB\nB\nE\nB\nB\nB\nB\nB\n\n\nM\nR\nM\nB\nB\nB\nB\nE\nM\nR\n\n\n\n\n\n\nLFIS 325 - Semana 1"
   },
   {
     "objectID": "slides/lec_week1.html#ejemplo-enunciado",
@@ -523,13 +530,6 @@
     "title": "Estadística para ciencias físicas",
     "section": "Tabla general",
     "text": "Tabla general\n\n\n\n\nFrecuencias\n\nFrecuencias\nAcumuladas\n\n\n\n\nClases\nAbsoluta\nRelativa\nAbsoluta\nRelativa\n\n\n\\([LI_1-LS_1[\\)\n\\(n_1\\)\n\\(f_1\\)\n\\(N_1\\)\n\\(F_1\\)\n\n\n\\([LI_2-LS_2[\\)\n\\(n_2\\)\n\\(f_2\\)\n\\(N_2\\)\n\\(F_2\\)\n\n\n\\([LI_3-LS_3[\\)\n\\(n_3\\)\n\\(f_3\\)\n\\(N_3\\)\n\\(F_3\\)\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n\\([LI_k-LS_k[\\)\n\\(n_k\\)\n\\(f_k\\)\n\\(N_k\\)\n\\(F_k\\)"
-  },
-  {
-    "objectID": "pages/week2.html",
-    "href": "pages/week2.html",
-    "title": "Semana 2",
-    "section": "",
-    "text": "Leer capítulo 1 de Probability and Statistics for Engineering and the Sciences, 9th Edition."
   },
   {
     "objectID": "slides/lec_week2.html#media-aritmética",
@@ -581,13 +581,6 @@
     "text": "Interpolación\nEn este caso se observa que \\(y=\\mathbf{y}, x=P_{78}, x_2 - x_1= LS-LI=a\\) y \\(y_2 - y_1 = N_i - N_{i-1}=n_i\\)\nLuego despejando \\(x=P_{78}\\), se obtiene una expresión para el cálculo de percentiles en datos agrupados:\n\\[x=P_{78}=x_1+\\left( \\dfrac{y-y_1}{y_2 - y_1} \\right)(x_2 - x_1)=LI+\\left(\\dfrac{y- N_{i-1}}{n_i}\\right)a\\]\npero \\(y\\) no es otra cosa que \\(\\dfrac{n \\times j}{100}\\), donde \\(j\\) es el percentil \\(j-\\)ésimo. Por lo que podemos generalizar la ecuación anterior como:\n\\[P_j=LI+\\left(\\dfrac{\\dfrac{n\\times j}{100}-N_{i-1}}{n_i}\\right)a=LI+\\left(\\dfrac{\\dfrac{j}{100}-F_{i-1}}{f_i}\\right)a\\]"
   },
   {
-    "objectID": "slides/lec_week2.html#e",
-    "href": "slides/lec_week2.html#e",
-    "title": "Estadística para ciencias físicas",
-    "section": "e",
-    "text": "e\nLuego despejando \\(x=P_{78}\\), se obtiene una expresión para el cálculo de percentiles en datos agrupados:\n\\[x=P_{78}=x_1+\\left( \\dfrac{y-y_1}{y_2 - y_1} \\right)(x_2 - x_1)=LI+\\left(\\dfrac{y- N_{i-1}}{n_i}\\right)a\\]\npero \\(y\\) no es otra cosa que \\(\\dfrac{n \\times j}{100}\\), donde \\(j\\) es el percentil \\(j-\\)ésimo. Por lo que podemos generalizar la ecuación anterior como:\n\\[P_j=LI+\\left(\\dfrac{\\dfrac{n\\times j}{100}-N_{i-1}}{n_i}\\right)a=LI+\\left(\\dfrac{\\dfrac{j}{100}-F_{i-1}}{f_i}\\right)a\\]"
-  },
-  {
     "objectID": "slides/lec_week2.html#ejemplo",
     "href": "slides/lec_week2.html#ejemplo",
     "title": "Estadística descriptiva",
@@ -637,13 +630,6 @@
     "text": "Rango intercuartil\nEs la diferencia entre los percentiles 75 y 25, esto es RIQ (IQR)\\(= Q_3 - Q_1\\).\n\nRepresenta el 50% central de la población"
   },
   {
-    "objectID": "slides/lec_week2.html#diagrama-de-caja-box-plot",
-    "href": "slides/lec_week2.html#diagrama-de-caja-box-plot",
-    "title": "Estadística descriptiva",
-    "section": "Diagrama de caja / box-plot",
-    "text": "Diagrama de caja / box-plot"
-  },
-  {
     "objectID": "slides/lec_week2.html#histograma",
     "href": "slides/lec_week2.html#histograma",
     "title": "Estadística descriptiva",
@@ -658,6 +644,13 @@
     "text": "Ojiva"
   },
   {
+    "objectID": "slides/lec_week2.html#diagrama-de-caja-box-plot",
+    "href": "slides/lec_week2.html#diagrama-de-caja-box-plot",
+    "title": "Estadística descriptiva",
+    "section": "Diagrama de caja / box-plot",
+    "text": "Diagrama de caja / box-plot"
+  },
+  {
     "objectID": "slides/lec_week2.html#construcción-box-plot",
     "href": "slides/lec_week2.html#construcción-box-plot",
     "title": "Estadística descriptiva",
@@ -670,13 +663,6 @@
     "title": "Estadística descriptiva",
     "section": "Ejercicio",
     "text": "Ejercicio\nDatos:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(7,12\\)\n\\(7,89\\)\n\\(10,12\\)\n\\(8,88\\)\n\\(10,02\\)\n\\(9,91\\)\n\\(9,95\\)\n\\(9,90\\)\n\n\n\n\n\\(10,23\\)\n\\(9,12\\)\n\\(9,99\\)\n\\(12,40\\)\n\\(8,65\\)\n\\(10,05\\)\n\\(10,50\\)\n\\(9,87\\)\n\n\n\\(8,54\\)\n\\(9,72\\)\n\\(11,09\\)\n\\(11,52\\)\n\\(12,30\\)\n\\(11,53\\)\n\\(16,40\\)\n\\(13,24\\)\n\n\n\n\nRealizar un diagrama de caja"
-  },
-  {
-    "objectID": "pages/week3.html",
-    "href": "pages/week3.html",
-    "title": "Semana 3",
-    "section": "",
-    "text": "Leer capítulo 2 de Probability and Statistics for Engineering and the Sciences, 9th Edition."
   },
   {
     "objectID": "slides/lec_week3.html#escuelas-de-probabilidad",
@@ -721,11 +707,18 @@
     "text": "Principio de adición\nSupongamos que un procedimiento \\(1\\), se puede hacerse de \\(n_1\\) maneras, y que un segundo procedimiento \\(2\\), se puede hacer de \\(n_2\\) maneras. Supongamos además que no es posible que ambos procedimientos, 1 y 2, se realicen. Entonces el número de maneras como se puede hacer el procedimiento 1 ó 2 es de \\(n_1 + n_2\\).\n\nFactorial: Sea \\(n \\in \\mathbb{N}\\), entonces se define \\(n\\) factorial como \\(n \\times (n-1) \\times (n-2) \\times \\dots \\times 1\\), y se simboliza por \\(n!\\) Empleado en situaciones donde una vez seleccionado un elemento, éste puede ser nuevamente seleccionado.\n\n\nEjemplo\nConsidere un grupo de personas conformado por 15 hombres y 10 mujeres. Se eligen 3 personas al azar, la primera será la presidente de la comisión, la segunda vicepresidente y la tercera secretario. ¿De cuantas formas se puede conformar la comisión?"
   },
   {
-    "objectID": "slides/lec_week3.html#conceptos-fundamentales",
-    "href": "slides/lec_week3.html#conceptos-fundamentales",
+    "objectID": "slides/lec_week3.html#permutación",
+    "href": "slides/lec_week3.html#permutación",
     "title": "Probabilidades",
-    "section": "Conceptos fundamentales",
-    "text": "Conceptos fundamentales\n\nEspacio muestral: Se define como el conjunto de todos los posibles resultados del experimento, lo anotamos por \\(\\Omega\\).\nSuceso o evento: Es cualquier subconjunto de \\(\\Omega\\), usualmente lo anotamos con letras mayúsculas. \\((A,B,C,\\dots)\\).\nEspacio de sucesos: Es el conjunto de todos los subconjuntos de \\(\\Omega\\). Lo anotamos por \\(2^{\\Omega}\\).\n\\(\\sigma\\)-álgebra: Es una familia de subconjuntos del espacio de sucesos, \\(\\Sigma \\subset 2^{\\Omega}\\), y que cumplen con ciertas propiedades."
+    "section": "Permutación",
+    "text": "Permutación\nSe define la permutación de \\(r\\) elementos sobre \\(n\\) como el número de arreglos distintos que se pueden hacer con \\(r\\) elementos de un total de \\(n\\), importando el orden en el que salen los elementos, se simboliza por:\n\\[P_{r}^{n}=\\dfrac{n!}{(n-r)!}\\]\n\nEjemplo\nUn directorio compuesto por: Presidente, Secretario y Tesorero se debe elegir de un total de 10 candidatos. ¿Cuántos directorios diferentes se pueden conformar?\n\\[P_{3}^{10}=\\dfrac{10!}{(10-3)!}=\\dfrac{10!}{7!}=720\\]"
+  },
+  {
+    "objectID": "slides/lec_week3.html#combinatoria",
+    "href": "slides/lec_week3.html#combinatoria",
+    "title": "Probabilidades",
+    "section": "Combinatoria",
+    "text": "Combinatoria\nSe define la combinatoria de \\(r\\) elementos sobre \\(n\\) como el número de arreglos distintos que se pueden hacer con \\(r\\) elementos de un total de \\(n\\) sin importar el orden en que son asignados. Esta expresión se anota por:\n\\[C_{r}^{n}={{n}\\choose{r}}=\\dfrac{n!}{r!(n-r)!}\\]\n\nEjemplo\nPara formar un comité se van a elegir a tres personas de un total de 10. El número de grupos diferentes de tres personas que podrían elegirse, sin importar el orden en el que cada uno de los grupos está dado por:\n\\[C_{3}^{10}=\\dfrac{10!}{3!(10-3)!}=\\dfrac{10!}{3!7!}=\\dfrac{720}{6}=120\\]"
   },
   {
     "objectID": "slides/lec_week3.html#clasificación-del-espacio-muestral",
@@ -749,25 +742,11 @@
     "text": "Algunas propiedades\n\n\\(\\mathbb{P}[A]+\\mathbb{P}[A^c]=\\mathbb{P}[\\Omega]\\)\n\\(\\mathbb{P}[\\phi]=1-\\mathbb{P}[\\phi^c]=1-\\mathbb{P}[\\Omega]=0\\)\n\\(\\mathbb{P}[A \\cup B]=\\mathbb{P}[A]+\\mathbb{P}[B] - \\mathbb{P}[A\\cap B]\\) . Si este último término \\((\\mathbb{P}[A\\cap B])\\) es cero, se dice que \\(A\\) y \\(B\\) son eventos mutuamente excluyentes.\n\\(\\mathbb{P}[A-B]=\\mathbb{P}[A\\cap B^c]\\)\n\\(\\mathbb{P}[A \\cap B]=\\mathbb{P}[A]\\mathbb{P}[B]\\). Si \\(A\\) y \\(B\\) son independientes."
   },
   {
-    "objectID": "slides/lec_week3.html#permutación",
-    "href": "slides/lec_week3.html#permutación",
+    "objectID": "slides/lec_week3.html#ejercicio",
+    "href": "slides/lec_week3.html#ejercicio",
     "title": "Probabilidades",
-    "section": "Permutación",
-    "text": "Permutación\nSe define la permutación de \\(r\\) elementos sobre \\(n\\) como el número de arreglos distintos que se pueden hacer con \\(r\\) elementos de un total de \\(n\\), importando el orden en el que salen los elementos, se simboliza por:\n\\[P_{r}^{n}=\\dfrac{n!}{(n-r)!}\\]\n\nEjemplo\nUn directorio compuesto por: Presidente, Secretario y Tesorero se debe elegir de un total de 10 candidatos. ¿Cuántos directorios diferentes se pueden conformar?\n\\[P_{3}^{10}=\\dfrac{10!}{(10-3)!}=\\dfrac{10!}{7!}=720\\]"
-  },
-  {
-    "objectID": "slides/lec_week3.html#combinatoria",
-    "href": "slides/lec_week3.html#combinatoria",
-    "title": "Probabilidades",
-    "section": "Combinatoria",
-    "text": "Combinatoria\nSe define la combinatoria de \\(r\\) elementos sobre \\(n\\) como el número de arreglos distintos que se pueden hacer con \\(r\\) elementos de un total de \\(n\\) sin importar el orden en que son asignados. Esta expresión se anota por:\n\\[C_{r}^{n}={{n}\\choose{r}}=\\dfrac{n!}{r!(n-r)!}\\]\n\nEjemplo\nPara formar un comité se van a elegir a tres personas de un total de 10. El número de grupos diferentes de tres personas que podrían elegirse, sin importar el orden en el que cada uno de los grupos está dado por:\n\\[C_{3}^{10}=\\dfrac{10!}{3!(10-3)!}=\\dfrac{10!}{3!7!}=\\dfrac{720}{6}=120\\]"
-  },
-  {
-    "objectID": "slides/lec_week3.html#ejemplo-3",
-    "href": "slides/lec_week3.html#ejemplo-3",
-    "title": "Probabilidades",
-    "section": "Ejemplo",
-    "text": "Ejemplo\nSea A el evento en el cual un hombre vivirá 10 años más y sea B el evento en el cual su esposa viva 10 años más. Supongamos que \\(\\mathbb{P}(A)=\\frac{1}{4}\\) y \\(\\mathbb{P}(B)=\\frac{1}{3}\\). Supongamos que A y B son eventos independientes, encuentre la probabilidad de que en 10 años:\n\nAmbos estén vivos.\nAl menos uno esté vivo.\nNinguno esté vivo.\nSolamente la esposa esté viva"
+    "section": "Ejercicio",
+    "text": "Ejercicio\nSea A el evento en el cual un hombre vivirá 10 años más y sea B el evento en el cual su esposa viva 10 años más. Supongamos que \\(\\mathbb{P}(A)=\\frac{1}{4}\\) y \\(\\mathbb{P}(B)=\\frac{1}{3}\\). Supongamos que A y B son eventos independientes, encuentre la probabilidad de que en 10 años:\n\nAmbos estén vivos.\nAl menos uno esté vivo.\nNinguno esté vivo.\nSolamente la esposa esté viva"
   },
   {
     "objectID": "slides/lec_week3.html#probabilidades-clásicas",
@@ -775,13 +754,6 @@
     "title": "Probabilidades",
     "section": "Probabilidades clásicas",
     "text": "Probabilidades clásicas\nEste planteamiento probabilista establece que los eventos del espacio muestral sean expresados de la forma más elemental posible, con el fin de poder aceptar la posibilidad de que cada posible resultado sea igualmente posible.\n\\[\\mathbb{P}[A]=\\dfrac{\\#A}{\\#\\Omega}\\]\n\nEjemplo\nConsidere que se tienen 10 sacos de semillas. Se sabe que 4 son de una variedad y el resto de otra. Un cliente compra 3 sacos. ¿Cuál es la probabilidad de que los sacos sean de las dos variedades?\n\n\\(A:{ \\text{Los sacos comprados son de las dos variedades} }\\)\n\\[\\mathbb{P}[A]=\\dfrac{\\#A}{\\#\\Omega}=\\dfrac{ C_{1}^{4} \\times C_{2}^{6} +C_{2}^{4} \\times C_{1}^{6} }{C_{3}^{10}}\\]"
-  },
-  {
-    "objectID": "slides/lec_week3.html#ejercicio",
-    "href": "slides/lec_week3.html#ejercicio",
-    "title": "Probabilidades",
-    "section": "Ejercicio",
-    "text": "Ejercicio\nSea A el evento en el cual un hombre vivirá 10 años más y sea B el evento en el cual su esposa viva 10 años más. Supongamos que \\(\\mathbb{P}(A)=\\frac{1}{4}\\) y \\(\\mathbb{P}(B)=\\frac{1}{3}\\). Supongamos que A y B son eventos independientes, encuentre la probabilidad de que en 10 años:\n\nAmbos estén vivos.\nAl menos uno esté vivo.\nNinguno esté vivo.\nSolamente la esposa esté viva"
   },
   {
     "objectID": "slides/lec_week3.html#probabilidades-condicionales",
@@ -796,13 +768,6 @@
     "title": "Probabilidades",
     "section": "Regla multiplicativa",
     "text": "Regla multiplicativa\nSe refiere a la determinación de la probabilidad de ocurrencia conjunta de dos o más eventos. Para el caso de dos eventos, se tiene:\n\\[\\mathbb{P}[A\\cap B]=\\mathbb{P}[A]\\mathbb{P}[B|A]\\]\nEn el caso de tres eventos, se tiene:\n\\[\\mathbb{P}[A \\cap B \\cap C]=\\mathbb{P}[A] \\mathbb{P}[B|A] \\mathbb{P}[C| (A \\cap B)]\\]"
-  },
-  {
-    "objectID": "slides/lec_week3.html#a",
-    "href": "slides/lec_week3.html#a",
-    "title": "Probabilidades",
-    "section": "a",
-    "text": "a"
   },
   {
     "objectID": "slides/lec_week3.html#diagrama-de-árbol",
@@ -852,5 +817,278 @@
     "title": "Probabilidades",
     "section": "Continuación desarrollo",
     "text": "Continuación desarrollo\nSi la rentabilidad es negativa, ¿Cuál es la probabilidad que no se haya invertido en acciones del tipo A?\nPor enunciado se sabe que \\(\\displaystyle \\mathbb{P}(R\\vert B)=0.6 \\Rightarrow \\mathbb{P}(R^{c}\\vert B)=0.4= \\dfrac{\\mathbb{P}(R^{c}\\cap B)}{\\mathbb{P}(B)}\\), pero\n\\[\\mathbb{P}(B)=0.55 \\Rightarrow \\mathbb{P}(R^{c}\\cap B)= 0.4 * 0.55 = 0.22\\]\nNos piden \\(\\mathbb{P}(B\\vert R^{c})=\\dfrac{\\mathbb{P}(B\\cap R^{c})}{\\mathbb{P}(R^{c})}=\\dfrac{0.22}{(1-\\mathbb{P}(R))}\\).\nPor ítem anterior sabemos que \\(\\mathbb{P}(R)=0.645 \\Rightarrow \\mathbb{P}(R^{c})=1-0.645\\).\nReemplazando,\n\\[\\dfrac{\\mathbb{P}(B\\cap R^{c})}{\\mathbb{P}(R^{c})}=\\dfrac{0.22}{0.355}\\approx 0.62\\]"
+  },
+  {
+    "objectID": "slides/lec_week6.html#tipos-de-variables-aleatorias",
+    "href": "slides/lec_week6.html#tipos-de-variables-aleatorias",
+    "title": "Variables aleatorias",
+    "section": "Tipos de variables aleatorias",
+    "text": "Tipos de variables aleatorias\nSe dice que \\(X\\) es una Variable Aleatoria si es una función que toma valores en probabilidad, es decir, no se puede predecir con certeza sus resultados.\nUna variable aleatoria es siempre cuantitativa y se puede clasificar en los siguientes grupos:\n\\[X(\\omega)\n\\begin{cases}\n\\text{Discreto}\n\\begin{cases}\n\\text{Finito}\\\\\n\\text{Infinito}\n\\end{cases}\\\\\n\\text{Continuo}\n\\begin{cases}\n\\text{Acotados}\\\\\n\\text{No Acotados}\n\\end{cases}\n\\end{cases}\n\\]"
+  },
+  {
+    "objectID": "slides/lec_week6.html#variables-aleatorias-discretas",
+    "href": "slides/lec_week6.html#variables-aleatorias-discretas",
+    "title": "Variables aleatorias",
+    "section": "Variables aleatorias discretas",
+    "text": "Variables aleatorias discretas\nUna variable aleatoria \\(X\\) es llamada discreta si:\n\nSu soporte \\(R_X\\) es un conjunto numerable.\nExiste una función \\(p_X:\\mathbb{R}\\rightarrow [0,1]\\), llamada la función de masa de probabilidad de \\(X\\), tal que, para cualquier \\(x\\in \\mathbb{R}\\):\n\n\n\\[p_X(x)\\begin{cases} \\mathbb{P}(X=x) \\quad &\\text{si } x\\in R_X\\\\ 0 \\quad &\\text{si } x\\notin R_X\\end{cases}\\]\n\n\nEsta función tiene dos características principales:\n\nno-negatividad: \\(p_X(x)\\geq 0\\) para cualquier \\(x\\in \\mathbb{R}\\).\nSuma sobre su soporte es 1: \\(\\sum_{x\\in R_X}p_X(x)=1\\)"
+  },
+  {
+    "objectID": "slides/lec_week6.html#variables-aleatorias-continuas",
+    "href": "slides/lec_week6.html#variables-aleatorias-continuas",
+    "title": "Variables aleatorias",
+    "section": "Variables aleatorias continuas",
+    "text": "Variables aleatorias continuas\nUna variable aleatoria \\(X\\) es llamada continua si:\n\nSu soporte \\(R_X\\) es un conjunto no-numerable.\nExiste una función \\(f_X:\\mathbb{R}\\rightarrow [0,1]\\), llamada función de densidad de probabilidad de \\(X\\), tal que, para cualquier intervalo \\([a,b]\\subseteq \\mathbb{R}\\):\n\n\n\\[\\mathbb{P}(X\\in [a,b])=\\int_{a}^{b}f_X(x)dx\\]\n\n\nEsta función tiene dos características principales:\n\nno-negatividad: \\(f_X(x)\\geq 0\\) para cualquier \\(x\\in \\mathbb{R}\\).\nIntegral sobre \\(\\mathbb{R}\\) es 1: \\(\\int_{-\\infty}^{\\infty} f_X(x)dx=1\\)."
+  },
+  {
+    "objectID": "slides/lec_week6.html#variable-aleatoria-discreta-finita",
+    "href": "slides/lec_week6.html#variable-aleatoria-discreta-finita",
+    "title": "Variables aleatorias",
+    "section": "Variable Aleatoria Discreta Finita",
+    "text": "Variable Aleatoria Discreta Finita\n\\(\\varepsilon\\): Experimento Aleatorio: Lanzamiento de un dado cinco veces.\n\\[\\downarrow\\]\n\\(\\Omega\\): Espacio Muestral: Resultados (par o impar) del primer hasta el quinto lanzamiento.\n\\[\\left\\lbrace (I,I,I,I,I);(P,I,I,P,P);\\cdots\\right\\rbrace\\]\n\\[\\downarrow\\]\n\\(X:\\) Número de pares en 5 lanzamientos.\n\\[\\downarrow\\]\n\\[\\mathbb{R}_{X}:\\left\\lbrace 0,1,2,3,4,5\\right\\rbrace\\]"
+  },
+  {
+    "objectID": "slides/lec_week6.html#variable-aleatoria-discreta-infinita",
+    "href": "slides/lec_week6.html#variable-aleatoria-discreta-infinita",
+    "title": "Variables aleatorias",
+    "section": "Variable Aleatoria Discreta Infinita",
+    "text": "Variable Aleatoria Discreta Infinita\n\\(\\varepsilon\\): Experimento Aleatorio: Lanzamiento de un dado hasta que ocurra el primer par.\n\\[\\downarrow\\]\n\\(\\Omega\\): Espacio Muestral: Resultados (par o impar) del lanzamiento hasta que ocurra el primer par. \\[\\left\\lbrace (P);(I,P);(I,I,P)\\cdots\\right\\rbrace\\]\n\\[\\downarrow \\]\n\\(X:\\) Número lanzamientos hasta que ocurra el primer par\n\\[\\downarrow\\]\n\\[\\mathbb{R}_{X}:\\left\\lbrace 1,2,3,4,5,\\cdots\\right\\rbrace\\]"
+  },
+  {
+    "objectID": "slides/lec_week6.html#variable-aleatoria-continua-no-acotada",
+    "href": "slides/lec_week6.html#variable-aleatoria-continua-no-acotada",
+    "title": "Variables aleatorias",
+    "section": "Variable Aleatoria Continua No Acotada",
+    "text": "Variable Aleatoria Continua No Acotada\n\\(\\varepsilon\\): Experimento Aleatorio: Lanzamiento de un dado hasta que se obtenga un número par.\n\\[\\downarrow\\]\n\\(\\Omega\\): Espacio Muestral: Tiempo necesario hasta que el resultado del lanzamiento del dado sea par. \\[\\mathbb{R}^{+}:[0,\\infty[\\]\n\\[\\downarrow\\]\n\\(X:\\) Tiempo hasta la ocurrencia del primer resultado par.\n\\[\\downarrow\\]\n\\[\\mathbb{R}_{X}:\\mathbb{R}^{+}:[0,\\infty[\\]"
+  },
+  {
+    "objectID": "slides/lec_week6.html#función-de-distribución",
+    "href": "slides/lec_week6.html#función-de-distribución",
+    "title": "Variables aleatorias",
+    "section": "Función de distribución",
+    "text": "Función de distribución\nLas variables aleatorias son usualmente caracterizadas en términos de sus funciones de distribución.\n\nSea \\(X\\) una variable aleatoria. La función de distribución de \\(X\\) es una función \\(F_X:\\mathbb{R}\\rightarrow [0,1]\\) tal que:\n\\[F_X(x)=\\mathbb{P}(X\\leq x), \\forall x\\in \\mathbb{R}\\]\n\n\nSi conocemos la función de distribución de una variable aleatoria \\(X\\), entonces podemos fácilmente calcular la probabilidad que \\(X\\) pertenezca a un intervalo \\((a,b] \\subseteq \\mathbb{R}\\) como:\n\\[\\mathbb{P}(a<X<b)=F_X(b)-F_X(a)\\]"
+  },
+  {
+    "objectID": "slides/lec_week6.html#valores-esperados",
+    "href": "slides/lec_week6.html#valores-esperados",
+    "title": "Variables aleatorias",
+    "section": "Valores esperados",
+    "text": "Valores esperados\nSea \\(X\\) una variable aleatoria, entonces se define el valor esperado de una función real \\(g(X)\\), como:\n\\[\\mathbb{E}[g(X)]= \\begin{cases} \\sum_{x\\in \\mathbb{R}} g(X)P(X=x)\\\\ \\int_{x\\in \\mathbb{R}} g(X)f(x)dx \\end{cases}\\]\nSi \\(g(X)=X\\), diremos que el valor esperado o esperanza matemática de \\(X\\) es:\n\\[\\mathbb{E}(X)=\\begin{cases}\\sum_{x\\in \\mathbb{R}} x P(X=x)\\\\ \\int_{x\\in \\mathbb{R}} x f(x)dx \\end{cases}\\]\nPara variables de tipo discreta y continua, respectivamente."
+  },
+  {
+    "objectID": "slides/lec_week6.html#propiedades-de-los-valores-esperados",
+    "href": "slides/lec_week6.html#propiedades-de-los-valores-esperados",
+    "title": "Variables aleatorias",
+    "section": "Propiedades de los valores esperados",
+    "text": "Propiedades de los valores esperados\nSean \\(a\\) y \\(b\\) constantes, \\(X\\) una variable aleatoria entonces se cumple que:\n\n\\(\\mathbb{E}(a)=a\\)\n\\(\\mathbb{E}(X)=\\mu=\\) constante\n\\(\\mathbb{E}(aX)=a\\mathbb{E}(X)\\)\n\\(\\mathbb{E}(aX+b)=\\mathbb{E}(aX)+\\mathbb{E}(b)=a\\mathbb{E}(X)+b\\)"
+  },
+  {
+    "objectID": "slides/lec_week6.html#varianza",
+    "href": "slides/lec_week6.html#varianza",
+    "title": "Variables aleatorias",
+    "section": "Varianza",
+    "text": "Varianza\nSea \\(X\\) una variable aleatoria, se define el la varianza de \\(X\\) como:\n\\[\\mathbb{E}[(X-\\mathbb{E}(X))^2]=V(X)=\\begin{cases}\\sum_{x\\in\\mathbb{R}} (X-\\mathbb{E}(X))^2P(X=x)\\\\ \\int_{x\\in\\mathbb{R}}(X-\\mathbb{E}(X))^2f_{X}(x)dx\\end{cases}\\]\nPara variables de tipo discreta y continua, respectivamente."
+  },
+  {
+    "objectID": "slides/lec_week6.html#propiedades-de-la-varianza",
+    "href": "slides/lec_week6.html#propiedades-de-la-varianza",
+    "title": "Variables aleatorias",
+    "section": "Propiedades de la varianza",
+    "text": "Propiedades de la varianza\nSea \\(a\\) y \\(b\\) constantes, \\(X\\) una variable aleatoria, entonces se cumple:\n\n\\(\\mathbb{V}(a)=0\\)\n\\(\\mathbb{V}(X)=\\sigma^2=\\) constante\n\\(\\mathbb{V}(aX)=a^2 \\mathbb{V}(X)\\)\n\\(\\mathbb{V}(aX+b)=\\mathbb{V}(aX)+\\mathbb{V}(b)=a^2\\mathbb{V}(X)+0=a^2\\mathbb{V}(X)\\)\n\\(\\mathbb{V}(X)=\\mathbb{E}(X^2)-(\\mathbb{E}(X))^2\\)"
+  },
+  {
+    "objectID": "slides/lec_week6.html#esperanza-y-varianza-condicional",
+    "href": "slides/lec_week6.html#esperanza-y-varianza-condicional",
+    "title": "Variables aleatorias",
+    "section": "Esperanza y varianza condicional",
+    "text": "Esperanza y varianza condicional\nSea \\(X\\) e \\(Y\\) variables aleatorias discretas. La esperanza condicional de \\(X\\) dado que \\(Y=y\\), donde \\(f_{Y}(y)>0\\), se define por:\n\\[\\mathbb{E}[X|Y=y]=\\sum_{x\\in\\mathbb{R}}x\\mathbb{P}(X=x|Y=y)= \\sum_{x\\in\\mathbb{R}} x \\dfrac{\\mathbb{P}(X=x,Y=y)}{\\mathbb{P}(Y=y)}\\]\nNotar que y toma todos los valores del recorrido de \\(Y\\)."
+  },
+  {
+    "objectID": "slides/lec_week6.html#ejemplo-1",
+    "href": "slides/lec_week6.html#ejemplo-1",
+    "title": "Variables aleatorias",
+    "section": "Ejemplo #1",
+    "text": "Ejemplo #1\nSea \\(X\\) una variable aleatoria discreta que tiene la siguiente función de cuantía:\n\\[P_{X}(1)=\\dfrac{1}{2} \\hspace{30pt} P_{X}(2)=\\dfrac{1}{4} \\hspace{30pt} P_{X}(3)=\\dfrac{1}{8} \\hspace{30pt} P_{X}(4)=\\dfrac{1}{8}\\]\n\nEncontrar y graficar la función de distribución acumulada \\(F_{X}(x)\\) de la variable aleatoria \\(X\\).\nEncontrar \\(\\mathbb{P}(X\\leq1)\\), \\(\\mathbb{P}(1<X\\leq3)\\), \\(\\mathbb{P}(1\\leq X \\leq 3)\\)."
+  },
+  {
+    "objectID": "slides/lec_week6.html#resolución-ejemplo-1",
+    "href": "slides/lec_week6.html#resolución-ejemplo-1",
+    "title": "Variables aleatorias",
+    "section": "Resolución ejemplo #1",
+    "text": "Resolución ejemplo #1\nLa función de distribución acumulado está dada por: \\[\\begin{align*}\nF_{X}(x)\n\\begin{cases}\n0 \\hspace{20pt} \\text{si } X< 1\\\\\n\\dfrac{1}{2} \\hspace{20pt} \\text{si } 1 \\leq X < 2  \\\\\n\\dfrac{1}{2}+\\dfrac{1}{4}=\\dfrac{3}{4} \\hspace{20pt} \\text{si } 2\\leq X < 3\\\\\n\\dfrac{3}{4}+\\dfrac{1}{8}=\\dfrac{7}{8} \\hspace{20pt} \\text{si } 3\\leq X < 4\\\\\n1 \\hspace{20pt} \\text{si } X \\geq  4\\\\\n\\end{cases}\n\\end{align*}\\] El gráfico de esta función es igual que graficar una función escalonada."
+  },
+  {
+    "objectID": "slides/lec_week6.html#resolución-ejemplo-1-continuación",
+    "href": "slides/lec_week6.html#resolución-ejemplo-1-continuación",
+    "title": "Variables aleatorias",
+    "section": "Resolución ejemplo #1: continuación",
+    "text": "Resolución ejemplo #1: continuación\nLuego, usando la información dada por la función de distribución.\n\n\\(\\mathbb{P}(X\\leq 1)=F_{X}(1)=\\dfrac{1}{2}\\)\n\\(\\mathbb{P}(1<X\\leq 3)=\\mathbb{P}(X \\leq 3)-\\mathbb{P}(X \\leq 1)=F_{X}(3)-F_{X}(1)=\\dfrac{7}{8}-\\dfrac{1}{2}=\\dfrac{3}{8}\\)\n\\(\\mathbb{P}(1 \\leq X \\leq 3)=\\mathbb{P}(X\\leq 3)=\\dfrac{7}{8}\\)"
+  },
+  {
+    "objectID": "slides/lec_week6.html#ejemplo-2",
+    "href": "slides/lec_week6.html#ejemplo-2",
+    "title": "Variables aleatorias",
+    "section": "Ejemplo #2",
+    "text": "Ejemplo #2\nConsiderar la variable aleatoria discreta \\(X\\) cuya función de cuantía está dada por:\n\\[\\begin{align*}\np_{X}(x)=\\begin{cases}\n\\dfrac{1}{3} \\hspace{20pt} x=-1,0,1\\\\\n0 \\hspace{20pt} e.o.c.\n\\end{cases}\n\\end{align*}\\]\n\n\nGraficar \\(p_{X}(x)\\) y encontrar la esperanza y varianza de X.\nRepetir lo anterior considerando la función de cuantía como:\n\n\n\n\\[\\begin{align*}\np_{X}(x)=\\begin{cases}\n\\dfrac{1}{3} \\hspace{20pt} x=-2,0,2\\\\\n0 \\hspace{20pt} e.o.c.\n\\end{cases}\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "slides/lec_week6.html#resolución-ejemplo-2",
+    "href": "slides/lec_week6.html#resolución-ejemplo-2",
+    "title": "Variables aleatorias",
+    "section": "Resolución ejemplo #2",
+    "text": "Resolución ejemplo #2\nLa esperanza y varianza de la variable aleatoria \\(X\\) la podemos obtener por definición, en el primer caso: \\[\\begin{align*}\n\\mathbb{E}(X)&=-1\\cdot \\mathbb{P}(X=-1)+0\\cdot \\mathbb{P}(X=0)+1\\cdot \\mathbb{P}(X=1)\\\\\n&= -1 \\cdot \\dfrac{1}{3} + 0 + 1\\cdot \\dfrac{1}{3} = 0\\\\\n\\end{align*}\\] y la varianza está dada por: \\[\\begin{align*}\n\\mathbb{V}(X)&=\\mathbb{E}(X^2)-(\\mathbb{E}(X))^2=\\mathbb{E}(X^2)\\\\\n&= -1^2 \\cdot \\mathbb{P}(X=-1)+0\\cdot \\mathbb{P}(X=0)+1^2\\cdot \\mathbb{P}(X=1)\\\\\n&= \\dfrac{1}{3}+0+\\dfrac{1}{3}=\\dfrac{2}{3}\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "slides/lec_week6.html#resolución-ejemplo-2-1",
+    "href": "slides/lec_week6.html#resolución-ejemplo-2-1",
+    "title": "Variables aleatorias",
+    "section": "Resolución ejemplo #2",
+    "text": "Resolución ejemplo #2\nAhora en el segundo caso: \\[\\begin{align*}\n\\mathbb{E}(X)&=-2\\cdot \\mathbb{P}(X=-2)+0\\cdot \\mathbb{P}(X=0)+2\\cdot \\mathbb{P}(X=2)\\\\\n&= -2 \\cdot \\dfrac{1}{3} + 0 + 2\\cdot \\dfrac{1}{3} = 0\\\\\n\\end{align*}\\] y la varianza está dada por: \\[\\begin{align*}\n\\mathbb{V}(X)&=\\mathbb{E}(X^2)-(\\mathbb{E}(X))^2=\\mathbb{E}(X^2)\\\\\n&= -2^2 \\cdot \\mathbb{P}(X=-1)+0\\cdot \\mathbb{P}(X=0)+2^2\\cdot \\mathbb{P}(X=1)\\\\\n&= \\dfrac{4}{3}+0+\\dfrac{4}{3}=\\dfrac{8}{3}\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "slides/lec_week6.html#ejemplo-3",
+    "href": "slides/lec_week6.html#ejemplo-3",
+    "title": "Variables aleatorias",
+    "section": "Ejemplo #3",
+    "text": "Ejemplo #3\nConsidere el lanzamiento de 3 monedas con denominación de \\(1\\), \\(5\\) y \\(10\\) pesos, respectivamente. Sea \\(X\\) la suma de las monedas que caen cara.\n\n¿Cuál es el valor esperado de \\(X\\) dado que dos monedas caen cara?\nSea \\(Y\\) la suma de las monedas que caen cara, y que además, tienen denominación de \\(1\\) o \\(5\\) pesos. ¿Cuál es la esperanza condicional de \\(X\\) dado \\(Y\\)?"
+  },
+  {
+    "objectID": "slides/lec_week6.html#resolución-ejemplo-3",
+    "href": "slides/lec_week6.html#resolución-ejemplo-3",
+    "title": "Variables aleatorias",
+    "section": "Resolución ejemplo 3",
+    "text": "Resolución ejemplo 3\nDefinamos primero el espacio muestral del experimento aleatorio:\n\\[\\Omega=\\{CCC,CCS,CSC,SCC,CSS,SCS,SSC,SSS\\}\\]\nSi definimos el evento \\(B\\) como el evento en que dos monedas caen cara, entonces:\n\\[B=\\{CCS,CSC,SCC\\}\\]\nNos interesa determinar el valor de \\(E(X|B)\\). Primero, notamos que cada punto del evento \\(B\\) tiene una probabilidad de ocurrencia de \\(\\dfrac{1}{8}\\). Luego, obtenemos los valores de la V.A. \\(X\\):\n\\[X(CCS)= 1+5=6, \\hspace{10pt} X(CSC)=1+10=11, \\hspace{10pt} X(SCC)=5+10=15\\]"
+  },
+  {
+    "objectID": "slides/lec_week6.html#resolución-ejemplo-3-continuación",
+    "href": "slides/lec_week6.html#resolución-ejemplo-3-continuación",
+    "title": "Variables aleatorias",
+    "section": "Resolución ejemplo 3: continuación",
+    "text": "Resolución ejemplo 3: continuación\nLuego, calculamos \\(E(X|B)\\) por definición:\n\\[\\mathbb{E}(X|B)=\\dfrac{1}{3/8}\\left( 6 \\dfrac{1}{8}+11\\dfrac{1}{8}+15\\dfrac{1}{8}\\right)=\\dfrac{32}{3}\\]\nPara resolver el ítem b, observamos que \\(Y=\\{0,1,5,6\\}\\) con probabilidades:\n\\[\\mathbb{P}(Y=0)=\\mathbb{P}(Y=1)=\\mathbb{P}(Y=5)=\\mathbb{P}(Y=6)=\\dfrac{1}{4}\\]\nSiguiendo el mismo procedimiento que antes: \\[\\begin{align*}\n\\mathbb{E}(X|\\{Y=0\\})=5,\\hspace{10pt}\\mathbb{E}(X|\\{Y=1\\})=6\\\\\n\\mathbb{E}(X|\\{Y=5\\})=10,\\hspace{10pt}\\mathbb{E}(X|\\{Y=6\\})=11\\\\\n\\end{align*}\\] En donde \\(\\mathbb{E}(X|\\{Y=0\\})=\\dfrac{1}{1/4}\\left(\\dfrac{1}{8}\\overbrace{X(SSC)}^{10}+\\dfrac{1}{8}\\overbrace{X(SSS)}^{0}\\right)=5\\)"
+  },
+  {
+    "objectID": "slides/lec_week6.html#resolución-ejemplo-3-1",
+    "href": "slides/lec_week6.html#resolución-ejemplo-3-1",
+    "title": "Variables aleatorias",
+    "section": "Resolución ejemplo 3",
+    "text": "Resolución ejemplo 3\nAsí, podemos expresar la esperanza condicional de \\(X\\) dado \\(Y\\) como: \\[\\begin{align*}\n\\mathbb{E}(X|Y)(\\omega)\n\\begin{cases}\n5 \\hspace{10pt}\\text{si } Y(\\omega)=0,\\\\\n6 \\hspace{10pt}\\text{si } Y(\\omega)=1,\\\\\n10 \\hspace{10pt}\\text{si } Y(\\omega)=5,\\\\\n11 \\hspace{10pt}\\text{si } Y(\\omega)=6.\\\\\n\\end{cases}\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "slides/lec_week6.html#ejemplo-4",
+    "href": "slides/lec_week6.html#ejemplo-4",
+    "title": "Variables aleatorias",
+    "section": "Ejemplo #4",
+    "text": "Ejemplo #4\nUna variable aleatoria \\(X\\) tiene función de densidad:\n\\[\\begin{align*}\nf(x)=\n\\begin{cases}\n\\dfrac{c}{x^2+1} , & -\\infty < x < \\infty \\\\\n0 ,& e.o.c\\\\\n\\end{cases}\n\\end{align*}\\]\n\nHallar el valor de la constante c.\nHallar la probabilidad de que \\(X^2\\) esté entre \\(\\dfrac{1}{3}\\) y \\(1\\)."
+  },
+  {
+    "objectID": "slides/lec_week6.html#resolución-ejemplo-4",
+    "href": "slides/lec_week6.html#resolución-ejemplo-4",
+    "title": "Variables aleatorias",
+    "section": "Resolución ejemplo #4",
+    "text": "Resolución ejemplo #4\nPara hallar el valor de la constante C, utilizamos las propiedades de la función de densidad: \\(\\int_{-\\infty}^{\\infty} f(x)dx=1\\). Así:\n\\[\\int_{-\\infty}^{\\infty} \\dfrac{c}{x^2+1}dx = c\\tan^{-1}\\Bigg\\vert_{-\\infty}^{\\infty}=c\\left[ \\dfrac{\\pi}{2}-(-\\dfrac{\\pi}{2})\\right]=1\\Rightarrow c=\\dfrac{1}{\\pi}\\]\nLuego, para hallar la probabilidad pedida en el item b:\n\\[\\text{Si } \\dfrac{1}{3}\\leq X^2 \\leq 1, \\text{ entonces } \\dfrac{\\sqrt{3}}{3}\\leq X \\leq 1 \\text{ o } -1 \\leq X \\leq -\\dfrac{\\sqrt{3}}{3}\\]\nPor lo que la probabilidad pedida está dada por:\n\\[\\dfrac{1}{\\pi}\\int_{-1}^{-\\dfrac{\\sqrt{3}}{3}}\\dfrac{dx}{x^2+1}+\\dfrac{1}{\\pi}\\int_{\\dfrac{\\sqrt{3}}{3}}^{1}\\dfrac{dx}{x^2+1}=\\dfrac{2}{\\pi}\\int_{\\dfrac{\\sqrt{3}}{3}}^{1} \\dfrac{dx}{x^2+1}=\\dfrac{1}{6}\\]"
+  },
+  {
+    "objectID": "slides/lec_week6.html#momentos-de-una-variable-aleatoria",
+    "href": "slides/lec_week6.html#momentos-de-una-variable-aleatoria",
+    "title": "Variables aleatorias",
+    "section": "Momentos de una variable aleatoria",
+    "text": "Momentos de una variable aleatoria\nSean \\(X_1,X_2,\\cdots,X_n\\) una muestra aleatoria con función de masa de probabilidad \\(f_{X}\\). Entonces el \\(r\\)-ésimo momento poblacional en torno a cero se define por:\n\\[\\mu_r=\\mathbb{E}[X^r]\\]\ndonde se puede observar, que para el caso de \\(r=1\\), se obtiene la esperanza matemática."
+  },
+  {
+    "objectID": "slides/lec_week6.html#distribución-binomial",
+    "href": "slides/lec_week6.html#distribución-binomial",
+    "title": "Variables aleatorias",
+    "section": "Distribución binomial",
+    "text": "Distribución binomial\nSea \\(X\\) una variable aleatoria que representa el número de éxitos en \\(n\\) ensayos y \\(p\\) la probabilidad de éxito con cualquiera de éstos. Se dice entonces que \\(X\\) tiene una distribución binomial con función de probabilidad:\n\\[\\mathbb{P}(X=k)= {{n}\\choose{k}}p^k(1-p)^{n-k} \\hspace{20pt} k=1,2,\\cdots,n\\]\nEn donde \\(\\displaystyle {{n}\\choose{k}}\\) es el coeficiente binomial, esto es:\n\\[\\displaystyle{{n}\\choose{k}}=\\dfrac{n!}{k!(n-k)!}\\]\nSi \\(n=1\\) diremos que \\(X\\) sigue una distribución Bernoulli."
+  },
+  {
+    "objectID": "slides/lec_week6.html#distribución-binomial-propiedades",
+    "href": "slides/lec_week6.html#distribución-binomial-propiedades",
+    "title": "Variables aleatorias",
+    "section": "Distribución binomial: propiedades",
+    "text": "Distribución binomial: propiedades\nSi \\(X\\) tiene una distribución binomial, entonces se cumple que:\n\n\\(\\mathbb{E}[X]=np\\)\n\\(\\mathbb{V}[X]=np(1-p)\\)\n\n\nEs claro ver que si \\(X\\) tiene una distribución bernoulli, entonces:\n\n\\(\\mathbb{E}[X]=p\\)\n\\(\\mathbb{V}[X]=p(1-p)\\)"
+  },
+  {
+    "objectID": "slides/lec_week6.html#distribución-binomial-gráfico",
+    "href": "slides/lec_week6.html#distribución-binomial-gráfico",
+    "title": "Variables aleatorias",
+    "section": "Distribución binomial: gráfico",
+    "text": "Distribución binomial: gráfico"
+  },
+  {
+    "objectID": "slides/lec_week6.html#distribución-binomial-ejemplo",
+    "href": "slides/lec_week6.html#distribución-binomial-ejemplo",
+    "title": "Variables aleatorias",
+    "section": "Distribución Binomial: ejemplo",
+    "text": "Distribución Binomial: ejemplo\nDurante los últimos años, se ha logrado establecer que el 30% de los alumnos que ingresan por primera vez a cierta Universidad, reprueban todas las asignaturas de primer semestre. Si, en el segundo semestre, se elige al azar a 15 alumnos que ingresaron el semestre anterior a la Universidad.\n\n¿Cuál es la probabilidad que sólo 5 de ellos hayan reprobado todas las asignaturas del primer semestre?\n¿Cuál es la probabilidad que a lo más 13 hayan reprobado todas las asignaturas del primer semestre?\n¿Cuál es la probabilidad de que 8 o más hayan reprobado todas las asignaturas?"
+  },
+  {
+    "objectID": "slides/lec_week6.html#resolución-ejemplo",
+    "href": "slides/lec_week6.html#resolución-ejemplo",
+    "title": "Variables aleatorias",
+    "section": "Resolución ejemplo",
+    "text": "Resolución ejemplo\nLo primero es reconocer que el contexto del problema es posible modelarlo mediante una distribución binomial: número de éxitos dada una probabilidad conocida. Sabemos que para calcular las probabilidades bajo este distribución es necesario saber dicha probabilidad de éxito \\(p\\). Por enunciado sabemos que \\(p=0.3\\) y \\(n=15\\). Luego, definimos la variable aleatoria:\n\\[\\begin{align*}\nX= \\text{N° de alumnos que reprueban todas las asignaturas al ingresar}\\\\\n\\text{ por 1ra vez a cierta Universidad.}\n\\end{align*}\\]\nAhora podemos calcular las probabilidad pedidas, de las cuales debemos reconocer:\n\n\n\\(\\mathbb{P}(X=5)=F_{X}(5)-F_{X}(4)=0.7216-0.5155=0.2061\\)\n\\(\\mathbb{P}(X\\leq 13)=F_{X}(13)\\approx 1\\)\n\\(\\mathbb{P}(X\\geq 8)=1-\\mathbb{P}(X<8)=1-\\mathbb{P}(X\\leq 7)=1-F_{X}(7)=1-0.9500=0.0173\\)\n\n\n\nUtilizamos la notación \\(X\\sim Bin(15,0.3)\\) para mostrar la distribución de la variable aleatoria."
+  },
+  {
+    "objectID": "slides/lec_week6.html#distribución-de-poisson",
+    "href": "slides/lec_week6.html#distribución-de-poisson",
+    "title": "Variables aleatorias",
+    "section": "Distribución de Poisson",
+    "text": "Distribución de Poisson\nSea \\(X\\) una variable aleatoria que representa el número de eventos aleatorios independientes que ocurren a una rapidez constante sobre el tiempo o el espacio. Se dice entonces que la variable aleatoria \\(X\\) tiene una distribución de Poisson con función de probabilidad:\n\\[\\mathbb{P}(X=k)=\\dfrac{e^{-\\lambda}\\lambda^k}{k!} \\hspace{20pt} k=0,1,\\cdots,n,\\cdots\\]\nEn donde \\(\\lambda>0\\) representa el número promedio de ocurrencias del evento aleatorio por unidad de tiempo. Además, si \\(X\\) sigue una distribución de Poisson se cumple que:\n\n\\(\\mathbb{E}[X]=\\lambda\\)\n\\(\\mathbb{V}[X]=\\lambda\\)"
+  },
+  {
+    "objectID": "slides/lec_week6.html#distribución-poisson-gráfico",
+    "href": "slides/lec_week6.html#distribución-poisson-gráfico",
+    "title": "Variables aleatorias",
+    "section": "Distribución Poisson: gráfico",
+    "text": "Distribución Poisson: gráfico"
+  },
+  {
+    "objectID": "slides/lec_week6.html#distribución-de-poisson-ejemplo",
+    "href": "slides/lec_week6.html#distribución-de-poisson-ejemplo",
+    "title": "Variables aleatorias",
+    "section": "Distribución de Poisson: Ejemplo",
+    "text": "Distribución de Poisson: Ejemplo\nEn un estudio invernal de una tienda, se determinó que un articulo se pide en promedio cinco veces por semana (de 5 días), de acuerdo a una distribución Poisson. ¿Cuál es la probabilidad de que en un día especifico, el articulo.\n\nSe pida más de cinco veces.\nNo se pida."
+  },
+  {
+    "objectID": "slides/lec_week6.html#resolución-ejemplo-5",
+    "href": "slides/lec_week6.html#resolución-ejemplo-5",
+    "title": "Variables aleatorias",
+    "section": "Resolución ejemplo",
+    "text": "Resolución ejemplo\nPara resolver este tipo de problemas, lo primero es reconocere que es posible modelar la variable aleatoria mediante una distribución de Poissión. Como la distribución de Poisson tiene un parámetros (\\(\\lambda\\)), este debe ser sabido para poder calcular las probabilidades. Por enunciado sabemos que la tasa de ocurrencia es 5 en una semana. Como siempre definimos la variable aleatoria antes de cualquier cálculo.\n\\[X= \\text{N° de artículos que se pide en una tienda en una semana dada.}\\]\nPor lo que, utilizando la notación adecuada: \\(X\\sim Poisson(5)\\)"
+  },
+  {
+    "objectID": "slides/lec_week6.html#resolución-ejemplo-continuación",
+    "href": "slides/lec_week6.html#resolución-ejemplo-continuación",
+    "title": "Variables aleatorias",
+    "section": "Resolución ejemplo: continuación",
+    "text": "Resolución ejemplo: continuación\n\nNos pregunta la probabilidad que en un día específico se pida más de cinco veces. Nuestra información original (V.A. \\(X\\)) refiera a una semana, por lo que si definimos una nueva variable aleatoria como:\n\n\n\\[Y= \\text{N° de artículos que se pide en una tienda en un día dado.}\\]\nPodemos afirmar que \\(Y\\sim Poisson(1)\\), debido a que se asume una rapidez constante de ocurrencia. Así, lo pedido lo podemos escribir como \\(\\mathbb{P}(Y>5)\\) y calculamos:\n\\[\\mathbb{P}(Y>5)=1-\\mathbb{P}(Y\\leq 5)=1-0.9994=0.0006\\]\n\n\\(\\mathbb{P}(Y=0)=0.3679\\)"
+  },
+  {
+    "objectID": "slides/lec_week6.html#distribución-geométrica",
+    "href": "slides/lec_week6.html#distribución-geométrica",
+    "title": "Variables aleatorias",
+    "section": "Distribución geométrica",
+    "text": "Distribución geométrica\nSea \\(X\\) una variable aleatoria que representa el número de fallas que ocurren antes de que se presente el primer éxito.Se dice entonces que la variable aleatoria \\(X\\) tiene una distribución geométrica con función de probabilidad:\n\\[\\mathbb{P}(X=k)=(1-p)^{k-1}p \\hspace{20pt} k=1,2,\\cdots\\]\nEn donde \\(p\\) es la probabilidad de éxito. Además, Si \\(X\\) sigue una distribución Geométrica, entonces se cumple que:\n\n\\(\\displaystyle \\mathbb{E}[X]=\\dfrac{1}{p}\\)\n\\(\\mathbb{V}[X]=\\dfrac{(1-p)}{p^2}\\)"
+  },
+  {
+    "objectID": "slides/lec_week6.html#distribución-geométrica-gráfico",
+    "href": "slides/lec_week6.html#distribución-geométrica-gráfico",
+    "title": "Variables aleatorias",
+    "section": "Distribución geométrica: gráfico",
+    "text": "Distribución geométrica: gráfico"
+  },
+  {
+    "objectID": "slides/lec_week6.html#distribución-hipergeométrica",
+    "href": "slides/lec_week6.html#distribución-hipergeométrica",
+    "title": "Variables aleatorias",
+    "section": "Distribución hipergeométrica",
+    "text": "Distribución hipergeométrica\nSea \\(N\\) el número total de objetos de una población finita, de manera tal que \\(k\\) de éstos es de un tipo y \\(N-k\\) de otros. Si se selecciona una muestra aleatoria de la población constituida por \\(n\\) objetos de la probabilidad de que \\(x\\) sea de un tipo exactamente y \\(n-x\\) sea del otro, está dada por la función de probabilidad hipergeométrica:\n\\[\\displaystyle \\mathbb{P}(X=x)= \\dfrac{           {{k}\\choose{x}} {{N-k}\\choose{n-x}}  }{  {{N}\\choose{n}}}\\hspace{20pt} x=1,2,\\cdots,n; x \\leq k, n-x\\leq N-k\\]\nSi \\(X\\) sigue una distribución Hipergeométrica, si \\(p=k/N\\)\n\n\\(\\mathbb{E}[X]=np\\)\n\\(\\mathbb{V}[X]=np(1-p)\\left( \\dfrac{N-n}{N-1}\\right)\\)"
+  },
+  {
+    "objectID": "slides/lec_week6.html#distribución-hipergeométrica-gráfico",
+    "href": "slides/lec_week6.html#distribución-hipergeométrica-gráfico",
+    "title": "Variables aleatorias",
+    "section": "Distribución hipergeométrica: gráfico",
+    "text": "Distribución hipergeométrica: gráfico"
   }
 ]

@@ -5,6 +5,7 @@ subtitle: "Revisión prueba y continuación tópicos de variables aleatorias"
 
 ## Preparación
 
+Leer capítulo 3, Probability and Statistics for Engineering and the Sciences, 9th Edition.
 
 ## Presentación
 
@@ -15,3 +16,5 @@ subtitle: "Revisión prueba y continuación tópicos de variables aleatorias"
 ```
 
 ## Material adicional
+
+Leer capítulo 4, Probability and Statistics for Engineering and the Sciences, 9th Edition.
