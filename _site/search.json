@@ -249,7 +249,7 @@
     "href": "pages/week7.html",
     "title": "Semana 7",
     "section": "",
-    "text": "Instalar R y Python.\nSe recomienda también instalar Rstudio y Spyder"
+    "text": "Leer capítulo 5, Probability and Statistics for Engineering and the Sciences, 9th Edition."
   },
   {
     "objectID": "pages/week7.html#presentación",
@@ -263,7 +263,7 @@
     "href": "pages/week7.html#material-adicional",
     "title": "Semana 7",
     "section": "Material adicional",
-    "text": "Material adicional\nCapítulo 1 a 8 de Introducción a R en español\nCapítulo 1 y 2 de Python for probability, statistics, and machine learning"
+    "text": "Material adicional\n\nLeer capítulo 2, Statistical data analysis, Glen Cowan.\nPauta Prueba #2 2020\nPauta Prueba #2 2021\nGuía de ejercicios: Variables aleatorias\nGuía de ejercicios: Variables aleatorias continuas\nGuía de ejercicios: Distribuciones\nGuía de ejercicios: Distribuciones continuas\nGuía de ejercicios: Variables aleatorias bivariadas"
   },
   {
     "objectID": "pages/week8.html#presentación",
@@ -1090,5 +1090,257 @@
     "title": "Variables aleatorias",
     "section": "Distribución hipergeométrica: gráfico",
     "text": "Distribución hipergeométrica: gráfico"
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribución-normal",
+    "href": "slides/lec_week7.html#distribución-normal",
+    "title": "Distribuciones continuas",
+    "section": "Distribución normal",
+    "text": "Distribución normal\nSea \\(X\\) una variable aleatoria que toma valores reales, esto es: \\(-\\infty<x<\\infty\\), diremos que \\(X\\) sigue una distribución normal (o Gaussiana) si su función de densidad está por:\n\\[f_{X}(x)=\\dfrac{1}{\\sqrt{2\\pi}\\sigma}\\exp\\left[ -\\dfrac{1}{2}\\left(\\dfrac{x-\\mu}{\\sigma}\\right) ^2\\right]\\]\nEn donde los parámetros de la distribución son \\(\\mu\\) y \\(\\sigma\\) satisfacen las condiciones:\n\\[\\begin{align*}\n-\\infty<\\mu<\\infty\\\\\n\\sigma^2>0\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "slides/lec_week7.html#propiedades-de-la-distribución-normal",
+    "href": "slides/lec_week7.html#propiedades-de-la-distribución-normal",
+    "title": "Distribuciones continuas",
+    "section": "Propiedades de la distribución normal",
+    "text": "Propiedades de la distribución normal\nSi \\(X\\) sigue una distribución normal de parámetros \\(\\mu\\) y \\(\\sigma\\), entonces se cumple que:\n\n\\(\\mathbb{E}(X)=\\mu\\)\n\\(\\mathbb{V}(X)=E[X^2]-(E[X])^2=\\sigma^2\\)\nSi \\(Y=aX+b\\) entonces \\(Y\\) sigue una distribución normal de parámetros \\(a\\mu+b\\) y \\(a^2\\sigma^2\\), respectivamente. Se escribe: \\(Y \\sim N(a\\mu+b,a^2\\sigma^2)\\)"
+  },
+  {
+    "objectID": "slides/lec_week7.html#densidad-de-la-distribución-normal",
+    "href": "slides/lec_week7.html#densidad-de-la-distribución-normal",
+    "title": "Distribuciones continuas",
+    "section": "Densidad de la distribución normal",
+    "text": "Densidad de la distribución normal"
+  },
+  {
+    "objectID": "slides/lec_week7.html#ejemplo-distribución-normal",
+    "href": "slides/lec_week7.html#ejemplo-distribución-normal",
+    "title": "Distribuciones continuas",
+    "section": "Ejemplo distribución Normal",
+    "text": "Ejemplo distribución Normal\nLa duración de un láser semiconductor a potencia constante tiene una distribución normal con media 7.000 horas y desviación estándar de 600 horas.\n\n¿Cuál es la probabilidad de que el láser falle antes de 5.000 horas?\n¿Cuál es la duración en horas excedida por el 99% de los lasers?\nSi se hace uso de tres láser en un producto y se supone que fallan de manera independiente. ¿Cuál es la probabilidad de que los tres sigan funcionando después de 6700 horas?"
+  },
+  {
+    "objectID": "slides/lec_week7.html#resolución-ejemplo",
+    "href": "slides/lec_week7.html#resolución-ejemplo",
+    "title": "Distribuciones continuas",
+    "section": "Resolución ejemplo",
+    "text": "Resolución ejemplo\nPor enunciado, sabemos que si definimos la variable aleatoria \\(X\\) como:\n\\[X= \\text{Duración de un laser semiconductor a potencia constante.}\\]\nEntonces, podemos afirmar que \\(X\\sim N(7000,600^2)\\). Luego,\n\\[\\begin{align*}\n\\mathbb{P}(X<5000)&=\\mathbb{P}\\left(\\dfrac{X-7000}{600} < \\dfrac{5000-7000}{600}\\right)\\\\\n&=\\mathbb{P}(Z< -3.333); \\hspace{10pt} Z\\sim N(0,1)\\\\\n&=0.0004\n\\end{align*}\\]\ny,\n\\[\\begin{align*}\n&\\mathbb{P}(X>x)=0.99 \\Rightarrow 1-\\mathbb{P}(X\\leq x)=0.99\\\\\n&\\mathbb{P}\\left(\\dfrac{X-7000}{600} \\leq \\dfrac{x-7000}{600}\\right)=\\mathbb{P}(Z\\leq z)=0.01\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "slides/lec_week7.html#resolución-ejemplo-continuación",
+    "href": "slides/lec_week7.html#resolución-ejemplo-continuación",
+    "title": "Distribuciones continuas",
+    "section": "Resolución ejemplo: continuación",
+    "text": "Resolución ejemplo: continuación\n\\[\\mathbb{P}(Z\\leq z)=0.01 \\Rightarrow z=-2.325\\]\nAhora nos devolvemos a la variable original \\(X\\), así:\n\\[-2.325=\\dfrac{x-7000}{600} \\Rightarrow x=5605\\]\nPor lo que, la duración en horas excedida por el 99% de los lasers es de 5605 horas."
+  },
+  {
+    "objectID": "slides/lec_week7.html#resolución-ejemplo-continuación-1",
+    "href": "slides/lec_week7.html#resolución-ejemplo-continuación-1",
+    "title": "Distribuciones continuas",
+    "section": "Resolución ejemplo: continuación",
+    "text": "Resolución ejemplo: continuación\nAhora, para el item c) debemos reconocer como modelar la variable aleatoria del problema. Definimos la variable aleatoria:\n\\[Y= \\text{ N° de lasers que siguen funcionando después de 6700 hrs}\\]\nDebimos reconocer que esta variable aleatoria tiene distribución \\(Bin(3,p)\\) en donde \\(p\\) es la probabilidad que uno de los lasers siga funcionando después de 6700 horas. Por lo que primero calculamos este valor:\n\\[\\begin{align*}\n\\mathbb{P}(X>6700)&=1-\\mathbb{P}(X\\leq 6700)=1-\\mathbb{P}\\left(\\dfrac{X-7000}{600} < \\dfrac{6700-7000}{600}\\right)\\\\\n&=1-\\mathbb{P}(Z<-0.5)=1-.3085=0.6915\n\\end{align*}\\]\nAsí, \\(Y\\sim Bin(3,0.6915)\\). Finalmente, lo preguntado lo planteamos como:\n\\[\\mathbb{P}(Y=3)=\\mathbb{P}(Y\\leq 3)-\\mathbb{P}(Y\\leq 2)= 1- 0.657 = 0.343\\]"
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribución-uniforme",
+    "href": "slides/lec_week7.html#distribución-uniforme",
+    "title": "Distribuciones continuas",
+    "section": "Distribución Uniforme",
+    "text": "Distribución Uniforme\nSea \\(X\\) una variable aleatoria continua, diremos que \\(X\\) sigue una distribución uniforme sobre el intervalo \\((a,b)\\) si su función de densidad de probabilidad está dada por:\n\\[\\begin{align*}\nf_{X}(x)=\\begin{cases}\n1/(b-a) \\hspace{20pt} a\\leq x \\leq b\\\\\n0 \\hspace{20pt} e.o.c\n\\end{cases}\n\\end{align*}\\]\nLos parámetros de la distribución cumplen las condiciones:\n\\[-\\infty<a<\\infty, \\quad  -\\infty<b<\\infty\\]\n\n\\(\\mathbb{E}(X)=\\dfrac{(a+b)}{2}\\)\n\\(\\mathbb{V}(X)=\\dfrac{(b-a)^2}{12}\\)"
+  },
+  {
+    "objectID": "slides/lec_week7.html#densidad-de-la-distribución-uniforme",
+    "href": "slides/lec_week7.html#densidad-de-la-distribución-uniforme",
+    "title": "Distribuciones continuas",
+    "section": "Densidad de la distribución uniforme",
+    "text": "Densidad de la distribución uniforme"
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribución-exponencial",
+    "href": "slides/lec_week7.html#distribución-exponencial",
+    "title": "Distribuciones continuas",
+    "section": "Distribución exponencial",
+    "text": "Distribución exponencial\nSea \\(X\\) una variable aleatoria continua que toma valores positivos, diremos que \\(X\\) sigue una distribución exponencial con parámetro \\(\\alpha>0\\) si su función de densidad está dada por:\n\\[\\begin{align*}\nf_{X}(x)=\\begin{cases}\n\\alpha e^{-\\alpha x} \\hspace{20pt} x\\geq 0 \\\\\n0 \\hspace{20pt} e.o.c\n\\end{cases}\n\\end{align*}\\]\nAdemás se cumple que:\n\n\\(\\mathbb{E}(X)=\\dfrac{1}{\\alpha}\\)\n\\(\\mathbb{V}(X)=\\dfrac{1}{\\alpha^2}\\)"
+  },
+  {
+    "objectID": "slides/lec_week7.html#densidad-de-la-distribución-exponencial",
+    "href": "slides/lec_week7.html#densidad-de-la-distribución-exponencial",
+    "title": "Distribuciones continuas",
+    "section": "Densidad de la distribución exponencial",
+    "text": "Densidad de la distribución exponencial"
+  },
+  {
+    "objectID": "slides/lec_week7.html#función-gamma",
+    "href": "slides/lec_week7.html#función-gamma",
+    "title": "Distribuciones continuas",
+    "section": "Función gamma",
+    "text": "Función gamma\nLa función Gamma denotada por \\(\\Gamma\\) está definida por:\n\\[\\Gamma(p)=\\int_{0}^{\\infty} x^{p-1} e^{-x}dx \\hspace{20pt} p>0\\]\nEsta función cumple las siguientes propiedades:\n\n\\(\\Gamma(n)=(n-1)!\\)\n\\(\\Gamma(1/2)=\\sqrt{\\pi}\\)"
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribución-gamma",
+    "href": "slides/lec_week7.html#distribución-gamma",
+    "title": "Distribuciones continuas",
+    "section": "Distribución gamma",
+    "text": "Distribución gamma\nSea \\(X\\) una variable aleatoria continua que toma valores positivos. Diremos que \\(X\\) sigue una distribución Gamma si su función de densidad está dada por:\n\\[\\begin{align*}\nf_{X}(x)=\\begin{cases}\n\\dfrac{\\alpha}{\\Gamma(r)}(\\alpha x)^{r-1}e^{-\\alpha x} \\hspace{20pt} x>0\\\\\n0 \\hspace{20pt} e.o.c\n\\end{cases}\n\\end{align*}\\]\nEn donde los parámetros \\(r\\) y \\(\\alpha\\) son positivos.\nEs claro ver que un caso particular de la distribución Gamma es la distribución exponencial (\\(r=1\\)). Si \\(X\\) se distribuye Gamma entonces se cumple:\n\n\\(\\mathbb{E}(X)=r/\\alpha\\)\n\\(\\mathbb{V}(X)=r/\\alpha^2\\)"
+  },
+  {
+    "objectID": "slides/lec_week7.html#densidad-de-la-distribución-gamma",
+    "href": "slides/lec_week7.html#densidad-de-la-distribución-gamma",
+    "title": "Distribuciones continuas",
+    "section": "Densidad de la distribución gamma",
+    "text": "Densidad de la distribución gamma"
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribución-chi-cuadrado",
+    "href": "slides/lec_week7.html#distribución-chi-cuadrado",
+    "title": "Distribuciones continuas",
+    "section": "Distribución chi-cuadrado",
+    "text": "Distribución chi-cuadrado\nSea \\(X\\) una variable aleatoria continua que toma valores positivos, diremos que \\(X\\) sigue una distribución chi-cuadrado con \\(k\\) grados de libertad, si su función de densidad de probabilidad está dada por:\n\\[f(x;k)=\n\\begin{cases}\\displaystyle\n\\frac{1}{2^{k/2}\\Gamma(k/2)}\\,x^{(k/2) - 1} e^{-x/2}&\\text{para }x>0,\\\\\n0&\\text{para }x\\le0\n\\end{cases}\\] donde \\(\\Gamma\\) es la función gamma. Si \\(X\\) se distribuye Chi-Cuadrado entonces:\n\n\\(\\mathbb{E}[X]=k\\)\n\\(\\mathbb{V}[X]=2k\\)"
+  },
+  {
+    "objectID": "slides/lec_week7.html#densidad-de-la-distribución-chi-cuadrado",
+    "href": "slides/lec_week7.html#densidad-de-la-distribución-chi-cuadrado",
+    "title": "Distribuciones continuas",
+    "section": "Densidad de la distribución chi-cuadrado",
+    "text": "Densidad de la distribución chi-cuadrado"
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribución-t-student",
+    "href": "slides/lec_week7.html#distribución-t-student",
+    "title": "Distribuciones continuas",
+    "section": "Distribución t-student",
+    "text": "Distribución t-student\nSea \\(X\\) una variable aleatoria continua que toma valores reales, diremos que \\(X\\) sigue una distribución t-student con \\(\\nu\\) grados de libertad, si su función de densidad de probabilidad está dada por:\n\\[f(t) = \\frac{\\Gamma(\\frac{\\nu+1}{2})} {\\sqrt{\\nu\\pi}\\,\\Gamma(\\frac{\\nu}{2})} \\left(1+\\frac{t^2}{\\nu} \\right)^{\\!-\\frac{\\nu+1}{2}},\\!\\]\ndonde \\(\\Gamma\\) es la función gamma. Si \\(X\\) se distribuye t-student entonces:\n\n\\(\\mathbb{E}[X]=0\\) para \\(\\nu>1\\). Indefinida para otros valores.\n\\(\\mathbb{V}[X]=\\dfrac{\\nu}{\\nu -2}\\) para \\(\\nu>2\\). Indefinida para otros valores."
+  },
+  {
+    "objectID": "slides/lec_week7.html#densidad-de-la-distribución-t-student",
+    "href": "slides/lec_week7.html#densidad-de-la-distribución-t-student",
+    "title": "Distribuciones continuas",
+    "section": "Densidad de la distribución t-student",
+    "text": "Densidad de la distribución t-student"
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribuciones-de-probabilidad-bivariada-continuación",
+    "href": "slides/lec_week7.html#distribuciones-de-probabilidad-bivariada-continuación",
+    "title": "Distribuciones continuas",
+    "section": "Distribuciones de probabilidad bivariada: continuación",
+    "text": "Distribuciones de probabilidad bivariada: continuación\nAnálogamente que en distribuciones univariadas, la función de distribución acumulada bivariada es la probabilidad conjunto de que \\(X\\leq x\\), y \\(Y\\leq y\\), dada por:\n\\[F_{X,Y}(x,y)=\\mathbb{P}(X \\leq x, Y \\leq y)=\\sum_{x_i \\leq x} \\sum_{y_i \\leq y} p(x_i,y_i)\\]\nLa función de probabilidad conjunta de dos variables aleatorias da origen a las probabilidad puntuales conjuntas, y la función de distribución bivariada es una función escalonada creciente para cada probabilidad puntual distinta de cero, de manera tal que \\(X=x\\) e \\(Y=y\\)."
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribuciones-de-probabilidad-bivariada-continuación-1",
+    "href": "slides/lec_week7.html#distribuciones-de-probabilidad-bivariada-continuación-1",
+    "title": "Distribuciones continuas",
+    "section": "Distribuciones de probabilidad bivariada: continuación",
+    "text": "Distribuciones de probabilidad bivariada: continuación\nDe igual manera, es posible definir lo anterior para variables aleatorias continuas. Sean \\(X\\) e \\(Y\\) dos variables aleatorias continuas. Si existe una función \\(f(x,y)\\) tal que la probabilidad conjunta:\n\\[\\mathbb{P}(a<X<b,c<Y<d)=\\int_{a}^{b}\\int_{c}^{d}f(x,y)dydx\\]\npara cualquier valor de \\(a,b,c\\) y \\(d\\) en donde \\(f(x,y)\\geq 0\\), \\(-\\infty < x,y < \\infty\\) y,\n\\[\\int_{-\\infty}^{\\infty} \\int_{-\\infty}^{\\infty} f(x,y)dydx =1,\\]\nentonces \\(f(x,y)\\) es la función de densidad de probabilidad bivariada de \\(X\\) e \\(Y\\)."
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribuciones-de-probabilidad-bivariada-continuación-2",
+    "href": "slides/lec_week7.html#distribuciones-de-probabilidad-bivariada-continuación-2",
+    "title": "Distribuciones continuas",
+    "section": "Distribuciones de probabilidad bivariada: continuación",
+    "text": "Distribuciones de probabilidad bivariada: continuación\nLa función de distribución bivariada acumulada de \\(X\\) e \\(Y\\) es la probabilidad conjunta de que \\(X\\leq x\\) y \\(Y\\leq y\\), dada por:\n\\[\\mathbb{P}(X \\leq x , Y \\leq y)=F(x,y)=\\int_{-\\infty}^{x} \\int_{-\\infty}^{y} f(u,v)dv,du\\]\nAsí, la función de densidad bivariadad se encuentra diferenciando \\(F(x,y)\\) con respecto a \\(x\\) e \\(y\\), es decir:\n\\[f(x,y)=\\dfrac{\\partial^2 F(x,y)}{\\partial x \\partial y}\\]"
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribuciones-marginales-de-probabilidad",
+    "href": "slides/lec_week7.html#distribuciones-marginales-de-probabilidad",
+    "title": "Distribuciones continuas",
+    "section": "Distribuciones marginales de probabilidad",
+    "text": "Distribuciones marginales de probabilidad\nSean \\(X\\) e \\(Y\\) dos variables aleatorias discretas con una función de probabilidad conjunta \\(p(x,y)\\). Las funciones marginales de probabilidad de \\(X\\) e \\(Y\\) están dadas por:\n\\[p_X(x)=\\sum_{y} p(x,y)\\]\ny,\n\\[p_Y(y)=\\sum_{x} p(x,y),\\]\nrespectivamente."
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribuciones-marginales-de-probabilidad-1",
+    "href": "slides/lec_week7.html#distribuciones-marginales-de-probabilidad-1",
+    "title": "Distribuciones continuas",
+    "section": "Distribuciones marginales de probabilidad",
+    "text": "Distribuciones marginales de probabilidad\nSean \\(X\\) e \\(Y\\) dos variables aleatorias continuas con una función de densidad de probabilidad conjunta \\(f(x,y)\\). Las funciones de densidad de probabilidad de \\(X\\) E \\(Y\\) están dadas por:\n\\[f_X(x)=\\int_{-\\infty}^{x}f(x,y)dy\\]\ny,\n\\[f_Y(y)=\\int_{-\\infty}^{y}f(x,y)dx\\]"
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribuciones-marginales-de-probabilidad-continuación",
+    "href": "slides/lec_week7.html#distribuciones-marginales-de-probabilidad-continuación",
+    "title": "Distribuciones continuas",
+    "section": "Distribuciones marginales de probabilidad: continuación",
+    "text": "Distribuciones marginales de probabilidad: continuación\nPara variables aleatorias continuas conjuntas, si se conoce la función de distribución acumulada \\(F(x,y)\\), las distribuciones acumuladas marginales de \\(X\\) e \\(Y\\) se obtienen de la siguiente forma:\n\\[\\mathbb{P}(X\\leq x)=F_X(x)=\\int_{-\\infty}^{x} \\int_{-\\infty}^{\\infty} f(t,y)dydt\\]\ny,\n\\[F_X(x)=\\int_{-\\infty}^{x} f_X(t)dt=F(x,\\infty)\\]\nDe manera similar,\n\\[\\mathbb{P}(Y\\leq y)=F_Y(y)=\\int_{-\\infty}^{y} \\int_{-\\infty}^{\\infty} f(x,t)dydt\\]"
+  },
+  {
+    "objectID": "slides/lec_week7.html#valores-esperados-y-momentos-para-distribuciones-bivariadas",
+    "href": "slides/lec_week7.html#valores-esperados-y-momentos-para-distribuciones-bivariadas",
+    "title": "Distribuciones continuas",
+    "section": "Valores esperados y momentos para distribuciones bivariadas",
+    "text": "Valores esperados y momentos para distribuciones bivariadas\nSean \\(X\\) e \\(Y\\) dos variables aleatorias que se distribuyen conjuntamente. El valor esperado de una función de \\(X\\) y de \\(Y\\), \\(g(x,y)\\) se define como:\n\\[\\mathbb{E}(g(X,Y))=\\sum_{x} \\sum_y g(x,y)p(x,y)\\]\nsi \\(X\\) e \\(Y\\) son V.A. discretas, o\n\\[\\mathbb{E}(g(X,Y))=\\int_{-\\infty}^{\\infty} \\int_{-\\infty}^{\\infty} g(x,y) f(x,y) dydx\\]\nsi \\(X\\) e \\(Y\\) son continuas, en donde \\(p(x,y)\\) y \\(f(x,y)\\) son las funciones de probabilidad y de densidad de probabilidad conjuntas, respectivamente."
+  },
+  {
+    "objectID": "slides/lec_week7.html#momentos-para-distribuciones-bivariadas",
+    "href": "slides/lec_week7.html#momentos-para-distribuciones-bivariadas",
+    "title": "Distribuciones continuas",
+    "section": "Momentos para distribuciones bivariadas",
+    "text": "Momentos para distribuciones bivariadas\nEl \\(r-\\)ésimo momento de \\(X\\) alrededor del cero es:\n\\[\\mathbb{E}(X^r)=\\int_{-\\infty}^{\\infty} \\int_{-\\infty}^{\\infty} x^r f(x,y)dydx=\\int_{-\\infty}^{\\infty}x^r f_X(x)dx\\]\nPor lo que el \\(r\\) y \\(s-\\)ésimo momento producto de \\(X\\) e \\(Y\\) alrededor del origen es:\n\\[\\mathbb{E}(X^r Y^s)=\\int_{-\\infty}^{\\infty} \\int_{-\\infty}^{\\infty} x^r y^s f(x,y)dydx\\]\ny alrededor de las medias es:\n\\[\\mathbb{E}((X-\\mu_X)^r(Y-\\mu_Y)^s)=\\int_{-\\infty}^{\\infty}\\int_{-\\infty}^{\\infty}(x-\\mu_X)^r(y-\\mu_Y)^sf(x,y)dydx\\]\nen donde \\(r\\) y \\(s\\) son enteros, no negativos."
+  },
+  {
+    "objectID": "slides/lec_week7.html#momentos-para-distribuciones-bivariadas-continuación",
+    "href": "slides/lec_week7.html#momentos-para-distribuciones-bivariadas-continuación",
+    "title": "Distribuciones continuas",
+    "section": "Momentos para distribuciones bivariadas: continuación",
+    "text": "Momentos para distribuciones bivariadas: continuación\nEs de particular importancia el momento producto alrededor de las medias cuando \\(r=s=1\\). Este momento producto recibe el nombre de covarianza de \\(X\\) e \\(Y\\), y se encuentra definido por:\n\\[COV(X,Y)=\\mathbb{E}((X-\\mu_X)(Y-\\mu_Y))\\]\nAl igual que la varianza, que es una medida de dispersión de una variable aleatoria, la covarianza es una medida de variabilidad conjunta de \\(X\\) y de \\(Y\\). De esta forma, la covarianza es una medida de asociación entre los valores de \\(X\\) y de \\(Y\\) y sus respectivas dispersiones. La expresión anterior puede ser reescrita de la forma:\n\\[COV(X,Y)=\\mathbb{E}(XY)-\\mathbb{E}(X)\\mathbb{E}(Y)\\]"
+  },
+  {
+    "objectID": "slides/lec_week7.html#momentos-para-distribuciones-bivariadas-continuación-1",
+    "href": "slides/lec_week7.html#momentos-para-distribuciones-bivariadas-continuación-1",
+    "title": "Distribuciones continuas",
+    "section": "Momentos para distribuciones bivariadas: continuación",
+    "text": "Momentos para distribuciones bivariadas: continuación\nSi la covarianza de \\(X\\) y de \\(Y\\) se divide por el producto de las desviaciones estándar de \\(X\\) y de \\(Y\\), el resultado es una cantidad sin dimensiones que recibe el nombre de coeficiente de correlación y que se denota por \\(\\rho(X,Y)\\), esto es:\n\\[\\rho(X,Y)=\\dfrac{COV(X,Y)}{\\sigma_x \\sigma_y}\\]\nSe puede demostrar que el coeficiente de correlación \\(\\rho \\in [-1,1]\\)"
+  },
+  {
+    "objectID": "slides/lec_week7.html#variables-aleatorias-independientes",
+    "href": "slides/lec_week7.html#variables-aleatorias-independientes",
+    "title": "Distribuciones continuas",
+    "section": "Variables aleatorias independientes",
+    "text": "Variables aleatorias independientes\nSean \\(X\\) e \\(Y\\) dos variables aleatorias con una distribución conjunta. Se dice que \\(X\\) e \\(Y\\) son estadísticamente independientes sí y sólo si,\n\\[p(x,y)=p_X(x)p_Y(y)\\hspace{20pt} \\text{ Si X e Y son discretas}\\]\no bien,\n\\[f(x,y)=f_X(x)f_Y(y)\\hspace{20pt} \\text{ Si X e Y son continuas}\\]\npara toda \\(x\\) e \\(y\\), en donde \\(p(x,y)\\) y \\(f(x,y)\\) son las funciones bivariadas de probabilidad y de densidad de probabilidad, respectivamente."
+  },
+  {
+    "objectID": "slides/lec_week7.html#variables-aleatorias-independientes-continuación",
+    "href": "slides/lec_week7.html#variables-aleatorias-independientes-continuación",
+    "title": "Distribuciones continuas",
+    "section": "Variables aleatorias independientes: continuación",
+    "text": "Variables aleatorias independientes: continuación\nSe desprende de la definición anterior que si \\(X\\) e \\(Y\\) son V.A. independientes, la probabilidad conjunta:\n\\[\\mathbb{P}(a<X<b,c<Y<d)=\\mathbb{P}(a<X<b)\\mathbb{P}(c<Y<d)\\]\ny por lo anterior,\n\\[\\mathbb{E}(XY)=\\mathbb{E}(X)\\mathbb{E}(Y)\\]\nY si \\(X\\) e \\(Y\\) son V.A. independientes, entonces \\(COV(X,Y)=\\rho(X,Y)=0\\),mas no el converso no es necesariamente cierto."
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribuciones-de-probabilidad-condicional",
+    "href": "slides/lec_week7.html#distribuciones-de-probabilidad-condicional",
+    "title": "Distribuciones continuas",
+    "section": "Distribuciones de probabilidad condicional",
+    "text": "Distribuciones de probabilidad condicional\nSean \\(X\\) e \\(Y\\) dos variables aleatorias con una función de densidad conjunta de probabilidad \\(f(x,y)\\). La función de densidad de probabilidad condicional de la variable aleatoria \\(X\\), denotada por \\(f(x|y)\\), para un valor fijo \\(y\\) de \\(Y\\), está definida por:\n\\[f(x|y)=\\dfrac{f(x,y)}{f_Y(y)}\\]\nen donde \\(f_Y(y)\\) es la función de densidad marginal de \\(Y\\) de manera tal que \\(f_Y(y)>0\\). Es claro ver que bajo independencia de estas variables aleatorias, se tiene:\n\\[f(x|y)=f_X(x)\\]"
+  },
+  {
+    "objectID": "slides/lec_week7.html#distribuciones-de-probabilidad-condicional-continuación",
+    "href": "slides/lec_week7.html#distribuciones-de-probabilidad-condicional-continuación",
+    "title": "Distribuciones continuas",
+    "section": "Distribuciones de probabilidad condicional: continuación",
+    "text": "Distribuciones de probabilidad condicional: continuación\nLos valores esperados se definen de manera análoga a lo visto anteriormente, esto es:\n\\[\\mathbb{E}(X|y)=\\int_{-\\infty}^{\\infty}xf(x|y)dx\\]\ny,\n\\[\\mathbb{E}(Y|x)=\\int_{-\\infty}^{\\infty}yf(y|x)dy\\]"
+  },
+  {
+    "objectID": "slides/lec_week7.html#ejemplo",
+    "href": "slides/lec_week7.html#ejemplo",
+    "title": "Distribuciones continuas",
+    "section": "Ejemplo",
+    "text": "Ejemplo\nLa función de probabilidad conjunta de dos variables aleatorias discretas \\(X, Y\\) está dada por \\(f(x,y) = c(2x+y)\\), donde \\(x,y\\) pueden tomar todos los valores enteros tales que \\(0\\leq x \\leq 2,0\\leq y \\leq 3\\), y \\(f(x,y)=0\\) de otra forma.\n\nHallar el valor de la constante c\nHallar \\(\\mathbb{P}(X=2,Y=1)\\)\nHallar \\(\\mathbb{P}(X\\geq 1, Y\\leq 2)\\)"
+  },
+  {
+    "objectID": "slides/lec_week7.html#resolución-ejemplo-1",
+    "href": "slides/lec_week7.html#resolución-ejemplo-1",
+    "title": "Distribuciones continuas",
+    "section": "Resolución ejemplo",
+    "text": "Resolución ejemplo\nNotamos que las V.A. toman sólo los valores entero, por lo que c lo obtenemos como:\n\\[\\begin{align*}\n\\sum_{x=0}^{2}\\sum_{y=0}^{3} c(2x+y)=1\n\\end{align*}\\]\nPodemos resumir los valores que toma la función de cuantía como:\n\nPor lo que \\(c=\\dfrac{1}{42}\\)"
+  },
+  {
+    "objectID": "slides/lec_week7.html#resolución-ejemplo-continuación-2",
+    "href": "slides/lec_week7.html#resolución-ejemplo-continuación-2",
+    "title": "Distribuciones continuas",
+    "section": "Resolución ejemplo: continuación",
+    "text": "Resolución ejemplo: continuación\nPara el ítem 2. \\(\\mathbb{P}(X=2,Y=3)\\) basta notar la celda correspondiente en la tabla construida reemplazando c apropiadamente, por lo que \\(\\mathbb{P}(X=2,Y=3)=7c=\\dfrac{7}{42}\\)\nPara el ítem 3. Reconocemos que:\n\\[\\begin{align*}\n\\mathbb{P}(X\\geq 1,Y\\leq 2)&=\\mathbb{P}(X=1,Y=0)+\\mathbb{P}(X=2,Y=0)\\\\\n&+\\mathbb{P}(X=1,Y=1)+\\mathbb{P}(X=2,Y=1)\\\\\n&+\\mathbb{P}(X=1,Y=2)+\\mathbb{P}(X=2,Y=2)\\\\\n&=2c+4c+3c+5c+4c+6c=24c=\\dfrac{24}{42}\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "pages/week8.html",
+    "href": "pages/week8.html",
+    "title": "Semana 8",
+    "section": "",
+    "text": "Estudiar pruebas de años anteriores\nDesarrollar guía de ejercicios\nLeer capítulo 6 y 7, Probability and Statistics for Engineering and the Sciences, 9th Edition."
   }
 ]
