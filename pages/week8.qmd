@@ -7,7 +7,7 @@ subtitle: "Introducción a inferencia estadística"
 
 - Estudiar pruebas de años anteriores
 - Desarrollar guía de ejercicios
-- Leer capítulo 6 y 7, Probability and Statistics for Engineering and the Sciences, 9th Edition.
+- Leer capítulo 8, Probability and Statistics for Engineering and the Sciences, 9th Edition.
 
 ## Presentación
 
@@ -18,3 +18,5 @@ subtitle: "Introducción a inferencia estadística"
 ```
 
 ## Material adicional
+
+- [Guía de ejercicios](../documents/Prueba_2/exercises_ci.pdf)

@@ -277,7 +277,7 @@
     "href": "pages/week8.html#material-adicional",
     "title": "Semana 8",
     "section": "Material adicional",
-    "text": "Material adicional"
+    "text": "Material adicional\n\nGuía de ejercicios"
   },
   {
     "objectID": "pages/week9.html#presentación",
@@ -1341,6 +1341,146 @@
     "href": "pages/week8.html",
     "title": "Semana 8",
     "section": "",
-    "text": "Estudiar pruebas de años anteriores\nDesarrollar guía de ejercicios\nLeer capítulo 6 y 7, Probability and Statistics for Engineering and the Sciences, 9th Edition."
+    "text": "Estudiar pruebas de años anteriores\nDesarrollar guía de ejercicios\nLeer capítulo 8, Probability and Statistics for Engineering and the Sciences, 9th Edition."
+  },
+  {
+    "objectID": "slides/lec_week8.html#parámetro-y-espacio-paramétrico",
+    "href": "slides/lec_week8.html#parámetro-y-espacio-paramétrico",
+    "title": "Introducción a inferencia estadística",
+    "section": "Parámetro y espacio paramétrico",
+    "text": "Parámetro y espacio paramétrico\n\nParámetro: Es una característica numérica de la distribución de la población, que describe, parcial o completamente, la función de masa de probabilidad de la característica de interés, habitualmente se simboliza por la letra griega \\(\\theta\\).\nEspacio paramétrico: Es el conjunto de posibles valores que puede(n) ser considerado(s) para el(los) parámetro(s). Se simboliza por la letra griega mayúscula \\(\\Theta\\)."
+  },
+  {
+    "objectID": "slides/lec_week8.html#método-de-máxima-verosimilitud",
+    "href": "slides/lec_week8.html#método-de-máxima-verosimilitud",
+    "title": "Introducción a inferencia estadística",
+    "section": "Método de máxima verosimilitud",
+    "text": "Método de máxima verosimilitud\nEl método de máxima verosimilitud consiste en encontrar el valor(es) del parámetro(s) que maximiza la función de masa (densidad) de probabilidad conjunta de la muestra, llamada verosimilitud.\n\n\nFunción de verosimilitud: Sean \\(X_1,\\cdots,X_n\\) una muestra aleatoria con función de masa(densidad) de probabilidad \\(f(X;\\theta)\\) y sea \\(L(\\theta,;X_1,\\cdots,X_n)\\) la verosimilitud de la muestra como función de \\(\\theta\\), la cual se representa por:\n\n\n\n\\[L(\\theta;x)=L(\\theta,;X_1,\\cdots,X_n)=f(x_1;\\theta)\\times f(x_2;\\theta)\\times \\cdots f(x_n;\\theta)\\]\n\n\nEl método de máxima verosimilitud busca \\(\\widehat{\\theta}(x_1,\\cdots,x_n)\\) función que depende sólo de la muestra que maximiza \\(L(\\theta;x)\\). Para obtener estimadores máximo verosímiles se utilizan las herramientas de cálculo matemático, además para simplificar los cálculos se utiliza el logaritmo de la verosimilitud, llamada función de logverosimilitud, representado por:\n\\[l(\\theta;x)=\\ln (L(\\theta;x))\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#método-de-mínimos-cuadrados",
+    "href": "slides/lec_week8.html#método-de-mínimos-cuadrados",
+    "title": "Introducción a inferencia estadística",
+    "section": "Método de mínimos cuadrados",
+    "text": "Método de mínimos cuadrados\nSupongamos que tenemos \\(\\mathbb{E}(Y)=\\alpha X + \\beta\\), donde \\(\\alpha,\\beta\\) y \\(X\\) son tal como en una regresión lineal simple. Sea \\((x_1,Y_1),\\dots,(x_n,Y_n)\\) una muestra aleatoria de \\(Y\\). Los estimadores mínimos cuadrados de los parámetros \\(\\alpha,\\beta\\) son los valores de \\(\\alpha\\) y \\(\\beta\\) que minimizan:\n\\[\\sum_{i=1}^{N} [Y_i - (\\alpha x_i +\\beta)]^2\\]\nPara poder obtener las estimaciones para \\(\\alpha\\) y \\(\\beta\\), procedemos de la siguiente manera:\nSea \\(S(\\alpha,\\beta)=\\sum_{i=1}^{N} [Y_i - (\\alpha x_i +\\beta)]^2\\). Para minimizar \\(S(\\alpha,\\beta)\\), debemos resolver las ecuaciones:\n\\[\\dfrac{\\partial S}{\\partial \\alpha}=0 \\hspace{20pt}\\text{y}\\hspace{20pt}\\dfrac{\\partial S}{\\partial \\beta}=0\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#método-de-mínimos-cuadrados-desarrollo",
+    "href": "slides/lec_week8.html#método-de-mínimos-cuadrados-desarrollo",
+    "title": "Introducción a inferencia estadística",
+    "section": "Método de mínimos cuadrados: desarrollo",
+    "text": "Método de mínimos cuadrados: desarrollo\nDerivando, obtenemos:\n\\[\\dfrac{\\partial S}{\\partial \\alpha}=\\sum_{i=1}^{n}2[Y_i - (\\alpha x_i + \\beta)](-x_i)=-2\\sum_{i=1}^{n}[x_i Y_i - \\alpha x_{i}^{2} - \\beta x_i]\\]\ny,\n\\[\\dfrac{\\partial S}{\\partial \\beta}=\\sum_{i=1}^{n}2[Y_i - (\\alpha x_i + \\beta)](-1)=-2\\sum_{i=1}^{n}[Y_i - \\alpha x_{i} - \\beta]\\]\nLuego, igualando a cero, se tiene que:\n\\[\\alpha\\sum_{i=1}^{n} x_{i}^{2} + \\beta \\sum_{i=1}^{n} x_i = \\sum_{i=1}^{n} x_i Y_i \\qquad \\text{y,} \\qquad \\alpha \\sum_{i=1}^{n} x_i + n\\beta=\\sum_{i=1}^{n} Y_i\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#método-de-mínimos-cuadrados-desarrollo-1",
+    "href": "slides/lec_week8.html#método-de-mínimos-cuadrados-desarrollo-1",
+    "title": "Introducción a inferencia estadística",
+    "section": "Método de mínimos cuadrados: desarrollo",
+    "text": "Método de mínimos cuadrados: desarrollo\nTenemos dos ecuaciones lineales y dos incógnitas, por lo que podemos obtener soluciones para \\(\\alpha\\) y \\(\\beta\\), así:\n\\[\\hat{\\alpha}=\\dfrac{\\sum_{i=1}^{n} Y_i (x_i - \\overline{x})}{\\sum_{i=1}^{n} (x_i-\\overline{x})^2}\\hspace{20pt}\\text{donde}\\hspace{20pt}\\overline{x}=\\dfrac{1}{n}\\sum_{i=1}^{n}x_i\\]\n\\[\\hat{\\beta}=\\overline{Y}-\\hat{\\alpha}\\overline{x}\\hspace{20pt}\\text{donde}\\hspace{20pt}\\overline{Y}=\\dfrac{1}{n}\\sum_{i=1}^{n}Y_i\\]\nEstas soluciones siempre se pueden obtener y son únicas si \\(\\sum_{i=1}^{n}(x_i-\\overline{x})^2\\neq 0\\).\nSin embargo, esta condición se satisface cuando no todos los \\(x_i\\) son iguales. En cuanto a la estimación de \\(\\sigma^2\\), esta no puede obtenida mediante este método."
+  },
+  {
+    "objectID": "slides/lec_week8.html#estimadores-insesgados",
+    "href": "slides/lec_week8.html#estimadores-insesgados",
+    "title": "Introducción a inferencia estadística",
+    "section": "Estimadores insesgados",
+    "text": "Estimadores insesgados\nConsideramos una muestra aleatoria, \\(X_1,X_2,\\cdots,X_n\\) y \\(T=T(X_1,X_2,\\cdots,X_n)\\) una función de la muestra, entonces \\(T\\) es llamada un estadística. Cuando una estadística \\(T\\), se utiliza con fines de estimación recibe el nombre de estimador. En general, se desea que los estimadores tengan algunas propiedades especiales.\n\nEstimadores Insesgados: Sea \\(T\\) un estimador (estadística) de un parámetro \\(\\theta\\), se dice que \\(T\\) es un estimador insesgado (o libre de sesgo), si \\(E[T]=\\theta\\), para todos los posibles valores de \\(\\theta\\).\n\n\nEn otras palabras, lo que se desea es que el estimador \\(T\\), en promedio (promediando sobre todas las posibles muestras), sea igual a \\(\\theta\\), “lo que se desea estimar”, bajo la hipótesis que la distribución de probabilidad de la población propuesta es correcta."
+  },
+  {
+    "objectID": "slides/lec_week8.html#error-cuadrático-medio",
+    "href": "slides/lec_week8.html#error-cuadrático-medio",
+    "title": "Introducción a inferencia estadística",
+    "section": "Error cuadrático medio",
+    "text": "Error cuadrático medio\nSea \\(T\\) un estimador de un parámetro \\(\\theta\\), se define el error cuadrático medio de \\(T\\), como el valor esperado del cuadrado de la diferencia entre \\(T\\) y \\(\\theta\\), y se anota \\(ECM(T)\\), esto es:\n\\[ECM(T)=E[(T-\\theta)^2]\\]\nSi de desarrolla la expresión, podemos reescribir lo anterior de la forma:\n\\[ECM(T)=V[T]+(E[T]-\\theta)^2\\]\nEl error cuadrático medio de un estimador \\(T\\), es la suma de dos cantidades no negativas: una es la varianza del estimador, mientras que la otra es el sesgo al cuadrado.\nUn criterio para seleccionar un estimador, es que posea el ECM más pequeño entre los posibles estimadores de \\(\\theta\\)."
+  },
+  {
+    "objectID": "slides/lec_week8.html#eficiencia-relativa",
+    "href": "slides/lec_week8.html#eficiencia-relativa",
+    "title": "Introducción a inferencia estadística",
+    "section": "Eficiencia relativa",
+    "text": "Eficiencia relativa\nSean \\(T_1\\) y \\(T_2\\) dos estimadores de \\(\\theta\\). Se define la eficiencia relativa entre \\(T_1\\) y \\(T_2\\) como:\n\\[Ef(T_1;T_2)=\\dfrac{ECM(T_1)}{ECM(T_2)}\\]\nSi la eficiencia relativa es menor que uno, se concluye que el estimador \\(T_1\\) es más eficiente que el estimador \\(T_2\\), en caso contrario, se concluye que el estimador \\(T_1\\) es más eficiente que el estimador \\(T_2\\)."
+  },
+  {
+    "objectID": "slides/lec_week8.html#consistencia",
+    "href": "slides/lec_week8.html#consistencia",
+    "title": "Introducción a inferencia estadística",
+    "section": "Consistencia",
+    "text": "Consistencia\nLa consistencia mide la capacidad del estimador de acercarse cada vez más al verdadero valor del parámetro, a medida que el tamaño de muestra crece.\n\\[ T_n \\overset{p}{\\to} \\theta\\]\n\nConsistencia en media cuadrática:\n\n\nUn estimador \\(T\\), de un parámetro desconocido \\(\\theta\\), se dice consistente en media cuadrática, si se cumple:\n\\[\\lim_{n\\rightarrow\\infty} ECM(T_n)=0\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#definición-intervalo-de-confianza",
+    "href": "slides/lec_week8.html#definición-intervalo-de-confianza",
+    "title": "Introducción a inferencia estadística",
+    "section": "Definición intervalo de confianza",
+    "text": "Definición intervalo de confianza\nSea \\(X_1,X_2,\\cdots,X_n\\) una muestra aleatoria desde \\(f(x;\\theta)\\), donde \\(f(x;\\theta)\\) es una función de masa (densidad) de probabilidades dependiendo de un parámetro desconocido \\(\\theta\\). Sean \\(T_1\\) y \\(T_2\\) dos estadísticos tales que \\(T_1(x)<T_2(x)\\) para casi todo \\(x\\) y\n\\[\\mathbb{P}(T_1\\leq\\theta \\leq T_2)=\\gamma,\\]\ndonde \\(\\gamma\\) no depende de \\(\\theta\\). Se dice que \\([T_1,T_2]\\) es un intervalo de confianza para \\(\\theta\\) con \\(100\\gamma \\%\\) de confianza.\n\n\\(T_1\\) y \\(T_2\\) reciben el nombre de cota inferior y superior de confianza, respectivamente.\n\\(\\gamma\\) recibe el nombre de coeficiente de confianza.\n\n\\([T_1,T_2]\\) es un intervalo aleatorio, ya que sus extremos son variables aleatorias."
+  },
+  {
+    "objectID": "slides/lec_week8.html#cantidad-pivotal",
+    "href": "slides/lec_week8.html#cantidad-pivotal",
+    "title": "Introducción a inferencia estadística",
+    "section": "Cantidad pivotal",
+    "text": "Cantidad pivotal\nExisten técnicas para construir intervalos (regiones) de confianza, y una de ellas es la del pivote.\n\nSea \\(X_1,X_2,\\cdots,X_n\\) una muestra aleatoria \\(n\\) desde \\(f(x;\\theta)\\) y \\(Q=Q(X_1,X_2,\\cdots,X_n)\\). Si la distribución de \\(Q\\) es independiente de \\(\\theta\\), se dice que Q es una cantidad pivotal.\n\n\nEjemplo\nSea \\(X_1,X_2,\\cdots,X_n\\) una muestra aleatoria \\(n\\) desde una familia normal \\(F_{N}(\\mu,\\sigma^2)\\) con media \\(\\mu\\) y varianza conocida \\(\\sigma^2\\), luego:\n\\[Q=\\overline{X}-\\mu \\rightarrow Q \\approx N\\left(0,\\dfrac{\\sigma^2}{n}\\right)\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#intervalo-de-confianza-para-la-media-poblacional",
+    "href": "slides/lec_week8.html#intervalo-de-confianza-para-la-media-poblacional",
+    "title": "Introducción a inferencia estadística",
+    "section": "Intervalo de confianza para la media poblacional",
+    "text": "Intervalo de confianza para la media poblacional\nSea \\(X_1,X_2,\\cdots,X_n\\) una muestra aleatoria \\(n\\) de una familia normal \\(F_{N}(\\mu,\\sigma^2)\\), como \\(\\overline{X}\\) es el mejor estimador de \\(\\mu\\), entonces si se conoce \\(\\sigma^2\\), se tiene que:\n\\[Z=\\dfrac{(\\overline{X}-\\mu)\\sqrt{n}}{\\sigma} \\approx N(0,1) \\Rightarrow Z \\text{ pivote}\\]\nLuego dado \\(\\gamma\\), se requiere determinar los valores más apropiados de \\(q_1\\) y \\(q_2\\) que cumplan con:\n\\[\\mathbb{P}\\left(q_1 \\leq \\dfrac{(\\overline{X}-\\mu)\\sqrt{n}}{\\sigma} \\leq q_2\\right)=\\gamma\\]\n\nSe desea minimizar la longitud del intervalo de confianza, los valores \\(q_1\\) y \\(q_2\\) deben ser aquellos que produzcan igualdad de probabilidades en las colas."
+  },
+  {
+    "objectID": "slides/lec_week8.html#desarrollo-intervalo-de-confianza",
+    "href": "slides/lec_week8.html#desarrollo-intervalo-de-confianza",
+    "title": "Introducción a inferencia estadística",
+    "section": "Desarrollo intervalo de confianza",
+    "text": "Desarrollo intervalo de confianza\nEsto es:\n\\[q_2=Z_{\\dfrac{1+\\gamma}{2}} \\hspace{30pt} q_1=-q_2\\]\nLuego, si tomamos \\(\\alpha=1-\\gamma\\), se tiene:\n\\[\\mathbb{P}\\left( Z_{\\alpha /2} \\leq \\dfrac{(\\overline{X}-\\mu)\\sqrt{n}}{\\sigma} \\leq Z_{1-\\alpha/2} \\right)=1-\\alpha\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#i.c.-para-la-media-con-varianza-población-conocida",
+    "href": "slides/lec_week8.html#i.c.-para-la-media-con-varianza-población-conocida",
+    "title": "Introducción a inferencia estadística",
+    "section": "I.C. para la media con varianza población conocida",
+    "text": "I.C. para la media con varianza población conocida\nDe la probabilidad del pivote, podemos despejar nuestro parámetro de interés \\(\\mu\\) obteniendo:\n\\[\\mathbb{P}\\left( \\overline{X}-Z_{1-\\alpha/2} \\dfrac{\\sigma}{\\sqrt{n}} \\leq \\mu \\leq \\overline{X}-Z_{\\alpha/2}\\dfrac{\\sigma}{\\sqrt{n}}\\right) =1- \\alpha\\]\nPero como \\(Z_{\\alpha/2}=-Z_{1-\\alpha/2}\\)\n\\[\\mathbb{P}\\left( \\overline{X}-Z_{1-\\alpha/2} \\dfrac{\\sigma}{\\sqrt{n}} \\leq \\mu \\leq \\overline{X}+Z_{1-\\alpha/2}\\dfrac{\\sigma}{\\sqrt{n}}\\right) =1-\\alpha\\]\nCon lo anterior se concluye que el intervalo de \\((1-\\alpha)\\%\\) de confianza para la media poblacional está dado por:\n\\[IC(\\mu):=\\left[\\overline{X}\\mp Z_{1-\\alpha/2}\\dfrac{\\sigma}{\\sqrt{n}}\\right]\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#i.c.-para-la-media-con-varianza-población-desconocida",
+    "href": "slides/lec_week8.html#i.c.-para-la-media-con-varianza-población-desconocida",
+    "title": "Introducción a inferencia estadística",
+    "section": "I.C. para la media con varianza población desconocida",
+    "text": "I.C. para la media con varianza población desconocida\nSi se tiene una muestra aleatoria de tamaño \\(n\\), \\(X_1,X_2,\\cdots,X_n\\) tal que \\(X_i \\approx N(\\mu,\\sigma^2)\\), con varianza poblacional \\(\\sigma^2\\) desconocida, como sabemos que \\(S^2\\) es el mejor estimador de \\(\\sigma^2\\), se tiene:\n\\[T=\\dfrac{(\\overline{X}-\\mu)\\sqrt{n}}{s} \\approx \\mathcal{T}(n-1) \\Rightarrow T \\text{ pivote}\\]\nEn donde \\(\\mathcal{T}\\) es la distribución t-student con \\((n-1)\\) grados de libertad. Análogamente, podemos construir el intervalo de confianza para \\(\\mu\\) utilizando esta distribución, obteniéndose:\n\\[IC(\\mu):=\\left[\\overline{X}\\mp t_{1-\\alpha/2}(n-1)\\dfrac{s}{\\sqrt{n}}\\right]\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#i.c.-para-la-media-con-tamaño-de-muestra-grande",
+    "href": "slides/lec_week8.html#i.c.-para-la-media-con-tamaño-de-muestra-grande",
+    "title": "Introducción a inferencia estadística",
+    "section": "I.C. para la media con tamaño de muestra grande",
+    "text": "I.C. para la media con tamaño de muestra grande\nSi el tamaño de muestra es muy grande (mayor que 50), utilizando el teorema de límite central, el intervalo de confianza toma la siguiente forma:\n\\[IC(\\mu):=\\left[\\overline{X}\\mp Z_{1-\\alpha/2}\\dfrac{s}{\\sqrt{n}}\\right]\\]\nNotamos que es importante distinguir cuando la varianza poblacional es conocida o desconocida. Si a partir de la muestra aleatoria se determina una varianza, ésta es la muestral, por lo tanto, lo correcto es utilizar un intervalo de confianza considerando la distribución t-student, caso contrario si la muestra es superior a 50, entonces empleamos el teorema de límite central para aproximar por distribución normal."
+  },
+  {
+    "objectID": "slides/lec_week8.html#intervalos-de-confianza-para-una-proporción",
+    "href": "slides/lec_week8.html#intervalos-de-confianza-para-una-proporción",
+    "title": "Introducción a inferencia estadística",
+    "section": "Intervalos de confianza para una proporción",
+    "text": "Intervalos de confianza para una proporción\nSea \\(X_1,X_2,\\cdots,X_n\\) una muestra aleatoria de tamaño \\(n\\) de una familia binomial \\(\\mathcal{B} (1,p)\\). El estimador de \\(p\\) sobre la base de la muestra es \\(\\widehat{P}=\\overline{X}\\). La distribución de \\(\\widehat{P}=\\overline{X}\\), para muestras grandes, se puede aproximar mediante una distribución normal de parámetros \\(p\\) y \\(\\dfrac{p(1-p)}{n}\\). Con esto podemos aproximar la siguiente cantidad pivotal:\n\\[Z=\\dfrac{(\\widehat{P}-p)}{\\sqrt{\\dfrac{\\widehat{P}(1-\\widehat{P})}{n}}} \\approx N(0,1) \\Rightarrow Z \\text{ pivote}\\]\nLuego dado \\((1-\\alpha)\\), los valores de \\(q_1\\) y \\(q_2\\) que minimizan la longitud del intervalo serán:\n\\[\\mathbb{P}\\left(  \\widehat{P}-Z_{1-\\alpha /2} \\sqrt{\\dfrac{\\widehat{P}(1-\\widehat{P})}{n}} \\leq p \\leq \\widehat{P}+Z_{1-\\alpha /2} \\sqrt{\\dfrac{\\widehat{P}(1-\\widehat{P}) }{n} } \\right)=\\gamma \\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#i.c.-final-para-una-proporción",
+    "href": "slides/lec_week8.html#i.c.-final-para-una-proporción",
+    "title": "Introducción a inferencia estadística",
+    "section": "I.C. final para una proporción",
+    "text": "I.C. final para una proporción\nLuego, el intervalo de confianza, del \\((100*\\gamma)\\%\\) para la proporción es:\n\\[IC(p):=\\left[ \\widehat{P}\\mp Z_{1-\\alpha/2}\\sqrt{\\dfrac{\\widehat{P}(1-\\widehat{P})}{n}}\\right] \\]\nSe puede apreciar que los intervalos de confianza anteriores están compuestos por un estimador puntual, más o menos una cantidad, ésta cantidad recibe el nombre de error de estimación, que resultará útil para determinar el tamaños de muestra."
+  },
+  {
+    "objectID": "slides/lec_week8.html#intervalos-de-confianza-para-la-varianza-poblacional",
+    "href": "slides/lec_week8.html#intervalos-de-confianza-para-la-varianza-poblacional",
+    "title": "Introducción a inferencia estadística",
+    "section": "Intervalos de confianza para la varianza poblacional",
+    "text": "Intervalos de confianza para la varianza poblacional\nSea \\(X_1,X_2,\\dots,X_n\\) una muestra aleatoria de tamaño \\(n\\) desde una familia normal \\(F_N(\\mu,\\sigma^2)\\). Existen dos posibilidades para la estimación de la varianza, cuando la media población es conocida (caso no práctico) y cuando ésta es desconocida. Para ambos casos podemos definir cantidades pivotales:\n\n\\(\\dfrac{n S_{n}^{2}}{\\sigma^2} \\sim \\chi^2(n)\\)\n\n\\(\\dfrac{(n-1) S_{n-1}^{2}}{\\sigma^2} \\sim \\chi^2(n-1)\\)\n\n\nen donde:\n\\[S_{n}^{2}=\\sum_{i=1}^{n} \\dfrac{(X_i - \\mu)^2}{n},\\qquad S_{n-1}^{2}=\\sum_{i=1}^{n} \\dfrac{(X_i - \\overline{X})^2}{n-1}\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#i.c.-final-para-la-varianza-poblacional",
+    "href": "slides/lec_week8.html#i.c.-final-para-la-varianza-poblacional",
+    "title": "Introducción a inferencia estadística",
+    "section": "I.C. final para la varianza poblacional",
+    "text": "I.C. final para la varianza poblacional\nSiguiendo el mismo procedimiento para la cantidad pivotal, en particular, el caso donde la media poblacional es desconocida. Se tiene:\n\\[\\mathbb{P}\\left[ \\chi_{\\alpha/2}^{2}(n-1) \\leq \\dfrac{(n-1) S_{n-1}^{2}}{\\sigma^2} \\leq \\chi_{1-\\alpha/2}^{2}(n-1) \\right]=1-\\alpha\\]\nLuego, despejando el parámetro de interés \\(\\sigma^2\\), podemos definir un intervalo de \\((1-\\alpha)\\%\\) de confianza para la varianza poblacional:\n\\[IC(\\sigma^2)=\\left[ \\dfrac{(n-1)S_{n-1}^{2}}{\\chi_{1-\\alpha/2}^{2}(n-1)};\\dfrac{(n-1)S_{n-1}^{2}}{\\chi_{\\alpha/2}^{2}(n-1)}\\right]\\]"
   }
 ]
