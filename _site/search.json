@@ -277,7 +277,7 @@
     "href": "pages/week8.html#material-adicional",
     "title": "Semana 8",
     "section": "Material adicional",
-    "text": "Material adicional\n\nGuía de ejercicios"
+    "text": "Material adicional\n\nGuía de ejercicios I.C."
   },
   {
     "objectID": "pages/week9.html#presentación",
@@ -291,7 +291,7 @@
     "href": "pages/week9.html#material-adicional",
     "title": "Semana 9",
     "section": "Material adicional",
-    "text": "Material adicional"
+    "text": "Material adicional\n\nGuía de ejercicios: test de hipótesis para la media\nGuía de ejercicios: test de hipótesis para la proporción y varianza"
   },
   {
     "objectID": "slides/lec_week1.html#descripción-del-curso",
@@ -1482,5 +1482,411 @@
     "title": "Introducción a inferencia estadística",
     "section": "I.C. final para la varianza poblacional",
     "text": "I.C. final para la varianza poblacional\nSiguiendo el mismo procedimiento para la cantidad pivotal, en particular, el caso donde la media poblacional es desconocida. Se tiene:\n\\[\\mathbb{P}\\left[ \\chi_{\\alpha/2}^{2}(n-1) \\leq \\dfrac{(n-1) S_{n-1}^{2}}{\\sigma^2} \\leq \\chi_{1-\\alpha/2}^{2}(n-1) \\right]=1-\\alpha\\]\nLuego, despejando el parámetro de interés \\(\\sigma^2\\), podemos definir un intervalo de \\((1-\\alpha)\\%\\) de confianza para la varianza poblacional:\n\\[IC(\\sigma^2)=\\left[ \\dfrac{(n-1)S_{n-1}^{2}}{\\chi_{1-\\alpha/2}^{2}(n-1)};\\dfrac{(n-1)S_{n-1}^{2}}{\\chi_{\\alpha/2}^{2}(n-1)}\\right]\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#parámetro-y-espacio-paramétrico",
+    "href": "slides/lec_week9.html#parámetro-y-espacio-paramétrico",
+    "title": "Introducción a inferencia estadística",
+    "section": "Parámetro y espacio paramétrico",
+    "text": "Parámetro y espacio paramétrico\n\nParámetro: Es una característica numérica de la distribución de la población, que describe, parcial o completamente, la función de masa de probabilidad de la característica de interés, habitualmente se simboliza por la letra griega \\(\\theta\\).\nEspacio paramétrico: Es el conjunto de posibles valores que puede(n) ser considerado(s) para el(los) parámetro(s). Se simboliza por la letra griega mayúscula \\(\\Theta\\)."
+  },
+  {
+    "objectID": "slides/lec_week9.html#método-de-máxima-verosimilitud",
+    "href": "slides/lec_week9.html#método-de-máxima-verosimilitud",
+    "title": "Introducción a inferencia estadística",
+    "section": "Método de máxima verosimilitud",
+    "text": "Método de máxima verosimilitud\nEl método de máxima verosimilitud consiste en encontrar el valor(es) del parámetro(s) que maximiza la función de masa (densidad) de probabilidad conjunta de la muestra, llamada verosimilitud.\n\n\nFunción de verosimilitud: Sean \\(X_1,\\cdots,X_n\\) una muestra aleatoria con función de masa(densidad) de probabilidad \\(f(X;\\theta)\\) y sea \\(L(\\theta,;X_1,\\cdots,X_n)\\) la verosimilitud de la muestra como función de \\(\\theta\\), la cual se representa por:\n\n\n\n\\[L(\\theta;x)=L(\\theta,;X_1,\\cdots,X_n)=f(x_1;\\theta)\\times f(x_2;\\theta)\\times \\cdots f(x_n;\\theta)\\]\n\n\nEl método de máxima verosimilitud busca \\(\\widehat{\\theta}(x_1,\\cdots,x_n)\\) función que depende sólo de la muestra que maximiza \\(L(\\theta;x)\\). Para obtener estimadores máximo verosímiles se utilizan las herramientas de cálculo matemático, además para simplificar los cálculos se utiliza el logaritmo de la verosimilitud, llamada función de logverosimilitud, representado por:\n\\[l(\\theta;x)=\\ln (L(\\theta;x))\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#método-de-mínimos-cuadrados",
+    "href": "slides/lec_week9.html#método-de-mínimos-cuadrados",
+    "title": "Introducción a inferencia estadística",
+    "section": "Método de mínimos cuadrados",
+    "text": "Método de mínimos cuadrados\nSupongamos que tenemos \\(\\mathbb{E}(Y)=\\alpha X + \\beta\\), donde \\(\\alpha,\\beta\\) y \\(X\\) son tal como en una regresión lineal simple. Sea \\((x_1,Y_1),\\dots,(x_n,Y_n)\\) una muestra aleatoria de \\(Y\\). Los estimadores mínimos cuadrados de los parámetros \\(\\alpha,\\beta\\) son los valores de \\(\\alpha\\) y \\(\\beta\\) que minimizan:\n\\[\\sum_{i=1}^{N} [Y_i - (\\alpha x_i +\\beta)]^2\\]\nPara poder obtener las estimaciones para \\(\\alpha\\) y \\(\\beta\\), procedemos de la siguiente manera:\nSea \\(S(\\alpha,\\beta)=\\sum_{i=1}^{N} [Y_i - (\\alpha x_i +\\beta)]^2\\). Para minimizar \\(S(\\alpha,\\beta)\\), debemos resolver las ecuaciones:\n\\[\\dfrac{\\partial S}{\\partial \\alpha}=0 \\hspace{20pt}\\text{y}\\hspace{20pt}\\dfrac{\\partial S}{\\partial \\beta}=0\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#método-de-mínimos-cuadrados-desarrollo",
+    "href": "slides/lec_week9.html#método-de-mínimos-cuadrados-desarrollo",
+    "title": "Introducción a inferencia estadística",
+    "section": "Método de mínimos cuadrados: desarrollo",
+    "text": "Método de mínimos cuadrados: desarrollo\nDerivando, obtenemos:\n\\[\\dfrac{\\partial S}{\\partial \\alpha}=\\sum_{i=1}^{n}2[Y_i - (\\alpha x_i + \\beta)](-x_i)=-2\\sum_{i=1}^{n}[x_i Y_i - \\alpha x_{i}^{2} - \\beta x_i]\\]\ny,\n\\[\\dfrac{\\partial S}{\\partial \\beta}=\\sum_{i=1}^{n}2[Y_i - (\\alpha x_i + \\beta)](-1)=-2\\sum_{i=1}^{n}[Y_i - \\alpha x_{i} - \\beta]\\]\nLuego, igualando a cero, se tiene que:\n\\[\\alpha\\sum_{i=1}^{n} x_{i}^{2} + \\beta \\sum_{i=1}^{n} x_i = \\sum_{i=1}^{n} x_i Y_i \\qquad \\text{y,} \\qquad \\alpha \\sum_{i=1}^{n} x_i + n\\beta=\\sum_{i=1}^{n} Y_i\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#método-de-mínimos-cuadrados-desarrollo-1",
+    "href": "slides/lec_week9.html#método-de-mínimos-cuadrados-desarrollo-1",
+    "title": "Introducción a inferencia estadística",
+    "section": "Método de mínimos cuadrados: desarrollo",
+    "text": "Método de mínimos cuadrados: desarrollo\nTenemos dos ecuaciones lineales y dos incógnitas, por lo que podemos obtener soluciones para \\(\\alpha\\) y \\(\\beta\\), así:\n\\[\\hat{\\alpha}=\\dfrac{\\sum_{i=1}^{n} Y_i (x_i - \\overline{x})}{\\sum_{i=1}^{n} (x_i-\\overline{x})^2}\\hspace{20pt}\\text{donde}\\hspace{20pt}\\overline{x}=\\dfrac{1}{n}\\sum_{i=1}^{n}x_i\\]\n\\[\\hat{\\beta}=\\overline{Y}-\\hat{\\alpha}\\overline{x}\\hspace{20pt}\\text{donde}\\hspace{20pt}\\overline{Y}=\\dfrac{1}{n}\\sum_{i=1}^{n}Y_i\\]\nEstas soluciones siempre se pueden obtener y son únicas si \\(\\sum_{i=1}^{n}(x_i-\\overline{x})^2\\neq 0\\).\nSin embargo, esta condición se satisface cuando no todos los \\(x_i\\) son iguales. En cuanto a la estimación de \\(\\sigma^2\\), esta no puede obtenida mediante este método."
+  },
+  {
+    "objectID": "slides/lec_week9.html#estimadores-insesgados",
+    "href": "slides/lec_week9.html#estimadores-insesgados",
+    "title": "Introducción a inferencia estadística",
+    "section": "Estimadores insesgados",
+    "text": "Estimadores insesgados\nConsideramos una muestra aleatoria, \\(X_1,X_2,\\cdots,X_n\\) y \\(T=T(X_1,X_2,\\cdots,X_n)\\) una función de la muestra, entonces \\(T\\) es llamada un estadística. Cuando una estadística \\(T\\), se utiliza con fines de estimación recibe el nombre de estimador. En general, se desea que los estimadores tengan algunas propiedades especiales.\n\nEstimadores Insesgados: Sea \\(T\\) un estimador (estadística) de un parámetro \\(\\theta\\), se dice que \\(T\\) es un estimador insesgado (o libre de sesgo), si \\(E[T]=\\theta\\), para todos los posibles valores de \\(\\theta\\).\n\n\nEn otras palabras, lo que se desea es que el estimador \\(T\\), en promedio (promediando sobre todas las posibles muestras), sea igual a \\(\\theta\\), “lo que se desea estimar”, bajo la hipótesis que la distribución de probabilidad de la población propuesta es correcta."
+  },
+  {
+    "objectID": "slides/lec_week9.html#error-cuadrático-medio",
+    "href": "slides/lec_week9.html#error-cuadrático-medio",
+    "title": "Introducción a inferencia estadística",
+    "section": "Error cuadrático medio",
+    "text": "Error cuadrático medio\nSea \\(T\\) un estimador de un parámetro \\(\\theta\\), se define el error cuadrático medio de \\(T\\), como el valor esperado del cuadrado de la diferencia entre \\(T\\) y \\(\\theta\\), y se anota \\(ECM(T)\\), esto es:\n\\[ECM(T)=E[(T-\\theta)^2]\\]\nSi de desarrolla la expresión, podemos reescribir lo anterior de la forma:\n\\[ECM(T)=V[T]+(E[T]-\\theta)^2\\]\nEl error cuadrático medio de un estimador \\(T\\), es la suma de dos cantidades no negativas: una es la varianza del estimador, mientras que la otra es el sesgo al cuadrado.\nUn criterio para seleccionar un estimador, es que posea el ECM más pequeño entre los posibles estimadores de \\(\\theta\\)."
+  },
+  {
+    "objectID": "slides/lec_week9.html#eficiencia-relativa",
+    "href": "slides/lec_week9.html#eficiencia-relativa",
+    "title": "Introducción a inferencia estadística",
+    "section": "Eficiencia relativa",
+    "text": "Eficiencia relativa\nSean \\(T_1\\) y \\(T_2\\) dos estimadores de \\(\\theta\\). Se define la eficiencia relativa entre \\(T_1\\) y \\(T_2\\) como:\n\\[Ef(T_1;T_2)=\\dfrac{ECM(T_1)}{ECM(T_2)}\\]\nSi la eficiencia relativa es menor que uno, se concluye que el estimador \\(T_1\\) es más eficiente que el estimador \\(T_2\\), en caso contrario, se concluye que el estimador \\(T_1\\) es más eficiente que el estimador \\(T_2\\)."
+  },
+  {
+    "objectID": "slides/lec_week9.html#consistencia",
+    "href": "slides/lec_week9.html#consistencia",
+    "title": "Introducción a inferencia estadística",
+    "section": "Consistencia",
+    "text": "Consistencia\nLa consistencia mide la capacidad del estimador de acercarse cada vez más al verdadero valor del parámetro, a medida que el tamaño de muestra crece.\n\\[ T_n \\overset{p}{\\to} \\theta\\]\n\nConsistencia en media cuadrática:\n\n\nUn estimador \\(T\\), de un parámetro desconocido \\(\\theta\\), se dice consistente en media cuadrática, si se cumple:\n\\[\\lim_{n\\rightarrow\\infty} ECM(T_n)=0\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#definición-intervalo-de-confianza",
+    "href": "slides/lec_week9.html#definición-intervalo-de-confianza",
+    "title": "Introducción a inferencia estadística",
+    "section": "Definición intervalo de confianza",
+    "text": "Definición intervalo de confianza\nSea \\(X_1,X_2,\\cdots,X_n\\) una muestra aleatoria desde \\(f(x;\\theta)\\), donde \\(f(x;\\theta)\\) es una función de masa (densidad) de probabilidades dependiendo de un parámetro desconocido \\(\\theta\\). Sean \\(T_1\\) y \\(T_2\\) dos estadísticos tales que \\(T_1(x)<T_2(x)\\) para casi todo \\(x\\) y\n\\[\\mathbb{P}(T_1\\leq\\theta \\leq T_2)=\\gamma,\\]\ndonde \\(\\gamma\\) no depende de \\(\\theta\\). Se dice que \\([T_1,T_2]\\) es un intervalo de confianza para \\(\\theta\\) con \\(100\\gamma \\%\\) de confianza.\n\n\\(T_1\\) y \\(T_2\\) reciben el nombre de cota inferior y superior de confianza, respectivamente.\n\\(\\gamma\\) recibe el nombre de coeficiente de confianza.\n\n\\([T_1,T_2]\\) es un intervalo aleatorio, ya que sus extremos son variables aleatorias."
+  },
+  {
+    "objectID": "slides/lec_week9.html#cantidad-pivotal",
+    "href": "slides/lec_week9.html#cantidad-pivotal",
+    "title": "Introducción a inferencia estadística",
+    "section": "Cantidad pivotal",
+    "text": "Cantidad pivotal\nExisten técnicas para construir intervalos (regiones) de confianza, y una de ellas es la del pivote.\n\nSea \\(X_1,X_2,\\cdots,X_n\\) una muestra aleatoria \\(n\\) desde \\(f(x;\\theta)\\) y \\(Q=Q(X_1,X_2,\\cdots,X_n)\\). Si la distribución de \\(Q\\) es independiente de \\(\\theta\\), se dice que Q es una cantidad pivotal.\n\n\nEjemplo\nSea \\(X_1,X_2,\\cdots,X_n\\) una muestra aleatoria \\(n\\) desde una familia normal \\(F_{N}(\\mu,\\sigma^2)\\) con media \\(\\mu\\) y varianza conocida \\(\\sigma^2\\), luego:\n\\[Q=\\overline{X}-\\mu \\rightarrow Q \\approx N\\left(0,\\dfrac{\\sigma^2}{n}\\right)\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#intervalo-de-confianza-para-la-media-poblacional",
+    "href": "slides/lec_week9.html#intervalo-de-confianza-para-la-media-poblacional",
+    "title": "Introducción a inferencia estadística",
+    "section": "Intervalo de confianza para la media poblacional",
+    "text": "Intervalo de confianza para la media poblacional\nSea \\(X_1,X_2,\\cdots,X_n\\) una muestra aleatoria \\(n\\) de una familia normal \\(F_{N}(\\mu,\\sigma^2)\\), como \\(\\overline{X}\\) es el mejor estimador de \\(\\mu\\), entonces si se conoce \\(\\sigma^2\\), se tiene que:\n\\[Z=\\dfrac{(\\overline{X}-\\mu)\\sqrt{n}}{\\sigma} \\approx N(0,1) \\Rightarrow Z \\text{ pivote}\\]\nLuego dado \\(\\gamma\\), se requiere determinar los valores más apropiados de \\(q_1\\) y \\(q_2\\) que cumplan con:\n\\[\\mathbb{P}\\left(q_1 \\leq \\dfrac{(\\overline{X}-\\mu)\\sqrt{n}}{\\sigma} \\leq q_2\\right)=\\gamma\\]\n\nSe desea minimizar la longitud del intervalo de confianza, los valores \\(q_1\\) y \\(q_2\\) deben ser aquellos que produzcan igualdad de probabilidades en las colas."
+  },
+  {
+    "objectID": "slides/lec_week9.html#desarrollo-intervalo-de-confianza",
+    "href": "slides/lec_week9.html#desarrollo-intervalo-de-confianza",
+    "title": "Introducción a inferencia estadística",
+    "section": "Desarrollo intervalo de confianza",
+    "text": "Desarrollo intervalo de confianza\nEsto es:\n\\[q_2=Z_{\\dfrac{1+\\gamma}{2}} \\hspace{30pt} q_1=-q_2\\]\nLuego, si tomamos \\(\\alpha=1-\\gamma\\), se tiene:\n\\[\\mathbb{P}\\left( Z_{\\alpha /2} \\leq \\dfrac{(\\overline{X}-\\mu)\\sqrt{n}}{\\sigma} \\leq Z_{1-\\alpha/2} \\right)=1-\\alpha\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#i.c.-para-la-media-con-varianza-población-conocida",
+    "href": "slides/lec_week9.html#i.c.-para-la-media-con-varianza-población-conocida",
+    "title": "Introducción a inferencia estadística",
+    "section": "I.C. para la media con varianza población conocida",
+    "text": "I.C. para la media con varianza población conocida\nDe la probabilidad del pivote, podemos despejar nuestro parámetro de interés \\(\\mu\\) obteniendo:\n\\[\\mathbb{P}\\left( \\overline{X}-Z_{1-\\alpha/2} \\dfrac{\\sigma}{\\sqrt{n}} \\leq \\mu \\leq \\overline{X}-Z_{\\alpha/2}\\dfrac{\\sigma}{\\sqrt{n}}\\right) =1- \\alpha\\]\nPero como \\(Z_{\\alpha/2}=-Z_{1-\\alpha/2}\\)\n\\[\\mathbb{P}\\left( \\overline{X}-Z_{1-\\alpha/2} \\dfrac{\\sigma}{\\sqrt{n}} \\leq \\mu \\leq \\overline{X}+Z_{1-\\alpha/2}\\dfrac{\\sigma}{\\sqrt{n}}\\right) =1-\\alpha\\]\nCon lo anterior se concluye que el intervalo de \\((1-\\alpha)\\%\\) de confianza para la media poblacional está dado por:\n\\[IC(\\mu):=\\left[\\overline{X}\\mp Z_{1-\\alpha/2}\\dfrac{\\sigma}{\\sqrt{n}}\\right]\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#i.c.-para-la-media-con-varianza-población-desconocida",
+    "href": "slides/lec_week9.html#i.c.-para-la-media-con-varianza-población-desconocida",
+    "title": "Introducción a inferencia estadística",
+    "section": "I.C. para la media con varianza población desconocida",
+    "text": "I.C. para la media con varianza población desconocida\nSi se tiene una muestra aleatoria de tamaño \\(n\\), \\(X_1,X_2,\\cdots,X_n\\) tal que \\(X_i \\approx N(\\mu,\\sigma^2)\\), con varianza poblacional \\(\\sigma^2\\) desconocida, como sabemos que \\(S^2\\) es el mejor estimador de \\(\\sigma^2\\), se tiene:\n\\[T=\\dfrac{(\\overline{X}-\\mu)\\sqrt{n}}{s} \\approx \\mathcal{T}(n-1) \\Rightarrow T \\text{ pivote}\\]\nEn donde \\(\\mathcal{T}\\) es la distribución t-student con \\((n-1)\\) grados de libertad. Análogamente, podemos construir el intervalo de confianza para \\(\\mu\\) utilizando esta distribución, obteniéndose:\n\\[IC(\\mu):=\\left[\\overline{X}\\mp t_{1-\\alpha/2}(n-1)\\dfrac{s}{\\sqrt{n}}\\right]\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#i.c.-para-la-media-con-tamaño-de-muestra-grande",
+    "href": "slides/lec_week9.html#i.c.-para-la-media-con-tamaño-de-muestra-grande",
+    "title": "Introducción a inferencia estadística",
+    "section": "I.C. para la media con tamaño de muestra grande",
+    "text": "I.C. para la media con tamaño de muestra grande\nSi el tamaño de muestra es muy grande (mayor que 50), utilizando el teorema de límite central, el intervalo de confianza toma la siguiente forma:\n\\[IC(\\mu):=\\left[\\overline{X}\\mp Z_{1-\\alpha/2}\\dfrac{s}{\\sqrt{n}}\\right]\\]\nNotamos que es importante distinguir cuando la varianza poblacional es conocida o desconocida. Si a partir de la muestra aleatoria se determina una varianza, ésta es la muestral, por lo tanto, lo correcto es utilizar un intervalo de confianza considerando la distribución t-student, caso contrario si la muestra es superior a 50, entonces empleamos el teorema de límite central para aproximar por distribución normal."
+  },
+  {
+    "objectID": "slides/lec_week9.html#intervalos-de-confianza-para-una-proporción",
+    "href": "slides/lec_week9.html#intervalos-de-confianza-para-una-proporción",
+    "title": "Introducción a inferencia estadística",
+    "section": "Intervalos de confianza para una proporción",
+    "text": "Intervalos de confianza para una proporción\nSea \\(X_1,X_2,\\cdots,X_n\\) una muestra aleatoria de tamaño \\(n\\) de una familia binomial \\(\\mathcal{B} (1,p)\\). El estimador de \\(p\\) sobre la base de la muestra es \\(\\widehat{P}=\\overline{X}\\). La distribución de \\(\\widehat{P}=\\overline{X}\\), para muestras grandes, se puede aproximar mediante una distribución normal de parámetros \\(p\\) y \\(\\dfrac{p(1-p)}{n}\\). Con esto podemos aproximar la siguiente cantidad pivotal:\n\\[Z=\\dfrac{(\\widehat{P}-p)}{\\sqrt{\\dfrac{\\widehat{P}(1-\\widehat{P})}{n}}} \\approx N(0,1) \\Rightarrow Z \\text{ pivote}\\]\nLuego dado \\((1-\\alpha)\\), los valores de \\(q_1\\) y \\(q_2\\) que minimizan la longitud del intervalo serán:\n\\[\\mathbb{P}\\left(  \\widehat{P}-Z_{1-\\alpha /2} \\sqrt{\\dfrac{\\widehat{P}(1-\\widehat{P})}{n}} \\leq p \\leq \\widehat{P}+Z_{1-\\alpha /2} \\sqrt{\\dfrac{\\widehat{P}(1-\\widehat{P}) }{n} } \\right)=\\gamma \\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#i.c.-final-para-una-proporción",
+    "href": "slides/lec_week9.html#i.c.-final-para-una-proporción",
+    "title": "Introducción a inferencia estadística",
+    "section": "I.C. final para una proporción",
+    "text": "I.C. final para una proporción\nLuego, el intervalo de confianza, del \\((100*\\gamma)\\%\\) para la proporción es:\n\\[IC(p):=\\left[ \\widehat{P}\\mp Z_{1-\\alpha/2}\\sqrt{\\dfrac{\\widehat{P}(1-\\widehat{P})}{n}}\\right] \\]\nSe puede apreciar que los intervalos de confianza anteriores están compuestos por un estimador puntual, más o menos una cantidad, ésta cantidad recibe el nombre de error de estimación, que resultará útil para determinar el tamaños de muestra."
+  },
+  {
+    "objectID": "slides/lec_week9.html#intervalos-de-confianza-para-la-varianza-poblacional",
+    "href": "slides/lec_week9.html#intervalos-de-confianza-para-la-varianza-poblacional",
+    "title": "Introducción a inferencia estadística",
+    "section": "Intervalos de confianza para la varianza poblacional",
+    "text": "Intervalos de confianza para la varianza poblacional\nSea \\(X_1,X_2,\\dots,X_n\\) una muestra aleatoria de tamaño \\(n\\) desde una familia normal \\(F_N(\\mu,\\sigma^2)\\). Existen dos posibilidades para la estimación de la varianza, cuando la media población es conocida (caso no práctico) y cuando ésta es desconocida. Para ambos casos podemos definir cantidades pivotales:\n\n\\(\\dfrac{n S_{n}^{2}}{\\sigma^2} \\sim \\chi^2(n)\\)\n\n\\(\\dfrac{(n-1) S_{n-1}^{2}}{\\sigma^2} \\sim \\chi^2(n-1)\\)\n\n\nen donde:\n\\[S_{n}^{2}=\\sum_{i=1}^{n} \\dfrac{(X_i - \\mu)^2}{n},\\qquad S_{n-1}^{2}=\\sum_{i=1}^{n} \\dfrac{(X_i - \\overline{X})^2}{n-1}\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#i.c.-final-para-la-varianza-poblacional",
+    "href": "slides/lec_week9.html#i.c.-final-para-la-varianza-poblacional",
+    "title": "Introducción a inferencia estadística",
+    "section": "I.C. final para la varianza poblacional",
+    "text": "I.C. final para la varianza poblacional\nSiguiendo el mismo procedimiento para la cantidad pivotal, en particular, el caso donde la media poblacional es desconocida. Se tiene:\n\\[\\mathbb{P}\\left[ \\chi_{\\alpha/2}^{2}(n-1) \\leq \\dfrac{(n-1) S_{n-1}^{2}}{\\sigma^2} \\leq \\chi_{1-\\alpha/2}^{2}(n-1) \\right]=1-\\alpha\\]\nLuego, despejando el parámetro de interés \\(\\sigma^2\\), podemos definir un intervalo de \\((1-\\alpha)\\%\\) de confianza para la varianza poblacional:\n\\[IC(\\sigma^2)=\\left[ \\dfrac{(n-1)S_{n-1}^{2}}{\\chi_{1-\\alpha/2}^{2}(n-1)};\\dfrac{(n-1)S_{n-1}^{2}}{\\chi_{\\alpha/2}^{2}(n-1)}\\right]\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#tipos-de-error",
+    "href": "slides/lec_week9.html#tipos-de-error",
+    "title": "Introducción a inferencia estadística",
+    "section": "Tipos de error",
+    "text": "Tipos de error\nAl realizar nuestra prueba de hipótesis estamos sujetos al estado real de la naturaleza, es decir, la veracidad de nuestra conjetura (\\(H_0\\))\n\n\n\n\n\n\n\n\n\n\n\nEstado Real\nen la naturaleza\n\n\n\n\n\n\n\\(H_0\\) es Verdadera\n\\(H_0\\) es Falsa\n\n\nDecisión\nNo se rechaza \\(H_0\\)\nDecisión Correcta\nError Tipo II\n\n\n\nSe rechaza \\(H_0\\)\nError Tipo I\nDecisión Correcta\n\n\n\nPodemos cometer dos tipos de errores, tipo I y tipo II.\n\nError tipo I: Se comete al rechazar la hipótesis nula, cuando corresponde aceptarla por ser ésta verdadera. Lo denotamos por \\(\\alpha\\) y es llamado nivel de significación.\nError tipo II: Se comete al no rechazar la hipótesis nula, cuando corresponde rechazarla por ser esta falsa. Lo denotamos por \\(\\beta\\).\n\n\nEl error tipo I es fundamental debido a que es el error que el experimentador controla y pueda manejar."
+  },
+  {
+    "objectID": "slides/lec_week9.html#prueba-para-la-media-poblacional",
+    "href": "slides/lec_week9.html#prueba-para-la-media-poblacional",
+    "title": "Introducción a inferencia estadística",
+    "section": "Prueba para la media poblacional",
+    "text": "Prueba para la media poblacional\nSea \\(X_1,X_2,\\dots,X_n\\) una muestra aleatoria de una distribución normal con media \\(\\mu\\) desconocida. En este caso el interés recae en probar uno de los siguientes conjuntos de hipotesis con respecto a \\(\\mu\\).\n\\[H_0:\\mu = \\mu_0 \\qquad H_0:\\mu= \\mu_0 \\qquad H_0:\\mu = \\mu_0 \\\\H_1:\\mu \\neq \\mu_0 \\qquad H_1:\\mu > \\mu_0 \\qquad H_1:\\mu < \\mu_0\\]\nSupongamos primero que la varianza poblacional \\(\\sigma^2\\) es conocida. Utilizando la estadística de prueba \\(\\overline{X}\\), bajo \\(H_0\\) se tiene que \\(\\overline{X}\\sim N\\left(\\mu_0,{\\sigma^2 \\over n}\\right)\\). La región crítica de tamaño \\(\\alpha\\) para la hipótesis bilateral es de la forma:\n\\[\\text{Rechazar }H_0 \\text{ si}\\begin{cases} \\overline{X}\\geq \\overline{x}_{1-\\alpha /2}\\\\ \\overline{X}\\leq \\overline{x}_{\\alpha /2} \\end{cases}\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#prueba-para-la-media-poblacional-desarrollo",
+    "href": "slides/lec_week9.html#prueba-para-la-media-poblacional-desarrollo",
+    "title": "Introducción a inferencia estadística",
+    "section": "Prueba para la media poblacional: desarrollo",
+    "text": "Prueba para la media poblacional: desarrollo\nEn donde \\(\\overline{x}_{1-\\alpha /2}\\) y, \\(\\overline{x}_{\\alpha /2}\\) son los valores cuantiles críticos de \\(\\overline{X}\\) de manera tal que:\n\\[\\mathbb{P}(\\overline{X}\\geq  \\overline{x}_{1-\\alpha /2})= \\alpha /2 \\hspace{20pt}\\text{y}\\hspace{20pt} \\mathbb{P}(\\overline{X}\\geq  \\overline{x}_{\\alpha /2})= \\alpha /2\\]\nDado que bajo \\(H_0, \\overline{X}\\sim N(\\mu_0,{\\sigma^2 \\over n})\\), entonces de forma equivalente:\n\\[\\mathbb{P}\\left( Z \\geq \\underbrace{\\dfrac{\\overline{x}_{1-\\alpha /2}-\\mu_0}{\\sigma / \\sqrt{n}}}_{z_{1-\\alpha /2}}\\right)=\\alpha /2\\hspace{20pt}\\text{y}\\hspace{20pt}\\mathbb{P}\\left( Z \\leq \\underbrace{\\dfrac{\\overline{x}_{\\alpha /2}-\\mu_0}{\\sigma / \\sqrt{n}}}_{z_{\\alpha /2}}\\right)=\\alpha /2\\]\nPor lo que, \\(H_0\\) debe rechazarse cuando un valor de \\(\\overline{x}\\) de la media muestral \\(\\overline{X}\\) es tal que:\n\\[\\overline{x} \\geq \\dfrac{\\sigma z_{1-\\alpha /2}}{\\sqrt{n}}+\\mu_0\\hspace{20pt}\\text{o}\\hspace{20pt}\\overline{x} \\leq \\dfrac{\\sigma z_{\\alpha /2}}{\\sqrt{n}}+\\mu_0\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#prueba-para-la-media-poblacional-regiones-de-rechazo",
+    "href": "slides/lec_week9.html#prueba-para-la-media-poblacional-regiones-de-rechazo",
+    "title": "Introducción a inferencia estadística",
+    "section": "Prueba para la media poblacional: regiones de rechazo",
+    "text": "Prueba para la media poblacional: regiones de rechazo\nDe manera equivalente, se rechazará \\(H_0\\) cuando,\n\\[z\\geq z_{1-\\alpha /2}\\hspace{20pt}\\text{o}\\hspace{20pt}z\\leq z_{\\alpha /2}\\]\nDonde \\(z=\\dfrac{\\overline{x}-\\mu_0}{\\sigma / \\sqrt{n}}\\) es el valor de la correspondiente normal estándar al valor \\(\\overline{x}\\) de \\(\\overline{X}\\).\nPara la hipótesis alternativa unilateral, \\(H_1: \\mu > \\mu_0\\), la región crítica de tamaño \\(\\alpha\\) es el extremo derecho de la distribución de muestreo de \\(\\overline{X}\\), ésta es de la forma:\n\\[\\text{Rechazar } H_0  \\text{ si } \\overline{X} \\geq \\overline{x}_{1-\\alpha}\\]\nDe forma similar, para la hipótesis alternativa unilateral \\(H_1:\\mu < \\mu_0\\), la región crítica es de la forma:\n\\[\\text{Rechazar } H_0 \\text{ si } \\overline{X} \\leq \\overline{x}_{1-\\alpha}\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#tabla-resumen-pruebas-para-la-media-con-varianza-conocida",
+    "href": "slides/lec_week9.html#tabla-resumen-pruebas-para-la-media-con-varianza-conocida",
+    "title": "Introducción a inferencia estadística",
+    "section": "Tabla resumen pruebas para la media con varianza conocida",
+    "text": "Tabla resumen pruebas para la media con varianza conocida\nLo anterior puede ser resumido en:"
+  },
+  {
+    "objectID": "slides/lec_week9.html#observaciones",
+    "href": "slides/lec_week9.html#observaciones",
+    "title": "Introducción a inferencia estadística",
+    "section": "Observaciones",
+    "text": "Observaciones\nNotar que lo anterior, sólo fue posible debido a que sabíamos \\(\\sigma^2\\). En caso de no conocerlo, si utilizamos la misma estadística de prueba \\(\\overline{X}\\), se tiene que:\n\\[T=\\dfrac{\\overline{X}-\\mu_0}{S / \\sqrt{n}} \\sim t(n-1)\\]\nPor lo que siguiendo el mismo procedimiento que antes, podemos llegar a regiones críticas similares."
+  },
+  {
+    "objectID": "slides/lec_week9.html#tabla-resumen-pruebas-para-la-media-con-varianza-desconocida",
+    "href": "slides/lec_week9.html#tabla-resumen-pruebas-para-la-media-con-varianza-desconocida",
+    "title": "Introducción a inferencia estadística",
+    "section": "Tabla resumen pruebas para la media con varianza desconocida",
+    "text": "Tabla resumen pruebas para la media con varianza desconocida\nLo anterior puede ser resumido en:"
+  },
+  {
+    "objectID": "slides/lec_week9.html#pruebas-para-la-varianza-poblacional",
+    "href": "slides/lec_week9.html#pruebas-para-la-varianza-poblacional",
+    "title": "Introducción a inferencia estadística",
+    "section": "Pruebas para la varianza poblacional",
+    "text": "Pruebas para la varianza poblacional\nSea \\(X_1,\\dots,X_n\\) una muestra aleatoria de una distribución normal con media \\(\\mu\\) desconocida y varianza \\(\\sigma^2\\). Se considera el siguiente test de hipótesis:\n\\[H_0:\\sigma^2=\\sigma_{0}^{2}\\]\ncontra una de las siguientes alternativas:\n\\[H_1:\\sigma^2\\neq \\sigma_{0}^{2},\\hspace{5pt}H_1:\\sigma^2> \\sigma_{0}^{2},\\hspace{5pt}H_1:\\sigma^2< \\sigma_{0}^{2}\\]\ndonde \\(\\sigma_{0}^{2}\\) es el valor propuesto para \\(\\sigma^2\\). La estadística de interés es la varianza muestral \\(S^2\\). La hipótesis nula será rechazada si la realización de \\(s^2\\) calculada a partir de la muestra, es suficientemente diferente, mayor que o menos que \\(\\sigma_{0}^{2}\\), dependiendo de la hipótesis alternativa. Bajo \\(H_0\\):\n\\[\\dfrac{(n-1)s^2}{\\sigma_{0}^{2}}\\sim  \\chi^2(n-1)\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#tabla-resumen-pruebas-para-la-varianza",
+    "href": "slides/lec_week9.html#tabla-resumen-pruebas-para-la-varianza",
+    "title": "Introducción a inferencia estadística",
+    "section": "Tabla resumen pruebas para la varianza",
+    "text": "Tabla resumen pruebas para la varianza\nAsí, conforme la misma construcción realizada anteriormente, es posible encontrar las criterios de rechazo, en resumen:"
+  },
+  {
+    "objectID": "slides/lec_week9.html#pruebas-para-la-proporción-poblacional",
+    "href": "slides/lec_week9.html#pruebas-para-la-proporción-poblacional",
+    "title": "Introducción a inferencia estadística",
+    "section": "Pruebas para la proporción poblacional",
+    "text": "Pruebas para la proporción poblacional\nSea \\(X_1,\\dots,X_n\\) una muestra aleatoria de una distribución Bernoulli \\(Ber(1,p)\\). Consideramos el siguiente test de hipótesis:\n\\[H_0:p=p_0\\]\ncontra una de las siguientes alternativas:\n\\[H_1:p\\neq p_0,\\hspace{5pt}H_1:p> p_0,\\hspace{5pt}H_1:p<p_0\\]\ndonde \\(p_0\\) es el valor propuesto para \\(p\\). La estadística de interés bajo \\(H_0\\) es:\n\\[E=\\dfrac{\\hat{p}-p_0}{\\sqrt{\\dfrac{p_0(1-p_0)}{n}}}\\sim N(0,1)\\]\nPara \\(n>>50\\) y \\(\\hat{p}=\\sum_{i=1}^{n}X_i/n\\)"
+  },
+  {
+    "objectID": "slides/lec_week9.html#tabla-resumen-pruebas-para-la-proporción",
+    "href": "slides/lec_week9.html#tabla-resumen-pruebas-para-la-proporción",
+    "title": "Introducción a inferencia estadística",
+    "section": "Tabla resumen pruebas para la proporción",
+    "text": "Tabla resumen pruebas para la proporción\nAsí, conforme la misma construcción realizada anteriormente, es posible enconrtar los criterios de rechazo, en resumen:"
+  },
+  {
+    "objectID": "slides/lec_week9.html#definición-formal",
+    "href": "slides/lec_week9.html#definición-formal",
+    "title": "Introducción a inferencia estadística",
+    "section": "Definición formal",
+    "text": "Definición formal\nUn modelo de regresión básico donde sólo hay una variable predictora y la función de regresión es lineal se define como:\n\\[Y_i=\\beta_0+\\beta_1 X_i + \\varepsilon_i\\]\ndonde,\n\n\\(Y_i\\) es el valor de la varible respuesta en la i-ésima observación\n\\(\\beta_0\\) y \\(\\beta_1\\) son parámetros\n\\(X_i\\) es una constante conocida: el valor de la variable predictora en la i-ésima observación.\n\\(\\varepsilon_i\\) es un término de error aleatorio con meadia \\(\\mathbb{E}(\\varepsilon_i)=0\\) y varianza \\(\\mathbb{V}(\\varepsilon_i)=\\sigma^2\\)\n\\(\\varepsilon_i\\) y \\(\\varepsilon_j\\) no están correlacionados, por lo que su covarianza es cero.\n\n\nEsto modelo se le conoce como modelo de regresión lineal simple."
+  },
+  {
+    "objectID": "slides/lec_week9.html#características-importantes-del-modelo-de-regresión-lineal-simple",
+    "href": "slides/lec_week9.html#características-importantes-del-modelo-de-regresión-lineal-simple",
+    "title": "Introducción a inferencia estadística",
+    "section": "Características importantes del modelo de regresión lineal simple",
+    "text": "Características importantes del modelo de regresión lineal simple\nLa respuesta \\(Y_i\\) en la i-ésimo ensayo es la suma de dos componentes: - El término constante \\(\\beta_0+\\beta_1 X_i\\) y, - El término aleatorio \\(\\varepsilon_i\\). Por lo que \\(Y_i\\) es una variable aleatoria\nDebido a que \\(\\mathbb{E}(\\varepsilon_i)=0\\), sigue que:\n\\[\\mathbb{E}(Y_i)=\\mathbb{E}(\\beta_0+\\beta_1 X_i + \\varepsilon_i)=\\beta_0+\\beta_1 X_i + \\mathbb{E}(\\varepsilon_i)= \\beta_0+\\beta_1 X_i\\]\nAsí, la respuesta \\(Y_i\\), cuando el nivel de \\(X\\) en el i-ésimo ensayo es \\(X_i\\), viene desde una distribución de probabilidad cuya media está dada por:\n\\[\\mathbb{E}(Y_i)=\\beta_0+\\beta_1 X_i\\]\nSabremos que la función de regresión para este modelo es \\(\\mathbb{E}(Y)=\\beta_0+\\beta_1 X\\)\nDebido a que la función de regresión relaciona la media de la distribución de probabilidad de \\(Y\\) para un \\(X\\) dado para el nivel de \\(X\\)."
+  },
+  {
+    "objectID": "slides/lec_week9.html#características-importantes-del-modelo-de-regresión-lineal-simple-continuación",
+    "href": "slides/lec_week9.html#características-importantes-del-modelo-de-regresión-lineal-simple-continuación",
+    "title": "Introducción a inferencia estadística",
+    "section": "Características importantes del modelo de regresión lineal simple: continuación",
+    "text": "Características importantes del modelo de regresión lineal simple: continuación\nLa respuesta \\(Y_i\\) en el i-ésimo ensayo excede o queda bajo el valor de la función de regresión por la cantidad del término \\(\\varepsilon_i\\). Además, Los errores \\(\\varepsilon_i\\) se asumen que tienen varianza constante \\(\\sigma^2\\), por lo que la variable respuesta \\(Y_i\\) tiene la misma varianza constante.\nAsí, el modelo de regresión lineal simple asume que la distribución de probabilidad de \\(Y\\) tiene la misma varianza \\(\\sigma^2\\), independiente del nivel de la variable predictora \\(X\\).\nLos errores se asumen independientes. Debido a que los términos \\(\\varepsilon_i\\) y \\(\\varepsilon_j\\) no están correlacionados, también no lo estarán las respuestas \\(Y_i\\) e \\(Y_j\\).\nEn resumen, el modelo de regresión lineal simple implica que la respuesta \\(Y_i\\) viene desde una distribución de probabilidad cuyas medias son \\(\\mathbb{E}(Y_i)=\\beta_0+\\beta_1 X_i\\) y cuyas varianzas son \\(\\sigma^2\\), para todos los niveles de \\(X\\). Además, dos respuestas distintas \\(Y_i\\) e \\(Y_j\\) no están correlacionadas."
+  },
+  {
+    "objectID": "slides/lec_week9.html#interpretación-de-los-parámetros-de-regresión",
+    "href": "slides/lec_week9.html#interpretación-de-los-parámetros-de-regresión",
+    "title": "Introducción a inferencia estadística",
+    "section": "Interpretación de los parámetros de regresión",
+    "text": "Interpretación de los parámetros de regresión\nLos parámetros de regresión \\(\\beta_0\\) y \\(\\beta_1\\) en un modelo de regresión lineal simple son llamados coeficientes de regresión, siendo \\(\\beta_1\\) la pendiente y \\(\\beta_0\\) el intercepto. El primero indica el cambio en la media de la distribución de probabilidad de \\(Y\\) por el incremento unitario en \\(X\\).\nCuando el alcance del modelo incluye \\(X=0\\), \\(\\beta_0\\) entrega la media de la distribución de probabilidad de \\(Y\\) en \\(X=0\\). Cuando el alcance del modelo no incluye \\(X=0\\), \\(\\beta_0\\) no tienen ninguna interpretación particular como termino separado en la regresión."
+  },
+  {
+    "objectID": "slides/lec_week9.html#teorema-de-gauss-markov",
+    "href": "slides/lec_week9.html#teorema-de-gauss-markov",
+    "title": "Introducción a inferencia estadística",
+    "section": "Teorema de Gauss-Markov",
+    "text": "Teorema de Gauss-Markov\n\nBajo las condiciones de un modelo de regresión lineal simple, los estimadores de mínimos cuadrados \\(b_0\\) y \\(b_1\\) son estimadores insesgados y tienen mínima varianza entre los estimadores insesgados lineales.\n\nEste teorema establece que \\(b_0\\) y \\(b_1\\) son estimadores insesgados, por lo que:\n\\[\\mathbb{E}(b_0)=\\beta_0 \\hspace{40pt} \\mathbb{E}(b_1)=\\beta_1\\]\nPor lo que ninguno de estos estimadores tiende a sobrestimar o subestimar sistemáticamente. Segundo, el teorema establece que los estimadores \\(b_0\\) y \\(b_1\\) son más precisos (esto es, su distribución muestral es menos variable) que cualquier otro estimador perteneciente a la clase de estimadores insesgados que son funciones lineales de las observaciones \\(Y_1,\\dots,Y_n\\).\nLos estimadores \\(b_0\\) y \\(b_1\\) son funciones lineal de \\(Y_i\\)."
+  },
+  {
+    "objectID": "slides/lec_week9.html#propiedades-del-ajuste-de-regresión",
+    "href": "slides/lec_week9.html#propiedades-del-ajuste-de-regresión",
+    "title": "Introducción a inferencia estadística",
+    "section": "Propiedades del ajuste de regresión",
+    "text": "Propiedades del ajuste de regresión\nEl ajuste de regresión lineal al usar el método de mínimos cuadrados tiene un número de propiedades que valen la pena mencionar. Estas propiedades de los estimadores de mínimos cuadrados de una función de regresión no aplican para todos los modelos de regresión.\n\nLa suma de los residuos es cero: \\(\\sum_{i=1}^{n} e_i = 0\\)\nLa suma de los valores observados \\(Y_i\\) es igual a la suma de los valores ajustados \\(\\widehat{Y}_i\\):\n\n\n\\[\\sum_{i=1}^{n} Y_i = \\sum_{i=1}^{n} \\widehat{Y}_i\\]\n\n\nDe esto último, se desprende que la media de los valores ajustados \\(\\widehat{Y}_i\\) es la misma que la media de los valores observados \\(Y_i\\)."
+  },
+  {
+    "objectID": "slides/lec_week9.html#propiedades-del-ajuste-de-regresión-continuación",
+    "href": "slides/lec_week9.html#propiedades-del-ajuste-de-regresión-continuación",
+    "title": "Introducción a inferencia estadística",
+    "section": "Propiedades del ajuste de regresión: continuación",
+    "text": "Propiedades del ajuste de regresión: continuación\n\nLa suma de los residuos ponderados es cero cuando el i-ésimo residuo es ponderado con el nivel de la variable predictora i-ésima, esto es:"
+  },
+  {
+    "objectID": "slides/lec_week9.html#función-de-potencia",
+    "href": "slides/lec_week9.html#función-de-potencia",
+    "title": "Introducción a inferencia estadística",
+    "section": "Función de potencia",
+    "text": "Función de potencia\nEs la probabilidad de rechazar la hipótesis nula dado que la alternativa es correcta. Para los posibles valores de la hipótesis alternativa.\nCuando se toma un punto específico de la hipótesis alternativa, ya no se habla de función potencia, sino de potencia de la prueba. Relación entre la función potencia y el error tipo II.\n\\[\\begin{align*}\n\\pi(\\theta)&=1-\\beta\\\\\n&= 1-\\mathbb{P}(\\text{No rechazar }H_0 | H_0 \\text{ es Falsa})\\\\\n&=1-( 1-\\mathbb{P}(\\text{rechazar }H_0 | H_0 \\text{ es Falsa}))\\\\\n&=\\mathbb{P}(\\text{rechazar }H_0 | H_0 \\text{ es Falsa})\\\\\n&=\\mathbb{P}(\\text{rechazar }H_0 | H_1 \\text{ es Verdadera})\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#ejemplo",
+    "href": "slides/lec_week9.html#ejemplo",
+    "title": "Introducción a inferencia estadística",
+    "section": "Ejemplo",
+    "text": "Ejemplo\nSea \\(X\\) la duración del tiempo necesario para armar una unidad se distribuye de forma normal con desviación estándar \\(\\sigma=1.4\\) minutos. Se observan los tiempos de armado de 25 unidades seleccionadas aleatoriamente y se escoge la media muestral \\(\\overline{X}\\) como el estadístico de prueba. Se plantea la siguiente hipótesis nula:\n\\[H_0: \\mu = 10\\]\ny la hipótesis alternativa:\n\\[H_1: \\mu > 10\\]\nSe está interesado en comparar las siguientes regiones críticas, con un nivel de significancia del \\(6\\%\\)\n\nPrueba A: Rechazas \\(H_0\\) si \\(\\overline{X} > 10.65\\)\nPrueba B: Rechazas \\(H_0\\) si \\(\\overline{X} > 10.45\\)\nPrueba C: Rechazas \\(H_0\\) si \\(\\overline{X} > 10.25\\)"
+  },
+  {
+    "objectID": "slides/lec_week9.html#ejemplo-continuación",
+    "href": "slides/lec_week9.html#ejemplo-continuación",
+    "title": "Introducción a inferencia estadística",
+    "section": "Ejemplo: continuación",
+    "text": "Ejemplo: continuación\nPara determinar la probabilidad del error de tipo I, Asumimos que \\(H_0\\) es cierta y calculamos:\n\\[\\mathbb{P}\\left(\\overline{X}>c|\\mu =10\\right)=\\alpha\\]\nEn donde \\(c\\) es el valor crítico o frontera de la región crítica. Si asumimos \\(H_0\\) verdadera, entonces \\(\\overline{X}\\sim N\\left(10,{1.4^2 \\over 25}\\right)\\). Por lo que:\n\\[\\begin{align*}\n\\alpha&=\\mathbb{P}\\left(\\overline{X} > 10.65 | \\mu =10\\right)\\\\\n&=\\mathbb{P}\\left(Z>2.32 | \\mu =10\\right) = 0.0102\n\\end{align*}\\] De igual manera para los otros casos:\n\n\\(\\alpha=0.0537\\)\n\n\\(\\alpha=0.1867 > 0.06\\). Por lo que no la consideramos."
+  },
+  {
+    "objectID": "slides/lec_week9.html#ejemplo-continuación-1",
+    "href": "slides/lec_week9.html#ejemplo-continuación-1",
+    "title": "Introducción a inferencia estadística",
+    "section": "Ejemplo: continuación",
+    "text": "Ejemplo: continuación\nYa que ni la prueba A ni B han sobrepasado el tamaño máximo del error tipo I (nivel de significancia), se determinará cuál es estas dos tiene el tamaño más pequeño para el error de tipo II.\n(Error Tipo II \\(\\Rightarrow H_0\\) es falsa.)\n\\[\\beta(\\mu)=\\mathbb{P}\\left(\\overline{X} \\leq c \\Bigg\\vert\\  \\mu > 10\\right)\\]\nLo cual no es cuantificable en general. Consideramos que el valor real de \\(\\mu\\) es \\(10.4\\). Entonces para la prueba A y B, respectivamente.\n\n\\(\\mathbb{P}\\left(\\overline{X} \\leq 10.65 \\Bigg\\vert\\ \\mu = 10.4\\right)= \\mathbb{P}\\left(Z \\leq 0.89 \\Bigg\\vert\\ \\mu= 10.4\\right)=0.8133\\)\n\\(\\mathbb{P}\\left(\\overline{X} \\leq 10.45 \\Bigg\\vert\\ \\mu = 10.4\\right)= \\mathbb{P}\\left(Z \\leq 0.18 \\Bigg\\vert\\ \\mu= 10.4\\right)=0.5714\\)\n\n\nPor lo que, si \\(\\mu = 10.4\\), la probabilidad de que la prueba A se equivoque al rechazar la hipótesis nula de que \\(\\mu=10\\) es de \\(0.8133\\), análogamente para B es de \\(0.5714\\). Por lo que para este valor particular, la prueba B es mejor que la A."
+  },
+  {
+    "objectID": "slides/lec_week9.html#tipos-de-regiones-críticas",
+    "href": "slides/lec_week9.html#tipos-de-regiones-críticas",
+    "title": "Introducción a inferencia estadística",
+    "section": "Tipos de regiones críticas",
+    "text": "Tipos de regiones críticas\nSi consideramos una hipotesis nula simple, esto es:\n\\[H_0: \\theta = \\theta_0\\]\nEn donde \\(\\theta\\) es el parámetro de interés, cuando se muestrea una distribución cuya función de densidad de probabilidad es \\(f(x;\\theta)\\), en donde \\(\\theta_0\\) es el valor propuesto de \\(\\theta\\). Si la hipótesis alternativa es de la forma:\n\\[H_1: \\theta > \\theta_0\\hspace{20pt}\\text{o}\\hspace{20pt} H_1: \\theta < \\theta_0\\]\nSe dice que \\(H_1\\) es una hipotesis alternativa unilateral. En caso contrario, si la hipótesis alternativa no proporciona una dirección con respecto al valor propuesto de \\(\\theta_0\\), entonces se dice que \\(H_1\\) es una hipotesis alternativa bilateral de la forma:\n\\[H_1: \\theta \\neq \\theta_0\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#ejercicio-intervalo-de-confianza-para-la-media",
+    "href": "slides/lec_week8.html#ejercicio-intervalo-de-confianza-para-la-media",
+    "title": "Introducción a inferencia estadística",
+    "section": "Ejercicio Intervalo de confianza para la media",
+    "text": "Ejercicio Intervalo de confianza para la media\nEl índice de resistencia a la rotura, expresado en kg, de un determinado tipo de cuerda sigue una distribución Normal con desviación típica 15.6 kg. Con una muestra de 5 de estas cuerdas, seleccionadas al azar, se obtuvieron los siguientes índices:\n\\[280, 240, 270, 285, 270.\\]\n\nObtenga un intervalo de confianza para la media del índice de resistencia a la rotura de este tipo de cuerdas, utilizando un nivel de confianza del 95%.\nSi, con el mismo nivel de confianza, se desea obtener un error máximo en la estimación de la media de 5 kg, ¿será suficiente con elegir una muestra de 30 cuerdas?"
+  },
+  {
+    "objectID": "slides/lec_week8.html#resolución-ejercicio-intervalo-de-confianza-para-la-media",
+    "href": "slides/lec_week8.html#resolución-ejercicio-intervalo-de-confianza-para-la-media",
+    "title": "Introducción a inferencia estadística",
+    "section": "Resolución Ejercicio Intervalo de confianza para la media",
+    "text": "Resolución Ejercicio Intervalo de confianza para la media\nSabemos que:\n\\[X:\\{ \\text{Índice de resistencia a la rotura en kg}\\} \\sim N(\\mu,15.6^2)\\]\nAdicionalmente que \\(n=5\\). Como sabemos la desviación típica, nuestro I.C para la media real de la población estará dado por:\n\\[IC(\\mu)=[\\overline{X}\\mp Z_{1-\\alpha/2}\\dfrac{\\sigma}{\\sqrt{n}}]\\]\nAsí, podemos calcular \\(\\overline{X}=269\\) y por construcción sabemos que \\(\\alpha=0.05 \\Rightarrow 1-\\alpha/2=0.975\\). Luego, reemplazamos en el intervalo correspondiente:\n\\[IC(\\mu)=[269 \\mp Z_{0.975} \\dfrac{15.6}{\\sqrt{5}}]\\]\nEn donde \\(Z_{0.975}=1.96\\). Finalmente, el intervalo de confianza del 95\\(\\%\\) estará dado por:\n\\[IC(\\mu)=[255.326;282.674]\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#resolución-continuación",
+    "href": "slides/lec_week8.html#resolución-continuación",
+    "title": "Introducción a inferencia estadística",
+    "section": "Resolución: continuación",
+    "text": "Resolución: continuación\nPara el item b), por construcción -nuevamente- sabemos que \\(\\alpha=0.05\\) y que:\n\\[1.96 \\dfrac{15.6}{\\sqrt{n}} = 5\\]\nLuego, despejando \\(n \\approx 37.39567\\). Por lo que con elegir una muestra de 30 cuerdas no será suficiente para obtener un error máximo en la estimación de la media de a lo más 5 kg."
+  },
+  {
+    "objectID": "slides/lec_week8.html#ejercicio-intervalo-de-confianza-para-la-media-1",
+    "href": "slides/lec_week8.html#ejercicio-intervalo-de-confianza-para-la-media-1",
+    "title": "Introducción a inferencia estadística",
+    "section": "Ejercicio Intervalo de confianza para la media",
+    "text": "Ejercicio Intervalo de confianza para la media\nEn un hospital se ha tomado la temperatura a una muestra de 64 pacientes para estimar la temperatura media de sus enfermos. La media de la muestra ha sido 37.1 ºC y se sabe que la desviación típica de toda la población es 1.04 ºC.\n\nObtenga un intervalo de confianza, al 90%, para la media poblacional.\n¿Con qué nivel de confianza podemos afirmar que la media de la población está comprendida entre 36.8ºC y 37.4 ºC?"
+  },
+  {
+    "objectID": "slides/lec_week8.html#resolución-ejercicio-intervalo-de-confianza-para-la-media-1",
+    "href": "slides/lec_week8.html#resolución-ejercicio-intervalo-de-confianza-para-la-media-1",
+    "title": "Introducción a inferencia estadística",
+    "section": "Resolución Ejercicio Intervalo de confianza para la media",
+    "text": "Resolución Ejercicio Intervalo de confianza para la media\nSabemos que:\n\\[X:\\{\\text{Temperatura de los enfermos en un hospital}\\} \\sim N(\\mu,1.04^2)\\]\nAdicionalmente que \\(n=64\\) y \\(\\overline{x}=37.1\\) . Como sabemos la desviación típica, nuestro I.C para la media real de la población estará dado por:\n\\[IC(\\mu)=[\\overline{X}\\mp Z_{1-\\alpha/2}\\dfrac{\\sigma}{\\sqrt{n}}]\\]\nPor construcción sabemos que \\(\\alpha=0.1 \\Rightarrow 1-\\alpha/2=0.95\\). Luego, reemplazamos en el intervalo correspondiente:\n\\[IC(\\mu)=[37.1 \\mp Z_{0.95} \\dfrac{1.04}{\\sqrt{64}}]\\]\nEn donde \\(Z_{0.95}=1.64\\). Finalmente, el intervalo de confianza del 90% estará dado por:\n\\[IC(\\mu)=[36.4933;37.7067]\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#resolución-continuación-1",
+    "href": "slides/lec_week8.html#resolución-continuación-1",
+    "title": "Introducción a inferencia estadística",
+    "section": "Resolución: continuación",
+    "text": "Resolución: continuación\nPara el item b), nos preguntan por \\(1-\\alpha\\), por lo que debemos hacer el proceso inverso. Nos entregan un intervalo dado por:\n\\[[36.8;37.4]\\]\nPor lo que, \\(37.1 + Z_{1-\\alpha/2} \\dfrac{1.04}{\\sqrt{64}}= 37.4 \\Rightarrow Z_{1-\\alpha/2}=2.307692 \\approx 2.3\\)\nAsí, \\(1-\\alpha/2=0.9893\\Rightarrow \\alpha=0.0214\\)\nLuego, podemos afirmar con un nivel de 97.86% de confianza que la media real de los enfermos de un hospital está entre 36.8 y 37.4 grados."
+  },
+  {
+    "objectID": "slides/lec_week8.html#ejercicio-intervalo-de-confianza-para-la-proporción",
+    "href": "slides/lec_week8.html#ejercicio-intervalo-de-confianza-para-la-proporción",
+    "title": "Introducción a inferencia estadística",
+    "section": "Ejercicio Intervalo de confianza para la proporción",
+    "text": "Ejercicio Intervalo de confianza para la proporción\nUn sondeo de 100 votantes elegidos al azar en un distrito indica que el 55% de ellos estaban a favor de un cierto candidato.\n\nHallar los límites de confianza (a) 95% (b) 99% (c) 99.73% para la proporción de todos los votantes favorables a ese candidato.\n¿De qué tamaño hay tomar el sondeo para tener al 95% de confianza que el candidato saldrá elegido?"
+  },
+  {
+    "objectID": "slides/lec_week8.html#resolución-ejercicio-intervalo-de-confianza-para-la-proporción",
+    "href": "slides/lec_week8.html#resolución-ejercicio-intervalo-de-confianza-para-la-proporción",
+    "title": "Introducción a inferencia estadística",
+    "section": "Resolución Ejercicio Intervalo de confianza para la proporción",
+    "text": "Resolución Ejercicio Intervalo de confianza para la proporción\nHaremos sólo el límite de confianza al 95\\(\\%\\), el intervalo general está dado por:\n\\[IC(p):=\\left[ \\widehat{P}\\mp Z_{1-\\alpha/2}\\sqrt{\\dfrac{\\widehat{P}(1-\\widehat{P})}{n}}\\right]\\]\nreemplazando con \\(\\hat{P}=0.55, n=100, Z_{0.975}=1.96\\) tendremos que el IC estará dado por:\n\\[IC(p):= \\left[ 0.55 \\mp 1.96 \\sqrt{\\dfrac{0.55*0.45}{100}}\\right]=[ 0.4524912;0.6475088]\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#resolución-continuación-2",
+    "href": "slides/lec_week8.html#resolución-continuación-2",
+    "title": "Introducción a inferencia estadística",
+    "section": "Resolución: continuación",
+    "text": "Resolución: continuación\npara el item b), debemos realizar el mismo procedimiento que antes. Sabemos que el candidato será elegido si la proporción es mayor a 0.5, por lo que:\n\\[0.55-1.96\\sqrt{\\dfrac{0.55*0.45}{n}}>0.5  \\Rightarrow n= 380.3184 \\approx 381\\]\nAsí, el sondeo debe tomar al menos 381 encuestados."
+  },
+  {
+    "objectID": "slides/lec_week8.html#ejercicio-intervalo-de-confianza-para-la-varianza",
+    "href": "slides/lec_week8.html#ejercicio-intervalo-de-confianza-para-la-varianza",
+    "title": "Introducción a inferencia estadística",
+    "section": "Ejercicio Intervalo de confianza para la varianza",
+    "text": "Ejercicio Intervalo de confianza para la varianza\nEn un estudio sobre el llenado de botellas de plástico con detergente, se midió el contenido de una muestra de 25. Los resultados fueron: Promedio 0.38 litros y desviación estándar 0.06 litros. Estime, mediante un intervalo de confianza de coeficiente 99%, la varianza poblacional. Asuma que el contenido tiene distribución normal."
+  },
+  {
+    "objectID": "slides/lec_week8.html#resolución-ejercicio-intervalo-de-confianza-para-la-varianza",
+    "href": "slides/lec_week8.html#resolución-ejercicio-intervalo-de-confianza-para-la-varianza",
+    "title": "Introducción a inferencia estadística",
+    "section": "Resolución Ejercicio Intervalo de confianza para la varianza",
+    "text": "Resolución Ejercicio Intervalo de confianza para la varianza\nEl intervalo de confianza para la varianza general está dado por:\n\\[IC(\\sigma^2)=\\left[ \\dfrac{(n-1)S_{n-1}^{2}}{\\chi_{1-\\alpha/2}^{2}(n-1)};\\dfrac{(n-1)S_{n-1}^{2}}{\\chi_{\\alpha/2}^{2}(n-1)}\\right]\\]\nEn donde \\(n=25, S^2_{24}=0.06^2\\). Así, reemplazando en el intervalo tenemos que:\n\\[IC(\\sigma^2)=\\left[ \\dfrac{(25-1)0.06^{2}}{\\chi_{1-0.01/2}^{2}(25-1)};\\dfrac{(25-1)0.06^{2}}{\\chi_{0.01/2}^{2}(25-1)}\\right]\\]\nEn donde \\(\\chi_{0.995}^{2}=45.56, \\chi_{0.005}^{2}=9.886\\). Así,\n\\[IC(\\sigma^2)\\approx [0.0000731;0.000364]\\]"
+  },
+  {
+    "objectID": "slides/lec_week9.html#ejercicio-test-de-hipótesis-para-la-media",
+    "href": "slides/lec_week9.html#ejercicio-test-de-hipótesis-para-la-media",
+    "title": "Introducción a inferencia estadística",
+    "section": "Ejercicio test de hipótesis para la media",
+    "text": "Ejercicio test de hipótesis para la media\nLos siguientes datos representan los tiempos de armado para 20 unidades seleccionadas aleatoriamente:\n9.8, 10.4, 10.6, 9.6, 9.7, 9.9, 10.9, 11.1, 9,6, 10.2, 10.3, 9.6, 9.9, 11,2, 10.6, 9.8, 10.5, 10.1, 10.5, 9.7.\nSupóngase que el tiempo necesario para armar una unidad es una variable aleatoria normal con una desviación estándar de 0.6 minutos. Con base en esta muestra, ¿existe alguna razón para creer, a un nivel de significancia del 0.05, que el tiempo de armado promedio es mayor de 10 minutos?"
+  },
+  {
+    "objectID": "slides/lec_week9.html#resolución-ejercicio-test-de-hipótesis-para-la-media",
+    "href": "slides/lec_week9.html#resolución-ejercicio-test-de-hipótesis-para-la-media",
+    "title": "Introducción a inferencia estadística",
+    "section": "Resolución Ejercicio Test de hipótesis para la media",
+    "text": "Resolución Ejercicio Test de hipótesis para la media\nEn este caso sabemos la desviación estándar real: \\(\\sigma=0.6\\) y que el test de hipótesis está dado por:\n\\[H_0: \\mu \\leq 10 \\hspace{15pt} H_1: \\mu > 10\\]\nAsí, nuestro Estadístico de prueba estará dado por:\n\\[z=\\dfrac{\\overline{x}-\\mu_0}{\\sigma /\\sqrt{n}}\\]\nen donde \\(\\overline{x}=9.6\\) por lo que \\(z=\\dfrac{9.6-10}{0.6/\\sqrt{20}}=-2.981424\\) Así, rechazaremos \\(H_0\\) si \\(z \\geq z_{1-\\alpha}\\) en donde \\(\\alpha=0.05 \\Rightarrow z_{0.95}=1.65\\). Por lo que, debido a que \\(-2.981424 < 1.65\\) no se rechaza la hipótesis nula."
+  },
+  {
+    "objectID": "slides/lec_week9.html#ejercicio-test-de-hipótesis-para-la-proporción",
+    "href": "slides/lec_week9.html#ejercicio-test-de-hipótesis-para-la-proporción",
+    "title": "Introducción a inferencia estadística",
+    "section": "Ejercicio Test de hipótesis para la proporción",
+    "text": "Ejercicio Test de hipótesis para la proporción\nEn el año \\(2016\\), el \\(16\\%\\) de las embarazadas fueron adolecentes menores de \\(20\\) años. El Ministerio de Salud desea saber si esa cifra ha aumentado, para ello se considera una muestra de \\(704\\) partos ocurridos en el Hospital Metropolitano, donde \\(132\\) de ellos corresponden a embarazadas que son adolecentes menores de \\(20\\) años. Con la información anterior. ¿Es posible aseverar que el porcentaje ha aumentado?"
+  },
+  {
+    "objectID": "slides/lec_week9.html#resolución-ejercicio-test-de-hipótesis-para-la-proporción",
+    "href": "slides/lec_week9.html#resolución-ejercicio-test-de-hipótesis-para-la-proporción",
+    "title": "Introducción a inferencia estadística",
+    "section": "Resolución Ejercicio Test de hipótesis para la proporción",
+    "text": "Resolución Ejercicio Test de hipótesis para la proporción\nEn este caso sabemos que el test de hipótesis a realizar es:\n\\[H_0: p\\leq 0.16 \\hspace{15pt} H_1: p > 0.16\\]\nAdicionalmente, por enunciado sabemos que \\(\\hat{p}=\\dfrac{132}{704}=0.1875\\). Así, nuestro estadístico de prueba estará dado por:\n\\[E=\\dfrac{0.1875-0.16}{\\sqrt{\\dfrac{0.16(1-0.16)}{704}}}=144.0476\\]\nY rechazaremos \\(H_0\\) si \\(E> Z_{1-0.05}=Z_{0.95}=1.65\\), por lo que como \\(144.0476 > 1.65\\) rechazamos \\(H_0\\) y en consecuencia podemos aseverar que el porcentaje ha aumentado."
   }
 ]

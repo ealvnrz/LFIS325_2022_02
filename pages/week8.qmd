@@ -1,6 +1,6 @@
 ---
 title: "Semana 8"
-subtitle: "Introducción a inferencia estadística"
+subtitle: "Introducción a la inferencia estadística"
 ---
 
 ## Preparación
@@ -19,4 +19,4 @@ subtitle: "Introducción a inferencia estadística"
 
 ## Material adicional
 
-- [Guía de ejercicios](../documents/Prueba_2/exercises_ci.pdf)
+- [Guía de ejercicios I.C.](../documents/Prueba_2/exercises_ci.pdf)

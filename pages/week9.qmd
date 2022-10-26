@@ -15,3 +15,6 @@ subtitle: "Introducción a la inferencia estadística"
 ```
 
 ## Material adicional
+
+- [Guía de ejercicios: test de hipótesis para la media](../documents/Prueba_2/exercises_ht_mean.pdf)
+- [Guía de ejercicios: test de hipótesis para la proporción y varianza](../documents/Prueba_2/exercises_ht_prop_var.pdf)

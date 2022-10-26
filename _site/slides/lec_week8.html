@@ -521,6 +521,93 @@
 <p><span class="math display">\[\mathbb{P}\left[ \chi_{\alpha/2}^{2}(n-1) \leq \dfrac{(n-1) S_{n-1}^{2}}{\sigma^2} \leq \chi_{1-\alpha/2}^{2}(n-1) \right]=1-\alpha\]</span></p>
 <p>Luego, despejando el parámetro de interés <span class="math inline">\(\sigma^2\)</span>, podemos definir un intervalo de <span class="math inline">\((1-\alpha)\%\)</span> de confianza para la varianza poblacional:</p>
 <p><span class="math display">\[IC(\sigma^2)=\left[ \dfrac{(n-1)S_{n-1}^{2}}{\chi_{1-\alpha/2}^{2}(n-1)};\dfrac{(n-1)S_{n-1}^{2}}{\chi_{\alpha/2}^{2}(n-1)}\right]\]</span></p>
+</section>
+<section id="ejercicio-intervalo-de-confianza-para-la-media" class="slide level2">
+<h2>Ejercicio Intervalo de confianza para la media</h2>
+<p>El índice de resistencia a la rotura, expresado en kg, de un determinado tipo de cuerda sigue una distribución Normal con desviación típica 15.6 kg. Con una muestra de 5 de estas cuerdas, seleccionadas al azar, se obtuvieron los siguientes índices:</p>
+<p><span class="math display">\[280, 240, 270, 285, 270.\]</span></p>
+<ul>
+<li class="fragment">Obtenga un intervalo de confianza para la media del índice de resistencia a la rotura de este tipo de cuerdas, utilizando un nivel de confianza del 95%.</li>
+<li class="fragment">Si, con el mismo nivel de confianza, se desea obtener un error máximo en la estimación de la media de 5 kg, ¿será suficiente con elegir una muestra de 30 cuerdas?</li>
+</ul>
+</section>
+<section id="resolución-ejercicio-intervalo-de-confianza-para-la-media" class="slide level2 small">
+<h2>Resolución Ejercicio Intervalo de confianza para la media</h2>
+<p>Sabemos que:</p>
+<p><span class="math display">\[X:\{ \text{Índice de resistencia a la rotura en kg}\} \sim N(\mu,15.6^2)\]</span></p>
+<p>Adicionalmente que <span class="math inline">\(n=5\)</span>. Como sabemos la desviación típica, nuestro I.C para la media real de la población estará dado por:</p>
+<p><span class="math display">\[IC(\mu)=[\overline{X}\mp Z_{1-\alpha/2}\dfrac{\sigma}{\sqrt{n}}]\]</span></p>
+<p>Así, podemos calcular <span class="math inline">\(\overline{X}=269\)</span> y por construcción sabemos que <span class="math inline">\(\alpha=0.05 \Rightarrow 1-\alpha/2=0.975\)</span>. Luego, reemplazamos en el intervalo correspondiente:</p>
+<p><span class="math display">\[IC(\mu)=[269 \mp Z_{0.975} \dfrac{15.6}{\sqrt{5}}]\]</span></p>
+<p>En donde <span class="math inline">\(Z_{0.975}=1.96\)</span>. Finalmente, el intervalo de confianza del 95<span class="math inline">\(\%\)</span> estará dado por:</p>
+<p><span class="math display">\[IC(\mu)=[255.326;282.674]\]</span></p>
+</section>
+<section id="resolución-continuación" class="slide level2">
+<h2>Resolución: continuación</h2>
+<p>Para el item b), por construcción -nuevamente- sabemos que <span class="math inline">\(\alpha=0.05\)</span> y que:</p>
+<p><span class="math display">\[1.96 \dfrac{15.6}{\sqrt{n}} = 5\]</span></p>
+<p>Luego, despejando <span class="math inline">\(n \approx 37.39567\)</span>. Por lo que con elegir una muestra de 30 cuerdas no será suficiente para obtener un error máximo en la estimación de la media de a lo más 5 kg.</p>
+</section>
+<section id="ejercicio-intervalo-de-confianza-para-la-media-1" class="slide level2">
+<h2>Ejercicio Intervalo de confianza para la media</h2>
+<p>En un hospital se ha tomado la temperatura a una muestra de 64 pacientes para estimar la temperatura media de sus enfermos. La media de la muestra ha sido 37.1 ºC y se sabe que la desviación típica de toda la población es 1.04 ºC.</p>
+<ul>
+<li class="fragment">Obtenga un intervalo de confianza, al 90%, para la media poblacional.</li>
+<li class="fragment">¿Con qué nivel de confianza podemos afirmar que la media de la población está comprendida entre 36.8ºC y 37.4 ºC?</li>
+</ul>
+</section>
+<section id="resolución-ejercicio-intervalo-de-confianza-para-la-media-1" class="slide level2 small">
+<h2>Resolución Ejercicio Intervalo de confianza para la media</h2>
+<p>Sabemos que:</p>
+<p><span class="math display">\[X:\{\text{Temperatura de los enfermos en un hospital}\} \sim N(\mu,1.04^2)\]</span></p>
+<p>Adicionalmente que <span class="math inline">\(n=64\)</span> y <span class="math inline">\(\overline{x}=37.1\)</span> . Como sabemos la desviación típica, nuestro I.C para la media real de la población estará dado por:</p>
+<p><span class="math display">\[IC(\mu)=[\overline{X}\mp Z_{1-\alpha/2}\dfrac{\sigma}{\sqrt{n}}]\]</span></p>
+<p>Por construcción sabemos que <span class="math inline">\(\alpha=0.1 \Rightarrow 1-\alpha/2=0.95\)</span>. Luego, reemplazamos en el intervalo correspondiente:</p>
+<p><span class="math display">\[IC(\mu)=[37.1 \mp Z_{0.95} \dfrac{1.04}{\sqrt{64}}]\]</span></p>
+<p>En donde <span class="math inline">\(Z_{0.95}=1.64\)</span>. Finalmente, el intervalo de confianza del 90% estará dado por:</p>
+<p><span class="math display">\[IC(\mu)=[36.4933;37.7067]\]</span></p>
+</section>
+<section id="resolución-continuación-1" class="slide level2">
+<h2>Resolución: continuación</h2>
+<p>Para el item b), nos preguntan por <span class="math inline">\(1-\alpha\)</span>, por lo que debemos hacer el proceso inverso. Nos entregan un intervalo dado por:</p>
+<p><span class="math display">\[[36.8;37.4]\]</span></p>
+<p>Por lo que, <span class="math inline">\(37.1 + Z_{1-\alpha/2} \dfrac{1.04}{\sqrt{64}}= 37.4 \Rightarrow Z_{1-\alpha/2}=2.307692 \approx 2.3\)</span></p>
+<p>Así, <span class="math inline">\(1-\alpha/2=0.9893\Rightarrow \alpha=0.0214\)</span></p>
+<p>Luego, podemos afirmar con un nivel de 97.86% de confianza que la media real de los enfermos de un hospital está entre 36.8 y 37.4 grados.</p>
+</section>
+<section id="ejercicio-intervalo-de-confianza-para-la-proporción" class="slide level2">
+<h2>Ejercicio Intervalo de confianza para la proporción</h2>
+<p>Un sondeo de 100 votantes elegidos al azar en un distrito indica que el 55% de ellos estaban a favor de un cierto candidato.</p>
+<ul>
+<li class="fragment">Hallar los límites de confianza (a) 95% (b) 99% (c) 99.73% para la proporción de todos los votantes favorables a ese candidato.</li>
+<li class="fragment">¿De qué tamaño hay tomar el sondeo para tener al 95% de confianza que el candidato saldrá elegido?</li>
+</ul>
+</section>
+<section id="resolución-ejercicio-intervalo-de-confianza-para-la-proporción" class="slide level2">
+<h2>Resolución Ejercicio Intervalo de confianza para la proporción</h2>
+<p>Haremos sólo el límite de confianza al 95<span class="math inline">\(\%\)</span>, el intervalo general está dado por:</p>
+<p><span class="math display">\[IC(p):=\left[ \widehat{P}\mp Z_{1-\alpha/2}\sqrt{\dfrac{\widehat{P}(1-\widehat{P})}{n}}\right]\]</span></p>
+<p>reemplazando con <span class="math inline">\(\hat{P}=0.55, n=100, Z_{0.975}=1.96\)</span> tendremos que el IC estará dado por:</p>
+<p><span class="math display">\[IC(p):= \left[ 0.55 \mp 1.96 \sqrt{\dfrac{0.55*0.45}{100}}\right]=[ 0.4524912;0.6475088]\]</span></p>
+</section>
+<section id="resolución-continuación-2" class="slide level2">
+<h2>Resolución: continuación</h2>
+<p>para el item b), debemos realizar el mismo procedimiento que antes. Sabemos que el candidato será elegido si la proporción es mayor a 0.5, por lo que:</p>
+<p><span class="math display">\[0.55-1.96\sqrt{\dfrac{0.55*0.45}{n}}&gt;0.5  \Rightarrow n= 380.3184 \approx 381\]</span></p>
+<p>Así, el sondeo debe tomar al menos 381 encuestados.</p>
+</section>
+<section id="ejercicio-intervalo-de-confianza-para-la-varianza" class="slide level2">
+<h2>Ejercicio Intervalo de confianza para la varianza</h2>
+<p>En un estudio sobre el llenado de botellas de plástico con detergente, se midió el contenido de una muestra de 25. Los resultados fueron: Promedio 0.38 litros y desviación estándar 0.06 litros. Estime, mediante un intervalo de confianza de coeficiente 99%, la varianza poblacional. Asuma que el contenido tiene distribución normal.</p>
+</section>
+<section id="resolución-ejercicio-intervalo-de-confianza-para-la-varianza" class="slide level2">
+<h2>Resolución Ejercicio Intervalo de confianza para la varianza</h2>
+<p>El intervalo de confianza para la varianza general está dado por:</p>
+<p><span class="math display">\[IC(\sigma^2)=\left[ \dfrac{(n-1)S_{n-1}^{2}}{\chi_{1-\alpha/2}^{2}(n-1)};\dfrac{(n-1)S_{n-1}^{2}}{\chi_{\alpha/2}^{2}(n-1)}\right]\]</span></p>
+<p>En donde <span class="math inline">\(n=25, S^2_{24}=0.06^2\)</span>. Así, reemplazando en el intervalo tenemos que:</p>
+<p><span class="math display">\[IC(\sigma^2)=\left[ \dfrac{(25-1)0.06^{2}}{\chi_{1-0.01/2}^{2}(25-1)};\dfrac{(25-1)0.06^{2}}{\chi_{0.01/2}^{2}(25-1)}\right]\]</span></p>
+<p>En donde <span class="math inline">\(\chi_{0.995}^{2}=45.56, \chi_{0.005}^{2}=9.886\)</span>. Así,</p>
+<p><span class="math display">\[IC(\sigma^2)\approx [0.0000731;0.000364]\]</span></p>
 </section></section>
 <section id="qué-veremos-la-próxima-semana" class="title-slide slide level1 center">
 <h1>¿Qué veremos la próxima semana?</h1>
