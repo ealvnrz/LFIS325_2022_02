@@ -1888,5 +1888,278 @@
     "title": "Introducción a inferencia estadística",
     "section": "Resolución Ejercicio Test de hipótesis para la proporción",
     "text": "Resolución Ejercicio Test de hipótesis para la proporción\nEn este caso sabemos que el test de hipótesis a realizar es:\n\\[H_0: p\\leq 0.16 \\hspace{15pt} H_1: p > 0.16\\]\nAdicionalmente, por enunciado sabemos que \\(\\hat{p}=\\dfrac{132}{704}=0.1875\\). Así, nuestro estadístico de prueba estará dado por:\n\\[E=\\dfrac{0.1875-0.16}{\\sqrt{\\dfrac{0.16(1-0.16)}{704}}}=144.0476\\]\nY rechazaremos \\(H_0\\) si \\(E> Z_{1-0.05}=Z_{0.95}=1.65\\), por lo que como \\(144.0476 > 1.65\\) rechazamos \\(H_0\\) y en consecuencia podemos aseverar que el porcentaje ha aumentado."
+  },
+  {
+    "objectID": "slides/lec_week10.html#definición-formal",
+    "href": "slides/lec_week10.html#definición-formal",
+    "title": "Regresión lineal simple",
+    "section": "Definición formal",
+    "text": "Definición formal\nUn modelo de regresión básico donde sólo hay una variable predictora y la función de regresión es lineal se define como:\n\\[Y_i=\\beta_0+\\beta_1 X_i + \\varepsilon_i\\]\ndonde,\n\n\\(Y_i\\) es el valor de la varible respuesta en la i-ésima observación\n\\(\\beta_0\\) y \\(\\beta_1\\) son parámetros\n\\(X_i\\) es una constante conocida: el valor de la variable predictora en la i-ésima observación.\n\\(\\varepsilon_i\\) es un término de error aleatorio con meadia \\(\\mathbb{E}(\\varepsilon_i)=0\\) y varianza \\(\\mathbb{V}(\\varepsilon_i)=\\sigma^2\\)\n\\(\\varepsilon_i\\) y \\(\\varepsilon_j\\) no están correlacionados, por lo que su covarianza es cero.\n\n\nEsto modelo se le conoce como modelo de regresión lineal simple."
+  },
+  {
+    "objectID": "slides/lec_week10.html#características-importantes-del-modelo-de-regresión-lineal-simple",
+    "href": "slides/lec_week10.html#características-importantes-del-modelo-de-regresión-lineal-simple",
+    "title": "Regresión lineal simple",
+    "section": "Características importantes del modelo de regresión lineal simple",
+    "text": "Características importantes del modelo de regresión lineal simple\nLa respuesta \\(Y_i\\) en la i-ésimo ensayo es la suma de dos componentes: - El término constante \\(\\beta_0+\\beta_1 X_i\\) y, - El término aleatorio \\(\\varepsilon_i\\). Por lo que \\(Y_i\\) es una variable aleatoria\nDebido a que \\(\\mathbb{E}(\\varepsilon_i)=0\\), sigue que:\n\\[\\mathbb{E}(Y_i)=\\mathbb{E}(\\beta_0+\\beta_1 X_i + \\varepsilon_i)=\\beta_0+\\beta_1 X_i + \\mathbb{E}(\\varepsilon_i)= \\beta_0+\\beta_1 X_i\\]\nAsí, la respuesta \\(Y_i\\), cuando el nivel de \\(X\\) en el i-ésimo ensayo es \\(X_i\\), viene desde una distribución de probabilidad cuya media está dada por:\n\\[\\mathbb{E}(Y_i)=\\beta_0+\\beta_1 X_i\\]\nSabremos que la función de regresión para este modelo es \\(\\mathbb{E}(Y)=\\beta_0+\\beta_1 X\\)\nDebido a que la función de regresión relaciona la media de la distribución de probabilidad de \\(Y\\) para un \\(X\\) dado para el nivel de \\(X\\)."
+  },
+  {
+    "objectID": "slides/lec_week10.html#características-importantes-del-modelo-de-regresión-lineal-simple-continuación",
+    "href": "slides/lec_week10.html#características-importantes-del-modelo-de-regresión-lineal-simple-continuación",
+    "title": "Regresión lineal simple",
+    "section": "Características importantes del modelo de regresión lineal simple: continuación",
+    "text": "Características importantes del modelo de regresión lineal simple: continuación\nLa respuesta \\(Y_i\\) en el i-ésimo ensayo excede o queda bajo el valor de la función de regresión por la cantidad del término \\(\\varepsilon_i\\). Además, Los errores \\(\\varepsilon_i\\) se asumen que tienen varianza constante \\(\\sigma^2\\), por lo que la variable respuesta \\(Y_i\\) tiene la misma varianza constante.\nAsí, el modelo de regresión lineal simple asume que la distribución de probabilidad de \\(Y\\) tiene la misma varianza \\(\\sigma^2\\), independiente del nivel de la variable predictora \\(X\\).\nLos errores se asumen independientes. Debido a que los términos \\(\\varepsilon_i\\) y \\(\\varepsilon_j\\) no están correlacionados, también no lo estarán las respuestas \\(Y_i\\) e \\(Y_j\\).\nEn resumen, el modelo de regresión lineal simple implica que la respuesta \\(Y_i\\) viene desde una distribución de probabilidad cuyas medias son \\(\\mathbb{E}(Y_i)=\\beta_0+\\beta_1 X_i\\) y cuyas varianzas son \\(\\sigma^2\\), para todos los niveles de \\(X\\). Además, dos respuestas distintas \\(Y_i\\) e \\(Y_j\\) no están correlacionadas."
+  },
+  {
+    "objectID": "slides/lec_week10.html#interpretación-de-los-parámetros-de-regresión",
+    "href": "slides/lec_week10.html#interpretación-de-los-parámetros-de-regresión",
+    "title": "Regresión lineal simple",
+    "section": "Interpretación de los parámetros de regresión",
+    "text": "Interpretación de los parámetros de regresión\nLos parámetros de regresión \\(\\beta_0\\) y \\(\\beta_1\\) en un modelo de regresión lineal simple son llamados coeficientes de regresión, siendo \\(\\beta_1\\) la pendiente y \\(\\beta_0\\) el intercepto. El primero indica el cambio en la media de la distribución de probabilidad de \\(Y\\) por el incremento unitario en \\(X\\).\nCuando el alcance del modelo incluye \\(X=0\\), \\(\\beta_0\\) entrega la media de la distribución de probabilidad de \\(Y\\) en \\(X=0\\). Cuando el alcance del modelo no incluye \\(X=0\\), \\(\\beta_0\\) no tienen ninguna interpretación particular como termino separado en la regresión."
+  },
+  {
+    "objectID": "slides/lec_week10.html#teorema-de-gauss-markov",
+    "href": "slides/lec_week10.html#teorema-de-gauss-markov",
+    "title": "Regresión lineal simple",
+    "section": "Teorema de Gauss-Markov",
+    "text": "Teorema de Gauss-Markov\n\nBajo las condiciones de un modelo de regresión lineal simple, los estimadores de mínimos cuadrados \\(b_0\\) y \\(b_1\\) son estimadores insesgados y tienen mínima varianza entre los estimadores insesgados lineales.\n\nEste teorema establece que \\(b_0\\) y \\(b_1\\) son estimadores insesgados, por lo que:\n\\[\\mathbb{E}(b_0)=\\beta_0 \\hspace{40pt} \\mathbb{E}(b_1)=\\beta_1\\]\nPor lo que ninguno de estos estimadores tiende a sobrestimar o subestimar sistemáticamente. Segundo, el teorema establece que los estimadores \\(b_0\\) y \\(b_1\\) son más precisos (esto es, su distribución muestral es menos variable) que cualquier otro estimador perteneciente a la clase de estimadores insesgados que son funciones lineales de las observaciones \\(Y_1,\\dots,Y_n\\).\nLos estimadores \\(b_0\\) y \\(b_1\\) son funciones lineal de \\(Y_i\\)."
+  },
+  {
+    "objectID": "slides/lec_week10.html#propiedades-del-ajuste-de-regresión",
+    "href": "slides/lec_week10.html#propiedades-del-ajuste-de-regresión",
+    "title": "Regresión lineal simple",
+    "section": "Propiedades del ajuste de regresión",
+    "text": "Propiedades del ajuste de regresión\nEl ajuste de regresión lineal al usar el método de mínimos cuadrados tiene un número de propiedades que valen la pena mencionar. Estas propiedades de los estimadores de mínimos cuadrados de una función de regresión no aplican para todos los modelos de regresión.\n\nLa suma de los residuos es cero: \\(\\sum_{i=1}^{n} e_i = 0\\)\nLa suma de los valores observados \\(Y_i\\) es igual a la suma de los valores ajustados \\(\\widehat{Y}_i\\):\n\n\n\\[\\sum_{i=1}^{n} Y_i = \\sum_{i=1}^{n} \\widehat{Y}_i\\]\n\n\nDe esto último, se desprende que la media de los valores ajustados \\(\\widehat{Y}_i\\) es la misma que la media de los valores observados \\(Y_i\\)."
+  },
+  {
+    "objectID": "slides/lec_week10.html#propiedades-del-ajuste-de-regresión-continuación",
+    "href": "slides/lec_week10.html#propiedades-del-ajuste-de-regresión-continuación",
+    "title": "Regresión lineal simple",
+    "section": "Propiedades del ajuste de regresión: continuación",
+    "text": "Propiedades del ajuste de regresión: continuación\n\nLa suma de los residuos ponderados es cero cuando el i-ésimo residuo es ponderado con el nivel de la variable predictora i-ésima, esto es:\n\n\n\\[\\sum_{i=1}^{n} X_i e_i = 0\\]\n\nUna consecuencia de las propiedades 1 y 3, es que la suma de los pesos ponderados es cero cuando el i-ésimo residuo es ponderado con el valor ajustado de la i-ésima variable respuesta, esto es:\n\n\n\n\\[\\sum_{i=1}^{n} \\widehat{Y}_i e_i = 0\\]\n\nLa recta de regresión siempre pasa por el punto \\((\\overline{X},\\overline{Y})\\)."
+  },
+  {
+    "objectID": "slides/lec_week10.html#inferencia-sobre-la-pendiente",
+    "href": "slides/lec_week10.html#inferencia-sobre-la-pendiente",
+    "title": "Regresión lineal simple",
+    "section": "Inferencia sobre la pendiente",
+    "text": "Inferencia sobre la pendiente\nFrecuentemente es de particular interés la inferencia sobre el parámetro de la pendiente de regresión, pues nos entrega una noción de cambio medio por unidad en la variable regresora. Un tipo de test relevante en este contexto es:\n\\[H_0: \\beta_1=0 \\hspace{20pt} H_1: \\beta_1\\ne 0\\]\nEste test de hipótesis es relevante debido a que cuando \\(\\beta_1=0\\), no existe una asociación lineal entre las variables \\(X\\) e \\(Y\\).\nEn el caso de que el término de error en el modelo de regresión sea normal, la condición de que \\(\\beta_1=0\\) implica aún más cosas. Debido a que en este modelo todas las distribución de probabilidades de \\(Y\\) son normales con varianza constante, y que las medias son iguales cuando \\(\\beta_1=0\\), sigue que las distribuciones de probabilidad de \\(Y\\) son idénticas cuando \\(\\beta_1=0\\).\n\nAsí, \\(\\beta_1=0\\) para el modelo de regresión lineal normal implica que no sólo no existe relación lineal entre \\(X\\) e \\(Y\\), pero además no existe ningún tipo de relación entre \\(Y\\) y \\(X\\), dado que las distribuciones de probabilidad de \\(Y\\) son idénticas para todos los niveles de \\(X\\)."
+  },
+  {
+    "objectID": "slides/lec_week10.html#distribución-muestral-de-b_1",
+    "href": "slides/lec_week10.html#distribución-muestral-de-b_1",
+    "title": "Regresión lineal simple",
+    "section": "Distribución muestral de \\(b_1\\)",
+    "text": "Distribución muestral de \\(b_1\\)\nPor lo visto antes, sabemos que el estimador puntual de \\(b_1\\) está dado por:\n\\[b_1=\\dfrac{\\sum (X_i-\\overline{X})(Y_i - \\overline{Y})}{\\sum (X_i-\\overline{X})^2}\\]\nLa distribución muestral de \\(b_1\\) hace referencia a los diferentes valores de \\(b_1\\) que serían obtenidos con un muestreo repetido cuando los niveles de la variable predictora \\(X\\) se mantiene constante entre las diferentes muestras. Para el modelo de regresión normal, la distribución muestral de \\(b_1\\) es normal con media y varianza dada por:\n\\[\\mathbb{E}(b_1)=\\beta_1\\qquad \\qquad\\mathbb{V}(b_1)=\\dfrac{\\sigma^2}{\\sum (X_i-\\overline{X})^2}\\]\nPara mostrar esto, debemos identificar que \\(b_1\\) es una combinación lineal de las observaciones \\(Y_i\\)."
+  },
+  {
+    "objectID": "slides/lec_week10.html#normalidad-media-y-varianza",
+    "href": "slides/lec_week10.html#normalidad-media-y-varianza",
+    "title": "Regresión lineal simple",
+    "section": "Normalidad, media y varianza",
+    "text": "Normalidad, media y varianza\nDebido a que el término \\(b_1\\) es una combinación lineal de \\(Y_i\\), y este último son variables aleatoria normales independientes, sigue que \\(b_1\\) también lo es.\nLa insesgadez del estimador puntual de \\(b_1\\) es debido al teorema de Gauss-Markov, sigue que:\n\\[\\begin{align*}\n\\mathbb{E}(b_1)&=\\mathbb{E}\\left(\\sum k_i Y_i\\right)=\\sum k_i \\mathbb{E}(Y_i)= \\sum k_i(\\beta_0+\\beta_1 X_i)\\\\\n&= \\beta_0 \\sum k_i + \\beta_1 \\sum k_i X_i = \\beta_1\n\\end{align*}\\] En cuanto a la varianza de \\(b_1\\), sólo necesitamos recordar que \\(Y_i\\) son variables aleatorias independientes, cada una con varianza \\(\\sigma^2\\) y que \\(k_i\\) son constantes. Por lo que: \\[\\begin{align*}\n\\mathbb{V}(b_1)&=\\mathbb{V}\\left(\\sum k_i Y_i\\right)=\\sum k_{i}^{2} \\mathbb{V}(Y_i)\\\\\n&=\\sum k_{i}^{2} \\sigma^2=\\sigma^2 \\sum k_{i}^{2}\\\\\n&= \\dfrac{\\sigma^2}{\\sum (X_i -\\overline{X})^2}\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "slides/lec_week10.html#varianza-estimada",
+    "href": "slides/lec_week10.html#varianza-estimada",
+    "title": "Regresión lineal simple",
+    "section": "Varianza estimada",
+    "text": "Varianza estimada\nPodemos estimar la varianza de la distribución muestral de \\(b_1\\):\n\\[\\mathbb{V}(b_1)=\\dfrac{\\sigma^2}{\\sum (X_i - \\overline{X})^2}\\]\nReemplazando el parámetro \\(\\sigma^2\\) con el ECM, el estimador insesgado de \\(\\sigma^2\\):\n\\[\\widehat{\\mathbb{V}(b_1)}=\\dfrac{MSE}{\\sum (X_i - \\overline{X})^2}\\]\nEsta estimación puntual es un estimador insesgada de \\(\\mathbb{V}(b_1)\\). Tomando la raíz cuadrado podemos obtener la estimación puntual para la desviación estándar."
+  },
+  {
+    "objectID": "slides/lec_week10.html#distribución-muestral-útil",
+    "href": "slides/lec_week10.html#distribución-muestral-útil",
+    "title": "Regresión lineal simple",
+    "section": "Distribución muestral útil",
+    "text": "Distribución muestral útil\nCon vistas en obtener intervalos de confianza para los parámetros de regresión, necesitamos obtener las distribuciones muestrales de cantidades pivotales, entre ellas la cantidad:\n\\[(b_1-\\beta_1)/\\sqrt{\\widehat{\\mathbb{V}(b_1)}}\\]\nDebido a que \\(b_1\\) está distribuido normalmente, sabemos que la estandarización:\n\\[\\dfrac{(b_1-\\beta_1)}{\\sqrt{\\mathbb{V}(b_1)}}\\]\nes una variable aleatoria normal estándar. En la práctica, no se tiene acceso a la varianza teórica por lo que esta cantidad debe ser estimada por \\(\\widehat{\\mathbb{V}(b_1)}\\) por que estamos particularmente interesados en la distribución de \\((b_1-\\beta_1)/\\sqrt{\\widehat{\\mathbb{V}(b_1)}}\\)"
+  },
+  {
+    "objectID": "slides/lec_week10.html#distribución-muestral-útil-continuación",
+    "href": "slides/lec_week10.html#distribución-muestral-útil-continuación",
+    "title": "Regresión lineal simple",
+    "section": "Distribución muestral útil: continuación",
+    "text": "Distribución muestral útil: continuación\nCuando una estadístico está estandarizado pero el denominador es una estimación de la desviación estándar en vez de su valor real, se le llama estadístico estudentizado. Un teorema importante en estadística establece que el estadístico:\n\\[\\dfrac{(b_1-\\beta_1)}{\\sqrt{\\widehat{\\mathbb{V}(b_1)}}}\\sim t(n-2)\\]\nPara el modelo de regresión que estamos estudiando. Esto viene del hecho que \\(SSE/\\sigma^2 \\sim \\chi^2(n-2)\\) y es independiente de \\(b_0\\) y \\(b_1\\)."
+  },
+  {
+    "objectID": "slides/lec_week10.html#intervalo-de-confianza-para-la-pendiente",
+    "href": "slides/lec_week10.html#intervalo-de-confianza-para-la-pendiente",
+    "title": "Regresión lineal simple",
+    "section": "Intervalo de confianza para la pendiente",
+    "text": "Intervalo de confianza para la pendiente\nDebido a que esta cantidad sigue una distribución t-student, podemos establecer que:\n\\[\\mathbb{P}(t(\\alpha/2,n-2)\\leq (b_1-\\beta_1)/\\sqrt{\\widehat{\\mathbb{V}(b_1)}} \\leq  t(1-\\alpha/2,n-2))=1-\\alpha\\]\nLuego, operando de igual manera que en la construcción de intervalos de confianza usual (vía pivote). Podemos llegar a un intervalo de confianza para \\(\\beta_1\\):\n\\[\\left[ b_1 \\pm t(1-\\alpha/2, n-2) \\sqrt{\\widehat{\\mathbb{V}(b_1)}}\\right]\\]"
+  },
+  {
+    "objectID": "slides/lec_week10.html#test-de-hipótesis-para-la-pendiente",
+    "href": "slides/lec_week10.html#test-de-hipótesis-para-la-pendiente",
+    "title": "Regresión lineal simple",
+    "section": "Test de hipótesis para la pendiente",
+    "text": "Test de hipótesis para la pendiente\nDebido a que:\n\\[\\dfrac{(b_1-\\beta_1)}{\\sqrt{\\widehat{\\mathbb{V}(b_1)}}}\\sim t(n-2)\\]\nToda la teoría de test de hipótesis usuales es válida (tests unilaterales y bilaterales).\nTenemos particular interés en un test del tipo:\n\\[H_0: \\beta_1 = 0 \\hspace{20pt} H_1:\\beta_1 \\neq 0\\]\nPues con ello probamos si existe una asociación lineal entre las variables del modelo bajo un cierto nivel de confianza."
+  },
+  {
+    "objectID": "slides/lec_week10.html#inferencia-sobre-el-intercepto",
+    "href": "slides/lec_week10.html#inferencia-sobre-el-intercepto",
+    "title": "Regresión lineal simple",
+    "section": "Inferencia sobre el intercepto",
+    "text": "Inferencia sobre el intercepto\nComo lo mencionamos antes, rara vez tendremos interés en hacer inferencia sobre el parámetro \\(\\beta_0\\), y estos son sólo válidos cuando el rango de la variable predictora incluye \\(X=0\\).\nComo hemos visto antes la estimación puntal del intercepto está dado por:\n\\[b_0=\\overline{Y}-b_1\\overline{X}\\]\nPara el modelo de regresión en estudio, la distribución muestral de \\(b_0\\) es normal, con media y varianza:\n\\[\\mathbb{E}(b_0)=\\beta_0\\qquad \\qquad \\mathbb{V}(b_0)=\\sigma^2\\left[ \\dfrac{1}{n}+\\dfrac{\\overline{X}^2}{\\sum (X_i-\\overline{X})^2}\\right]\\]\nLa normalidad es obtenida debido a que \\(b_0\\) al igual que \\(b_1\\), es una combinación lineal de observaciones \\(Y_i\\). Al igual que antes, una estimador de la varianza viene dado al reemplazar \\(\\sigma^2\\) por su estimación puntual (ECM). El estimador de la desviación estándar es obtenido aplicando raíz cuadrada."
+  },
+  {
+    "objectID": "slides/lec_week10.html#intervalo-de-confianza-para-el-intercepto",
+    "href": "slides/lec_week10.html#intervalo-de-confianza-para-el-intercepto",
+    "title": "Regresión lineal simple",
+    "section": "Intervalo de confianza para el intercepto",
+    "text": "Intervalo de confianza para el intercepto\nAl igual que antes, se tiene que:\n\\[\\dfrac{b_0-\\beta_0}{\\sqrt{\\widehat{\\mathbb{V}(b_0)}}}\\sim t(n-2)\\]\npara este modelo de regresión. Así, los intervalos de confianza pueden ser construidos al igual que para \\(\\beta_1\\). Esto es:\n\\[\\left[ b_0 \\pm t(1-\\alpha/2, n-1)\\sqrt{\\widehat{\\mathbb{V}(b_0)}}\\right]\\]"
+  },
+  {
+    "objectID": "slides/lec_week10.html#introducción",
+    "href": "slides/lec_week10.html#introducción",
+    "title": "Regresión lineal simple",
+    "section": "Introducción",
+    "text": "Introducción\nCon lo anterior, ya hemos visto gran parte de la teoría de un modelo de regresión básico. En lo que sigue, estudiaremos el análisis de regresión desde la perspectiva de análisis de varianza.\nNociones básicas: El enfoque desde el análisis de varianza se base en particionar la suma de cuadrado y grados de libertad asociados con la variable respuesta \\(Y\\). Identificaremos 3 términos que usaremos frecuentemente:\n\nSuma de cuadrados total (SSTO): \\(\\sum (Y_i - \\overline{Y})^2\\)\nSuma de los cuadrados del error (SSE): \\(\\sum (Y_i - \\hat{Y}_i)^2\\)\nSuma de los cuadrados de la regresión (SSR): \\(\\sum (\\hat{Y}_i-\\overline{Y})^2\\)\n\n\nen donde se tiene la relación:\n\\[SSTO=SSE+SSR\\]"
+  },
+  {
+    "objectID": "slides/lec_week10.html#desglose-de-los-grados-de-libertad",
+    "href": "slides/lec_week10.html#desglose-de-los-grados-de-libertad",
+    "title": "Regresión lineal simple",
+    "section": "Desglose de los grados de libertad",
+    "text": "Desglose de los grados de libertad\nAl igual que para la varianza, podemos desglosar los grados de libertad. Es claro ver que:\n\nSSTO tiene asociado \\(n-1\\) grados de libertad, debido a que estimamos la media poblacional.\nSSE tiene asociado \\(n-2\\) grados de libertad, debido a que para obtener \\(\\hat{Y}_i\\) debemos estimar \\(\\beta_0\\) y \\(\\beta_1\\)\nSSR tiene asociado \\(1\\) grado de libertad debido a que los valores ajustados son calculados a partir de la recta de regresión, por lo que \\(2\\) grados de libertad están a asociado a esta, pero uno de ello es perdido debido a la estimación \\(\\overline{Y}\\).\n\n\nAsí, se tiene que:\n\\[n-1=1+(n-2)\\]"
+  },
+  {
+    "objectID": "slides/lec_week10.html#cuadrados-medios",
+    "href": "slides/lec_week10.html#cuadrados-medios",
+    "title": "Regresión lineal simple",
+    "section": "Cuadrados medios",
+    "text": "Cuadrados medios\nLlamamos cuadrados medios a las sumas cuadradas divididas por sus grados de libertad respectivos. Por lo que tenemos:\n\nError cuadrático medio: \\(\\dfrac{SSE}{n-2}\\)\nCuadrado medio de regresión: \\(\\dfrac{SSR}{1}\\)\n\n\nEn este caso, los cuadrados medios no son aditivos"
+  },
+  {
+    "objectID": "slides/lec_week10.html#tabla-anova",
+    "href": "slides/lec_week10.html#tabla-anova",
+    "title": "Regresión lineal simple",
+    "section": "Tabla ANOVA",
+    "text": "Tabla ANOVA\nLo que hemos visto anteriormente, puede ser resumido en la tabla ANOVA usual, en donde se incorporó además la esperanza de los cuadrados medios.\n\n\n\n\n\n\n\n\n\n\nF.V.\nSS\ng.l.\nMS\n\\(\\mathbf{\\mathbb{E}(MS)}\\)\n\n\n\n\nRegresión\n\\(SSR = \\sum (\\hat{Y}_i-\\overline{Y})^2\\)\n\\(1\\)\n\\(MSR=SSR\\)\n\\(\\sigma^2+\\beta_{1}^{2}\\sum (X_i-\\overline{X})^2\\)\n\n\nError\n\\(SSE = \\sum (Y_i - \\hat{Y}_i)^2\\)\n\\(n-2\\)\n\\(MSE=\\dfrac{SSE}{n-2}\\)\n\\(\\sigma^2\\)\n\n\nTotal\n\\(SSTO=\\sum (Y_i - \\overline{Y})^2\\)\n\\(n-1\\)"
+  },
+  {
+    "objectID": "slides/lec_week10.html#test-f",
+    "href": "slides/lec_week10.html#test-f",
+    "title": "Regresión lineal simple",
+    "section": "Test F",
+    "text": "Test F\nEl enfoque de análisis de varianza nos permite realizar fácilmente test para modelos de regresión (y otros modelos lineales). Por ejemplo, consideremos:\n\\[H_0: \\beta_1 = 0 \\hspace{20pt} H_1:\\beta_1 \\neq 0\\]\nEstadístico de prueba\nBajo este enfoque consideramos el estadístico \\(F^*\\), definido como:\n\\[F^*=\\dfrac{MSR}{MSE}\\]\nDistribución muestral de \\(F^*\\)\nEs posible mostrar que bajo \\(H_0\\), \\(F^*\\) sigue una distribución \\(F(1,n-2)\\)"
+  },
+  {
+    "objectID": "slides/lec_week10.html#test-f-continuación",
+    "href": "slides/lec_week10.html#test-f-continuación",
+    "title": "Regresión lineal simple",
+    "section": "Test F: continuación",
+    "text": "Test F: continuación\nRegla de decisión\nDebido a que \\(F^*\\) sigue una distribución \\(F(1,n-2)\\) bajo \\(H_0\\), la regla de decisión será:\n\nSi \\(F^* \\leq F(1-\\alpha; 1,n-2)\\), optamos por \\(H_0\\)\nSi \\(F^* > F(1-\\alpha; 1,n-2)\\), optamos por \\(H_1\\)"
+  },
+  {
+    "objectID": "slides/lec_week10.html#coeficiente-de-determinación",
+    "href": "slides/lec_week10.html#coeficiente-de-determinación",
+    "title": "Regresión lineal simple",
+    "section": "Coeficiente de determinación",
+    "text": "Coeficiente de determinación\nEl coeficiente de determinación lo definimos como:\n\\[R^2=\\dfrac{SSR}{SSTO}=1-\\dfrac{SSE}{SSTO}\\]\ny lo interpretamos como la proporción de la variabilidad que es explicada por el ajuste de regresión lineal.\nEste coeficiente se mueve entre 0 y 1, siendo 1 un ajuste perfecto. Un buen ajuste de regresión suele estar entre 0.7 - 0.9, pero esto puede variar dependiendo del contexto del problema."
+  },
+  {
+    "objectID": "slides/lec_week10.html#limitaciones-del-coeficiente-de-determinación",
+    "href": "slides/lec_week10.html#limitaciones-del-coeficiente-de-determinación",
+    "title": "Regresión lineal simple",
+    "section": "Limitaciones del coeficiente de determinación",
+    "text": "Limitaciones del coeficiente de determinación\n\nUn coeficiente de determinación alto no indica que se puedan hacer predicciones buenas\nUn coeficiente de determinación alto no indica que el ajuste es necesariamente bueno\nUn coeficiente de determinación cercano a cero no indica que \\(X\\) e \\(Y\\) no estén relacionados."
+  },
+  {
+    "objectID": "slides/lec_week10.html#coeficiente-de-correlación",
+    "href": "slides/lec_week10.html#coeficiente-de-correlación",
+    "title": "Regresión lineal simple",
+    "section": "Coeficiente de correlación",
+    "text": "Coeficiente de correlación\nEste coeficiente puede ser definido como la raíz del coeficiente de determinación.\n\\[r=\\pm \\sqrt{R^2}\\]\ny lo interpretamos como el coeficiente de correlación de Pearson."
+  },
+  {
+    "objectID": "slides/lec_week10.html#aplicación-computacional",
+    "href": "slides/lec_week10.html#aplicación-computacional",
+    "title": "Regresión lineal simple",
+    "section": "Aplicación computacional",
+    "text": "Aplicación computacional\n\nrequire(tidyverse)\nrequire(MASS)\nrequire(car)\nrequire(mosaic)\nset.seed(163)\ndata(UScereal)\nplot<-ggplot(UScereal,aes(x=fibre,y=calories)) + geom_point() +\n  geom_smooth(method=lm,se=FALSE,color=\"red\")"
+  },
+  {
+    "objectID": "slides/lec_week10.html#aplicación-computacional-continuación",
+    "href": "slides/lec_week10.html#aplicación-computacional-continuación",
+    "title": "Regresión lineal simple",
+    "section": "Aplicación computacional: continuación",
+    "text": "Aplicación computacional: continuación\n\nmodel <- lm(calories~fibre,data=UScereal)\nsummary(model)\n\n\nCall:\nlm(formula = calories ~ fibre, data = UScereal)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-144.73  -28.07  -17.48   15.51  258.48 \n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)  134.117      8.522  15.738   <2e-16 ***\nfibre          3.950      1.181   3.344   0.0014 ** \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 57.97 on 63 degrees of freedom\nMultiple R-squared:  0.1507,    Adjusted R-squared:  0.1372 \nF-statistic: 11.18 on 1 and 63 DF,  p-value: 0.001396"
+  },
+  {
+    "objectID": "slides/lec_week10.html#aplicación-computacional-continuación-1",
+    "href": "slides/lec_week10.html#aplicación-computacional-continuación-1",
+    "title": "Regresión lineal simple",
+    "section": "Aplicación computacional: continuación",
+    "text": "Aplicación computacional: continuación\n\nconfint(model)\n\n                 2.5 %    97.5 %\n(Intercept) 117.087793 151.14595\nfibre         1.589422   6.31138\n\nanova(model)\n\nAnalysis of Variance Table\n\nResponse: calories\n          Df Sum Sq Mean Sq F value   Pr(>F)   \nfibre      1  37572   37572   11.18 0.001396 **\nResiduals 63 211723    3361                    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1"
+  },
+  {
+    "objectID": "slides/lec_week10.html#diagnóstico-para-las-variables-predictoras",
+    "href": "slides/lec_week10.html#diagnóstico-para-las-variables-predictoras",
+    "title": "Regresión lineal simple",
+    "section": "Diagnóstico para las variables predictoras",
+    "text": "Diagnóstico para las variables predictoras\nPrimero debemos analizar las variables predictora para detectar la presencia de datos anómalos o outliers, que puedan influenciar la viabilidad del modelo.\n\nLa presencia de outliers, puede provocar residuos grandes en magnitud, influenciando enormemente el ajuste de regresión."
+  },
+  {
+    "objectID": "slides/lec_week10.html#diagnóstico-para-residuos",
+    "href": "slides/lec_week10.html#diagnóstico-para-residuos",
+    "title": "Regresión lineal simple",
+    "section": "Diagnóstico para residuos",
+    "text": "Diagnóstico para residuos\nEn general, los gráficos de diagnósticos utilizando directamente la variable respuesta \\(Y\\) no son muy útiles en el análisis de regresión debido a que el valor de las observaciones en la variable respuesta son una función del nivel de la variable predictora. Por lo que usualmente, se analizan indirectamente mediante la inspección de los residuos.\nLos residuos \\(e_i\\) son la diferencia entre el valor observado \\(Y_i\\) y el valor ajustado \\(\\hat{Y}_i\\):\n\\[e_i=Y_i-\\hat{Y}_i\\]\nEstos pueden ser considerados como el error observado, a diferencia de valor real del error \\(\\varepsilon_i\\) en el modelo de regresión:\n\\[\\varepsilon_i=Y_i - \\mathbb{E}(Y_i)\\]\nPara el modelo de regresión lineal simple, los errores \\(\\varepsilon_i\\) se asumen variables aleatorias normales independientes, con media 0 y varianza constante \\(\\sigma^2\\). Si el modelo es apropiado para los datos disponibles, el residuo observado \\(e_i\\) deben reflejar las propiedades que se asumieron para \\(\\varepsilon_i\\).\nEsta es la idea básica del análisis de residuos, una herramienta útil para evaluar la viabilidades de los modelos."
+  },
+  {
+    "objectID": "slides/lec_week10.html#propiedades-de-los-residuos-media",
+    "href": "slides/lec_week10.html#propiedades-de-los-residuos-media",
+    "title": "Regresión lineal simple",
+    "section": "Propiedades de los residuos: media",
+    "text": "Propiedades de los residuos: media\nLa media de los \\(n\\) residuos \\(e_i\\) para el modelo de regresión lineal simple es:\n\\[\\overline{e}=\\dfrac{\\sum e_i}{n}=0\\]\ndonde \\(\\overline{e}\\) denota la media de los residuos. Así, debido a que \\(\\overline{e}\\) es siempre 0, este no provee información sobre si los errores reales \\(\\varepsilon_i\\) tienen valor esperado \\(\\mathbb{E}(\\varepsilon_i)=0\\)."
+  },
+  {
+    "objectID": "slides/lec_week10.html#propiedades-de-los-residuos-varianza",
+    "href": "slides/lec_week10.html#propiedades-de-los-residuos-varianza",
+    "title": "Regresión lineal simple",
+    "section": "Propiedades de los residuos: varianza",
+    "text": "Propiedades de los residuos: varianza\nLa varianza de los \\(n\\) residuos \\(e_i\\) está definida como:\n\\[s^2=\\dfrac{\\sum (e_i - \\overline{e})^2}{n-2}=\\dfrac{\\sum e_{i}^{2}}{n-2}=\\dfrac{SSE}{n-2}=MSE\\]\nSi el modelo es apropiado, el error cuadrático medio es un estimador insesgado de la varianza del error \\(\\sigma^2\\)."
+  },
+  {
+    "objectID": "slides/lec_week10.html#propiedades-de-los-residuos-no-independencia",
+    "href": "slides/lec_week10.html#propiedades-de-los-residuos-no-independencia",
+    "title": "Regresión lineal simple",
+    "section": "Propiedades de los residuos: no independencia",
+    "text": "Propiedades de los residuos: no independencia\nLos residuos \\(e_i\\) no son variables aleatorias independientes debido a que involucran los valores ajustados \\(\\hat{Y}_i\\), los cuales están basado en la misma función de regresión ajustada. Como resultado de lo anterior, los residuos para el modelo de regresión están sujetos a dos restricciones:\n\nLa suma de \\(e_i\\) debe ser 0\nla suma de \\(X_i e_i\\) debe ser 0\n\n\nCuando el tamaño de muestra es grande en comparación con el número de parámetros en el modelo de regresión, la efecto de dependencia entre los residuos \\(e_i\\) no tiene mayor importancia y puede ser ignorado."
+  },
+  {
+    "objectID": "slides/lec_week10.html#propiedades-de-los-residuos-residuos-semi-studentizados",
+    "href": "slides/lec_week10.html#propiedades-de-los-residuos-residuos-semi-studentizados",
+    "title": "Regresión lineal simple",
+    "section": "Propiedades de los residuos: residuos semi-studentizados",
+    "text": "Propiedades de los residuos: residuos semi-studentizados\nFrecuentemente, sirve estandarizar los residuos para realizar el análisis. debido a que la desviación estándar de los términos de error \\(\\varepsilon_i\\) es \\(\\sigma\\), el cual puede ser estimado mediante \\(\\sqrt{MSE}\\), por lo que es natural considerar la estandarización:\n\\[e_{i}^{*}=\\dfrac{e_i-\\overline{e}}{\\sqrt{MSE}}=\\dfrac{e_i}{\\sqrt{MSE}}\\]\nSi \\(\\sqrt{MSE}\\) fuese una estimación de la desviación estándar de los residuos \\(e_i\\), llamaríamos \\(e_{i}^{*}\\) residuos studentizados. Sin embargo, la desviación estándar de \\(e_i\\) es compleja y varía para los diferentes residuos \\(e_i\\), y \\(\\sqrt{MSE}\\) es sólo una aproximación de la desviación estándar de \\(e_i\\).\nPor lo que llamamos el estadístico \\(e_{i}^{*}\\) un residuo semi-studentizado. Estos tipo de residuos nos sirven para identificar la presencia de datos anómalos."
+  },
+  {
+    "objectID": "slides/lec_week10.html#diferencias-con-el-modelo-estudiado",
+    "href": "slides/lec_week10.html#diferencias-con-el-modelo-estudiado",
+    "title": "Regresión lineal simple",
+    "section": "Diferencias con el modelo estudiado",
+    "text": "Diferencias con el modelo estudiado\nUsualmente, estaremos en busca de 6 formas en la cuales un modelo de regresión lineal simple con errores normales no es adecuado.\n\nLa función de regresión no es lineal\nLos errores no tienen varianza constante\nLos errores no son independientes\nEl modelo ajusta todas las observaciones exceptuando algunas\nLos errores no se distribuyen de manera normal\nUnas o varias variables predictoras fueron omitidas del modelo"
+  },
+  {
+    "objectID": "slides/lec_week10.html#diagnóstico-de-los-residuos",
+    "href": "slides/lec_week10.html#diagnóstico-de-los-residuos",
+    "title": "Regresión lineal simple",
+    "section": "Diagnóstico de los residuos",
+    "text": "Diagnóstico de los residuos\nUtilizaremos varios gráficos para identificar si ocurre alguna de las 6 situaciones antes planteadas. Los siguientes gráficos son usualmente usados para este fin\n\nGráficos de los residuos vs la variable predictora\nGráfico del valor absoluto o el cuadrado de los residuos vs la variable predictora\nGráfico de los residuos vs valores ajustados\nGráfico de los residuos vs tiempo u otra secuencia\nGráfico de los residuos vs variables predictoras omitidas\nBox-Plot de los residuos\nGráfico de probabilidad normal de los residuos"
+  },
+  {
+    "objectID": "slides/lec_week10.html#test-relacionados-con-los-residuos",
+    "href": "slides/lec_week10.html#test-relacionados-con-los-residuos",
+    "title": "Regresión lineal simple",
+    "section": "Test relacionados con los residuos",
+    "text": "Test relacionados con los residuos\nEl análisis de residuos mediante gráficos es inherentemente subjetivo. Aún así, este análisis subjetivo de una variedad de gráficos de residuos frecuentemente revela dificultades en la implementación del modelo más claramente que un test formal.\n\nTest de aleatoriedad: Durbin-Watson Test\nTest para la consistencia de varianza: Brown-Forsythe test y Breusch-Pagan test\nTest de normalidad: Test Chi-cuadrado, Kolmogorov-Smirnov, Lilliefors test."
+  },
+  {
+    "objectID": "slides/lec_week10.html#medidas-correctivas",
+    "href": "slides/lec_week10.html#medidas-correctivas",
+    "title": "Regresión lineal simple",
+    "section": "Medidas correctivas",
+    "text": "Medidas correctivas\nSi el modelo de regresión lineal simple no es apropiado para el conjunto de datos que se está analizando, se tienen dos opciones:\n\nAbandonar el modelo de regresión lineal simple y desarrollar otro modelo\nAplicar alguna transformación a los datos tal que el modelo de regresión lineal simple sea apropiado para los datos transformados."
   }
 ]
