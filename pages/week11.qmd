@@ -15,3 +15,5 @@ subtitle: "Intervalos de confianza"
 ```
 
 ## Material adicional
+
+- [Presentaciones](../documents/Presentaciones.pdf)
