@@ -1,6 +1,6 @@
 ---
 title: "Semana 12"
-subtitle: "Test de hipótesis"
+subtitle: "Ejercitación"
 ---
 
 ## Preparación
@@ -16,3 +16,5 @@ subtitle: "Test de hipótesis"
 ```
 
 ## Material adicional
+
+- [Trabajo Final](../documents/LFIS325_2022_02_TF.pdf)
