@@ -18,3 +18,4 @@ subtitle: "Ejercitación"
 ## Material adicional
 
 - [Trabajo Final](../documents/LFIS325_2022_02_TF.pdf)
+- [Datos](../documents/SDSS_QSO.csv)
